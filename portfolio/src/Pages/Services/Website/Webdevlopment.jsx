@@ -135,7 +135,7 @@ const Webdevlopment = () => {
     {
       id: "direct-01",
       title: "By Mythology",
-      subtitle: "Sacred candles",
+      subtitle: "Sacred Candles",
       description: "A visually immersive brand website crafted with modern design for a fashion-forward audience.",
       images: [bymythology1, bymythology2, bymythology3],
       layout: "image-left",
