@@ -1,0 +1,32 @@
+.scroll-service-bar {
+    position: fixed;
+  top: 89px; // ← adjust to match your Navbar height (check your Navbar SCSS)
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.6rem 0.3rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+
+    .service-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.7rem;
+        color: #111;
+
+        .icon {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .label {
+            font-size: 0.65rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}

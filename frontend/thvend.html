@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/asstes/Logo/new_favicon.png" type="image/png">
+    <title>Techorses - TH Vend</title>
+
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2YK4TXR4D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2YK4TXR4D');
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2YK4TXR4D"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+    <link rel="stylesheet" href="/css/thcore.css">
+    <link rel="stylesheet" href="/css/cursor.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR  -->
+
+    <header class="header">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <!-- Desktop logo -->
+                        <img src="/asstes/Logo/Main_Logo.png" alt="Company Logo" class="logo-desktop"
+                            draggable="false" />
+
+                        <!-- Mobile logo -->
+                        <img src="/asstes/Logo/Logo.svg" alt="Mobile Logo" class="logo-mobile" draggable="false" />
+                    </a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/company.html" class="nav-link">COMPANY</a>
+                    </li>
+
+                    <!-- PRODUCTS DROPDOWN - Single line style -->
+                    <li class="nav-item products-dropdown">
+                        <a href="#" class="nav-link products-toggle active">
+                            PRODUCTS <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container products-dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="/thcore.html" class="dropdown-item">
+                                    <i class="fas fa-cube"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Core</span></span>
+                                    </div>
+                                </a>
+                                <a href="/thvend.html" class="dropdown-item">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Vend</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- SERVICES DROPDOWN (unchanged) -->
+                    <li class="nav-item services-dropdown">
+                        <a href="#" class="nav-link services-toggle">
+                            SERVICES <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="webdevelopment.html" class="dropdown-item">
+                                    <i class="fas fa-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Web<br><span class="second-line">Development</span></span>
+                                    </div>
+                                </a>
+                                <a href="customsoftware.html" class="dropdown-item">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Custom<br><span class="second-line">Software</span></span>
+                                    </div>
+                                </a>
+                                <a href="marketingsolution.html" class="dropdown-item">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Marketing<br><span class="second-line">Solution</span></span>
+                                    </div>
+                                </a>
+                                <a href="graphicdesign.html" class="dropdown-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Graphic<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="uiux.html" class="dropdown-item">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>UI/UX<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="mobileapp.html" class="dropdown-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Mobile<br><span class="second-line">App</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="/portfolio" class="nav-link">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link btn-lets-talk">Let's Talk</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="lets-talk-modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-container">
+                <button class="modal-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-content">
+                    <h2>Let's Talk</h2>
+                    <p>Have a project in mind or want to discuss opportunities? We'd love to hear from you!</p>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LdlcuwrAAAAAASzygwkisSbTa_4Fo2dmt1wMCWO"></div>
+                        </div>
+
+
+                        <button type="submit" class="submit-btn lets-talk-style">
+                            <span class="lets-talk-sleeping">
+                                <img src="/asstes/Images/home/Icons/sleeping2.png" alt="Sleeping Icon" />
+                            </span>
+                            <span class="lets-talk-awake">
+                                <img src="/asstes/Images/home/Icons/awake2.png" alt="Awake Icon" />
+                            </span>
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;"></span>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-logo-only">
+                <img src="/asstes/Images/product/vend.png" alt="TH Vend Logo" class="hero-logo-main">
+            </div>
+            <p class="hero-subtitle">Smart Purchasing.<span class="mobile-break"> Seamless Selling.</span></p>
+            <a href="https://calendly.com/techorses/discovery-call" target="_blank" rel="noopener noreferrer"
+                class="hero-btn" id="heroServiceBtn">Get Demo
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 2: STATS SECTION (SEPARATE) -->
+    <!-- <section class="manufacturer-stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Retail Businesses</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Inventory Accuracy</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Business Support</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- SECTION 1: TH VEND PRODUCT HERO WITH FEATURES -->
+    <section class="product-core-section">
+        <div class="container">
+            <div class="product-hero-content">
+                <h2 class="product-heading">TH Vend</h2>
+                <p class="product-tagline">TH Vend helps retailers and traders manage everything - from purchasing to
+                    selling - and generates bills, invoices, and reports automatically. It reduces paperwork, avoids
+                    mistakes, and saves time.</p>
+
+                <!-- NEW: Feature Points Grid -->
+                <div class="product-features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Fast billing</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Track sales</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Mobile ready</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure & reliable</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-smile"></i>
+                        <span>Easy to use</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+
+                <button class="product-demo-btn" id="productDemoBtn">Get Demo</button>
+            </div>
+            <div class="product-mockup">
+                <img src="/asstes/Images/product/vendimage.png" alt="Retail Software Mockup" class="desktop-mockup">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: INDUSTRIES WE SERVE WITH SLIDER -->
+    <section class="industries-slider-section">
+        <div class="container">
+            <h2 class="section-title">Businesses We Serve</h2>
+
+            <div class="slider-container">
+                <button class="slider-arrow prev-arrow" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="industries-slider" id="industriesSlider">
+                    <div class="slider-track" id="sliderTrack">
+                        <!-- NO MANUAL DUPLICATES — JS handles cloning -->
+                        <div class="industry-card">
+                            <i class="fas fa-store"></i>
+                            <h4>Retail Stores</h4>
+                            <p>Complete POS and inventory management</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-tshirt"></i>
+                            <h4>Fashion & Apparel</h4>
+                            <p>Size-wise tracking and seasonal sales</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Electronics</h4>
+                            <p>Warranty tracking and serial number management</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Restaurants</h4>
+                            <p>Table management and kitchen order tracking</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-medkit"></i>
+                            <h4>Pharmacies</h4>
+                            <p>Expiry tracking and prescription management</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-gem"></i>
+                            <h4>Jewelry</h4>
+                            <p>Precious item tracking and weight management</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-dumbbell"></i>
+                            <h4>Sports Equipment</h4>
+                            <p>Seasonal inventory and rental management</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-paint-brush"></i>
+                            <h4>Art Supplies</h4>
+                            <p>Variant tracking and reorder management</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-spray-can"></i>
+                            <h4>Beauty & Cosmetics</h4>
+                            <p>Makeup, skincare and fragrance inventory</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-paw"></i>
+                            <h4>Pet Stores</h4>
+                            <p>Pet supplies and food inventory</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-car"></i>
+                            <h4>Auto Parts</h4>
+                            <p>Part compatibility and cross-referencing</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-tools"></i>
+                            <h4>Hardware</h4>
+                            <p>Tool tracking and bulk order management</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-gift"></i>
+                            <h4>Gift Shops</h4>
+                            <p>Seasonal inventory and gift registry</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-book"></i>
+                            <h4>Bookstores</h4>
+                            <p>ISBN tracking and category management</p>
+                        </div>
+
+                        <div class="industry-card">
+                            <i class="fas fa-bread-slice"></i>
+                            <h4>Bakeries</h4>
+                            <p>Fresh item tracking and expiry management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-arrow next-arrow" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT TH VEND SECTION -->
+    <section class="about-thcore-section">
+        <div class="container-2">
+            <div class="about-thcore-card">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h2>About TH Vend</h2>
+                </div>
+
+                <div class="card-content">
+                    <div class="main-statement">
+                        <div class="highlight-box">
+                            <p>TH Vend is a powerful retail management system that brings <span
+                                    class="highlight-text">complete clarity, control, and confidence</span> to your
+                                buying and selling process.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-grid">
+                        <div class="content-block">
+                            <!-- Icon removed for mobile - will be hidden via CSS -->
+                            <div class="block-icon mobile-hidden">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <p>Instead of juggling files, spreadsheets, and paper bills, TH Vend puts your entire retail
+                                workflow into one simple, easy-to-use platform.</p>
+                        </div>
+
+                        <div class="content-block">
+                            <!-- Icon removed for mobile - will be hidden via CSS -->
+                            <div class="block-icon mobile-hidden">
+                                <i class="fas fa-binoculars"></i>
+                            </div>
+                            <p>It helps you track what you purchase, what you sell, and what's in stock - all in real
+                                time. Whether it's supplier orders, customer purchases, or inventory levels, you always
+                                know what's happening, without searching or guessing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-visual">
+                    <div class="visual-track">
+                        <div class="track-item">
+                            <div class="track-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <span>Purchase</span>
+                        </div>
+                        <div class="track-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="track-item">
+                            <div class="track-icon">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <span>Inventory</span>
+                        </div>
+                        <div class="track-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="track-item">
+                            <div class="track-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <span>Sell</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- WHY CHOOSE US SECTION 2 - UPDATED -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2>Why Retailers Love TH Vend</h2>
+
+            <div class="points-grid">
+                <!-- Left Column - 6 Points -->
+                <div class="points-column left-column">
+                    <div class="point-item">
+                        <div class="point-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span class="point-text">Centralized inventory</span>
+                    </div>
+
+                    <div class="point-item">
+                        <div class="point-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <span class="point-text">Real-time stock management</span>
+                    </div>
+
+                    <div class="point-item">
+                        <div class="point-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <span class="point-text">Faster billing</span>
+                    </div>
+
+                    <div class="point-item">
+                        <div class="point-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <span class="point-text">Better client management with deep insights</span>
+                    </div>
+
+                    <div class="point-item">
+                        <div class="point-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <span class="point-text">Insightful decision-making reports</span>
+                    </div>
+
+
+                </div>
+
+                <!-- Right Column - 4 Points (since you gave 9 total points - 6 in left, 3 in right) -->
+                <div class="points-column right-column">
+                    <div class="point-item">
+                        <div class="point-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <span class="point-text">Smart automation</span>
+                    </div>
+
+                    <div class="point-item">
+                        <div class="point-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <span class="point-text">Zero errors, zero paperwork</span>
+                    </div>
+
+                    <div class="point-item">
+                        <div class="point-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <span class="point-text">Simplifies complex tasks</span>
+                    </div>
+                    <div class="point-item">
+                        <div class="point-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <span class="point-text">Customized solutions</span>
+                    </div>
+                    <div class="point-item">
+                        <div class="point-icon">
+                            <i class="fas fa-store-alt"></i>
+                        </div>
+                        <span class="point-text">Multi-store & multi-branch management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 1: TRUSTED RETAILERS (ONLY 1) -->
+    <section class="trusted-manufacturers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted by Leading Retailers</h2>
+                <p>Join hundreds of retail businesses that rely on TH Vend to streamline their operations</p>
+            </div>
+
+            <div class="manufacturers-grid">
+                <!-- Retailer: Jass Perfumes - Perfume Store -->
+                <div class="manufacturer-card">
+                    <div class="logo-wrapper">
+                        <div class="logo-content">
+                            <img src="/asstes/Images/product/jass.png" alt="Jass Logo" class="client-logo">
+                            <span>Jass Perfumes</span>
+
+                        </div>
+                    </div>
+                    <div class="manufacturer-category">Perfume & Fragrance Store</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A SYSTEM BUILT FOR REAL RETAIL NEEDS - UPDATED -->
+    <section class="manufacturing-needs-section">
+        <div class="container">
+            <div class="needs-card">
+                <div class="card-content">
+                    <h2>A System Built for Real Retail Needs</h2>
+                    <p class="lead-text">TH Vend is not just software - it's a digital partner that understands how
+                        retailers work.</p>
+
+                    <div class="cta-block">
+                        <div class="cta-badge">
+                            <i class="fas fa-check-circle"></i>
+                            Your Perfect Fit
+                        </div>
+                        <p class="cta-description">If you want <span class="highlight">control, speed, accuracy, and a
+                                stress-free workflow</span>, TH Vend is your perfect fit.</p>
+                        <button class="cta-btn">Start Your Journey</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- CUSTOMER TESTIMONIALS SECTION - WITH SLIDER -->
+    <!-- <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonials-header">
+                <h2>What Retailers Say About TH Vend</h2>
+                <p>Real stories from real retailers who transformed their business</p>
+            </div>
+
+            <div class="testimonials-slider-container">
+                <button class="testimonial-arrow prev-arrow" id="testimonialPrevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <div class="testimonials-track" id="testimonialsTrack">
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "TH Vend revolutionized our store management. We reduced billing time by 70% and
+                                    increased sales by 35% in just 3 months. The real-time inventory tracking is a
+                                    game-changer!"
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <div class="author-name">Rajesh Mehta</div>
+                                        <div class="author-role">Store Owner</div>
+                                        <div class="author-company">CityMart</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "As a pharmacy chain, expiry management is critical. TH Vend's automated expiry
+                                    tracking and reorder alerts saved us from huge losses and compliance issues."
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <i class="fas fa-user-md"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <div class="author-name">Dr. Sneha Patel</div>
+                                        <div class="author-role">Pharmacy Manager</div>
+                                        <div class="author-company">MedLife</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "The multi-store inventory feature alone paid for the system in 6 months. We now
+                                    have perfect visibility across all our branches. TH Vend made us more profitable
+                                    overnight."
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <i class="fas fa-user-cog"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <div class="author-name">Amit Shah</div>
+                                        <div class="author-role">Operations Director</div>
+                                        <div class="author-company">FashionHub</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="testimonial-arrow next-arrow" id="testimonialNextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="testimonial-dots" id="testimonialDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- FOOTER  -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main-row">
+                <!-- Logo Column -->
+                <div class="footer-column footer-logo-column">
+                    <img src="/asstes/Logo/Techorses Logo_03.png" alt="Techorses Logo">
+                    <p>Stay connected and join the digital conversation! Follow us on social media for the latest
+                        updates, tech insights, and creative inspirations. Let's build a vibrant digital community
+                        together.</p>
+                    <div class="footer-social-wrapper">
+                        <button class="client-btn-with-icon">
+                            <span class="plus-footer">+</span> Become a Client
+                            <!-- <img src="/asstes/Images/home/Icons/sitting.png" alt="Cartoon Icon" class="client-icon">  -->
+                        </button>
+                        <!-- Desktop Social Icons -->
+                        <div class="footer-socials desktop-social">
+                            <a href="https://www.facebook.com/people/Techorses/100089081915251/?mibextid=ZbWKwL"
+                                target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/techorses_?igsh=Zzh1ZDE0NHlvd3ht" target="_blank"
+                                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/techorses-ride-the-technology/" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explore Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Explore</h3>
+                   <ul>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="company.html" class="footer-link">Company</a></li>
+                        <li><a href="/portfolio" class="footer-link">Portfolio</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="terms-conditions.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html" class="footer-link">PrivacyPolicy</a></li>
+                        <li><a href="data-deletion.html" class="footer-link">Data Deletion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column mobile-none">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="thcore.html" class="footer-link">TH Core</a></li>
+                        <li><a href="thvend.html" class="footer-link">TH Vend</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Services</h3>
+                    <ul class="services-list">
+                        <li><a href="webdevelopment.html" class="footer-link">Web
+                                Development</a></li>
+                        <li><a href="customsoftware.html" class="footer-link">Custom
+                                Software</a></li>
+                        <li><a href="marketingsolution.html" class="footer-link">Marketing
+                                Solution</a></li>
+                        <li><a href="graphicdesign.html" class="footer-link">Graphic Design</a>
+                        </li>
+                        <li><a href="uiux.html" class="footer-link">UI/UX Design</a></li>
+                        <li><a href="mobileapp.html" class="footer-link">Mobile Application</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column - UPDATED STRUCTURE -->
+                <!-- Contact Column - UPDATED FOR MOBILE -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <!-- Address -->
+                        <div class="contact-line address-line">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://maps.google.com/?q=B-224+Samanvay+Silicon+Opp+Kalyan+Hotel+Dairy+Den+Circle+Sayajigunj+Vadodara+390020"
+                                target="_blank" rel="noopener noreferrer" class="address-text footer-link">
+                                B-224, Samanvay Silicon, Opp Kalyan Hotel, Dairy Den Circle, Sayajigunj, Vadodara,
+                                390020 (Gujarat, India)
+                            </a>
+                        </div>
+
+                        <!-- Phone Numbers -->
+                        <div class="contact-line phone-line">
+                            <div class="contact-items">
+                                <a href="tel:+917778048992" class="contact-item">
+                                    <i class="fas fa-phone-alt"></i> +91 7778048992
+                                </a>
+                                <span class="contact-separator">|</span>
+                                <a href="tel:+919328338281" class="contact-item">
+                                    <i class="fas fa-phone-alt"></i> +91 9328338281
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Emails -->
+                        <div class="contact-line email-line">
+                            <div class="contact-items">
+                                <a href="mailto:hey@techorses.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i> hey@techorses.com
+                                </a>
+                                <div class="contact-separator">|</div>
+                                <a href="mailto:sales@techorses.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i> sales@techorses.com
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Mobile Social Icons -->
+                        <div class="mobile-social">
+                            <div class="footer-socials">
+                                <a href="https://www.facebook.com/people/Techorses/100089081915251/?mibextid=ZbWKwL"
+                                    target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/techorses_?igsh=Zzh1ZDE0NHlvd3ht" target="_blank"
+                                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/techorses-ride-the-technology/"
+                                    target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Sections -->
+            <div class="footer-copyright-section desktop-copyright">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved. Designed by Techorses.
+                    <!-- <span>Privacy Policy</span>  -->
+                </p>
+            </div>
+            <div class="footer-copyright-section mobile-copyright">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved.<br> Designed by Techorses.
+                    <!-- <span>Privacy Policy</span>  -->
+                </p>
+            </div>
+        </div>
+
+        <!-- Go to Top Button -->
+        <button id="goToTopBtn" title="Go to top" aria-label="Go to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+
+
+
+    <!-- Toast Container -->
+    <div class="toast-container"></div>
+    <audio id="successSound" src="/asstes/Images/Sound/notification.mp3" preload="auto"></audio>
+
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/917778048992" id="whatsappBtn" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Particle.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="/js/Product1.js"></script>
+    <script src="/js/cursor.js"></script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const video2 = document.getElementById('productVideo2');
+            const playPauseBtn2 = document.getElementById('playPauseBtn2');
+            const playIcon2 = playPauseBtn2.querySelector('i');
+            const videoContainer2 = document.querySelector('.video-container-2');
+
+            // Function to toggle play/pause for section 2
+            function togglePlayPause2() {
+                if (video2.paused) {
+                    video2.play().catch(error => {
+                        console.log('Play failed for video 2:', error);
+                    });
+                    playIcon2.className = 'fas fa-pause';
+                } else {
+                    video2.pause();
+                    playIcon2.className = 'fas fa-play';
+                }
+            }
+
+            // Toggle play/pause when clicking the button
+            playPauseBtn2.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                togglePlayPause2();
+            });
+
+            // Toggle play/pause when clicking on video container
+            videoContainer2.addEventListener('click', function (e) {
+                if (!playPauseBtn2.contains(e.target)) {
+                    togglePlayPause2();
+                }
+            });
+
+            // Update button icon based on video state
+            video2.addEventListener('play', function () {
+                playIcon2.className = 'fas fa-pause';
+            });
+
+            video2.addEventListener('pause', function () {
+                playIcon2.className = 'fas fa-play';
+            });
+
+            // Handle video loading and autoplay
+            video2.addEventListener('loadeddata', function () {
+                video2.muted = true;
+                video2.play().then(() => {
+                    console.log('Video 2 autoplay started');
+                    playIcon2.className = 'fas fa-pause';
+                }).catch(error => {
+                    console.log('Autoplay failed for video 2:', error);
+                    playIcon2.className = 'fas fa-play';
+                });
+            });
+
+            video2.addEventListener('error', function () {
+                console.log('Video 2 loading error');
+                playIcon2.className = 'fas fa-play';
+            });
+        });
+    </script>
+
+    <script>
+        // Testimonials Slider Functionality - TRUE INFINITE LOOP
+        // Testimonials Slider Functionality - TRUE INFINITE LOOP
+        document.addEventListener('DOMContentLoaded', function () {
+            const sliderTrack = document.getElementById('testimonialsTrack');
+            const prevBtn = document.getElementById('testimonialPrevBtn');
+            const nextBtn = document.getElementById('testimonialNextBtn');
+            const dots = document.querySelectorAll('#testimonialDots .dot');
+            const sliderContainer = document.querySelector('.testimonials-slider-container');
+            const dotsContainer = document.querySelector('.testimonial-dots');
+
+            // Get all original cards
+            const originalCards = Array.from(document.querySelectorAll('.testimonial-card'));
+            const totalCards = originalCards.length; // Should be 3
+
+            // Store original HTML for reset
+            const originalHTML = sliderTrack.innerHTML;
+
+            let currentIndex = 0;
+            let autoSlideInterval;
+            let isTransitioning = false;
+            let cardsToShow = getCardsToShow();
+            let cloned = false;
+
+            // Get number of cards to show based on screen width
+            function getCardsToShow() {
+                if (window.innerWidth <= 767) return 1; // Mobile
+                if (window.innerWidth <= 992) return 2; // Tablet
+                return 3; // Desktop
+            }
+
+            // Check if slider should be active
+            function isSliderActive() {
+                return window.innerWidth <= 992; // Slider on tablet and mobile
+            }
+
+            // Setup slider (clone cards for infinite)
+            function setupSlider() {
+                if (!isSliderActive()) {
+                    // Desktop - reset to original 3 cards
+                    sliderTrack.innerHTML = originalHTML;
+                    sliderTrack.style.transform = 'none';
+                    sliderTrack.style.transition = 'none';
+                    sliderTrack.style.display = 'grid';
+                    sliderTrack.style.gridTemplateColumns = 'repeat(3, 1fr)';
+                    sliderTrack.style.gap = '2rem';
+
+                    // Hide arrows and dots
+                    if (prevBtn) prevBtn.style.display = 'none';
+                    if (nextBtn) nextBtn.style.display = 'none';
+                    if (dotsContainer) dotsContainer.style.display = 'none';
+
+                    cloned = false;
+                    return;
+                }
+
+                // Tablet/Mobile - setup slider
+                sliderTrack.style.display = 'flex';
+                sliderTrack.style.gap = cardsToShow === 1 ? '1rem' : '1.5rem';
+
+                // Hide arrows on mobile, show on tablet
+                if (window.innerWidth <= 767) {
+                    // Mobile - hide arrows
+                    if (prevBtn) prevBtn.style.display = 'none';
+                    if (nextBtn) nextBtn.style.display = 'none';
+                } else {
+                    // Tablet - show arrows
+                    if (prevBtn) prevBtn.style.display = 'flex';
+                    if (nextBtn) nextBtn.style.display = 'flex';
+                }
+
+                if (dotsContainer) dotsContainer.style.display = 'flex';
+
+                // Clone cards only once
+                if (!cloned) {
+                    // Clear track
+                    sliderTrack.innerHTML = '';
+
+                    // Add original cards
+                    originalCards.forEach(card => {
+                        sliderTrack.appendChild(card.cloneNode(true));
+                    });
+
+                    // Add clones for infinite
+                    originalCards.forEach(card => {
+                        sliderTrack.appendChild(card.cloneNode(true));
+                    });
+
+                    // Add one more set for smooth infinite
+                    originalCards.forEach(card => {
+                        sliderTrack.appendChild(card.cloneNode(true));
+                    });
+
+                    cloned = true;
+                }
+
+                // Reset position
+                const allCards = document.querySelectorAll('.testimonial-card');
+                const totalSlides = allCards.length;
+                currentIndex = totalCards; // Start at first set
+
+                // Force reflow and set position
+                setTimeout(() => {
+                    updateSlider(false);
+                }, 50);
+            }
+
+            // Calculate card width including gap
+            function getCardWidth() {
+                const cardElement = document.querySelector('.testimonial-card');
+                if (!cardElement) return 0;
+
+                const cardWidth = cardElement.offsetWidth;
+                const gap = cardsToShow === 1 ? 16 : 24;
+
+                return cardWidth + gap;
+            }
+
+            // Update slider position
+            function updateSlider(animate = true) {
+                if (!isSliderActive()) return;
+
+                if (!animate) {
+                    sliderTrack.style.transition = 'none';
+                } else {
+                    sliderTrack.style.transition = 'transform 0.5s ease';
+                }
+
+                const cardWidth = getCardWidth();
+                const translateValue = -(currentIndex * cardWidth);
+                sliderTrack.style.transform = `translateX(${translateValue}px)`;
+
+                // Update dots
+                const allCards = document.querySelectorAll('.testimonial-card');
+                const totalSlides = allCards.length;
+                const dotIndex = (currentIndex - totalCards + totalCards) % totalCards;
+
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === dotIndex);
+                });
+            }
+
+            // Check and reset for infinite loop
+            function checkInfinite() {
+                if (!isSliderActive()) return;
+
+                const allCards = document.querySelectorAll('.testimonial-card');
+                const totalSlides = allCards.length;
+
+                // If we've gone too far right
+                if (currentIndex >= totalSlides - cardsToShow) {
+                    sliderTrack.style.transition = 'none';
+                    currentIndex = totalCards; // Jump to first set
+                    const cardWidth = getCardWidth();
+                    sliderTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                    void sliderTrack.offsetHeight;
+                    sliderTrack.style.transition = 'transform 0.5s ease';
+                }
+
+                // If we've gone too far left
+                if (currentIndex < cardsToShow) {
+                    sliderTrack.style.transition = 'none';
+                    currentIndex = totalSlides - (totalCards + cardsToShow); // Jump to last set
+                    const cardWidth = getCardWidth();
+                    sliderTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                    void sliderTrack.offsetHeight;
+                    sliderTrack.style.transition = 'transform 0.5s ease';
+                }
+            }
+
+            // Next slide
+            function nextSlide() {
+                if (!isSliderActive() || isTransitioning) return;
+                isTransitioning = true;
+                currentIndex++;
+                updateSlider(true);
+            }
+
+            // Previous slide
+            function prevSlide() {
+                if (!isSliderActive() || isTransitioning) return;
+                isTransitioning = true;
+                currentIndex--;
+                updateSlider(true);
+            }
+
+            // Handle transition end
+            sliderTrack.addEventListener('transitionend', function () {
+                if (isSliderActive()) {
+                    checkInfinite();
+                }
+                isTransitioning = false;
+            });
+
+            // Auto slide function - FOR ALL DEVICES (mobile, tablet)
+            function startAutoSlide() {
+                if (!isSliderActive()) return; // Only for slider devices
+
+                stopAutoSlide();
+                // Auto slide every 5 seconds for both mobile and tablet
+                autoSlideInterval = setInterval(nextSlide, 5000); // Changed to 5 seconds
+            }
+
+            function stopAutoSlide() {
+                if (autoSlideInterval) {
+                    clearInterval(autoSlideInterval);
+                }
+            }
+
+            // Event listeners for arrows (only tablet)
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    if (window.innerWidth <= 767) return; // No arrows on mobile
+                    nextSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    if (window.innerWidth <= 767) return; // No arrows on mobile
+                    prevSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+            }
+
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    if (!isSliderActive()) return;
+                    stopAutoSlide();
+                    const targetIndex = totalCards + index;
+                    if (targetIndex !== currentIndex) {
+                        isTransitioning = true;
+                        currentIndex = targetIndex;
+                        updateSlider(true);
+                    }
+                    startAutoSlide();
+                });
+            });
+
+            // Pause auto-slide on hover
+            if (sliderContainer) {
+                sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+                sliderContainer.addEventListener('mouseleave', startAutoSlide);
+            }
+
+            // Handle resize
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    const wasActive = isSliderActive();
+                    cardsToShow = getCardsToShow();
+                    setupSlider();
+
+                    if (isSliderActive()) {
+                        // Start auto-slide for both mobile and tablet
+                        startAutoSlide();
+                    } else {
+                        // Desktop - stop auto-slide
+                        stopAutoSlide();
+                    }
+                }, 250);
+            });
+
+            // Initialize
+            setupSlider();
+            if (isSliderActive()) {
+                // Start auto-slide for both mobile and tablet
+                startAutoSlide();
+            }
+        });
+
+
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sliderTrack = document.getElementById('sliderTrack');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const dotsContainer = document.getElementById('sliderDots');
+
+            const totalOriginalCards = 15;
+            let currentIndex = 0;
+            let autoSlideInterval;
+            let isTransitioning = false;
+
+            function getCardsToShow() {
+                if (window.innerWidth <= 480) return 1;
+                if (window.innerWidth <= 768) return 1;
+                if (window.innerWidth <= 992) return 2;
+                return 4;
+            }
+
+            let cardsToShow = getCardsToShow();
+
+            function setupClones() {
+                sliderTrack.querySelectorAll('.cloned').forEach(el => el.remove());
+
+                const originals = Array.from(sliderTrack.querySelectorAll('.industry-card:not(.cloned)'));
+
+                // Append full set at end
+                originals.forEach(card => {
+                    const clone = card.cloneNode(true);
+                    clone.classList.add('cloned');
+                    sliderTrack.appendChild(clone);
+                });
+
+                // Prepend full set at start
+                [...originals].reverse().forEach(card => {
+                    const clone = card.cloneNode(true);
+                    clone.classList.add('cloned');
+                    sliderTrack.insertBefore(clone, sliderTrack.firstChild);
+                });
+            }
+
+            function getCardWidth() {
+                const card = sliderTrack.querySelector('.industry-card');
+                if (!card) return 0;
+                const gap = parseInt(getComputedStyle(sliderTrack).gap) || 32;
+                return card.offsetWidth + gap;
+            }
+
+            function goTo(index, animate) {
+                sliderTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+                sliderTrack.style.transform = `translateX(${-(index * getCardWidth())}px)`;
+                currentIndex = index;
+            }
+
+            function jumpToReal() {
+                const realStart = totalOriginalCards;
+                const realEnd = realStart + totalOriginalCards - 1;
+
+                if (currentIndex < realStart) {
+                    const diff = realStart - currentIndex;
+                    goTo(realEnd - diff + 1, false);
+                } else if (currentIndex > realEnd) {
+                    const diff = currentIndex - realEnd;
+                    goTo(realStart + diff - 1, false);
+                }
+            }
+
+            sliderTrack.addEventListener('transitionend', () => {
+                jumpToReal();
+                isTransitioning = false;
+                updateDots();
+            });
+
+            function updateDots() {
+                const realStart = totalOriginalCards;
+                const realIndex = ((currentIndex - realStart) % totalOriginalCards + totalOriginalCards) % totalOriginalCards;
+                const dotCount = dotsContainer.querySelectorAll('.dot').length;
+                const activeDot = Math.floor(realIndex / cardsToShow) % dotCount;
+
+                dotsContainer.querySelectorAll('.dot').forEach((dot, i) => {
+                    dot.classList.toggle('active', i === activeDot);
+                });
+            }
+
+            function createDots() {
+                dotsContainer.innerHTML = '';
+                const numDots = window.innerWidth <= 992 ? 4 : 5;
+                for (let i = 0; i < numDots; i++) {
+                    const dot = document.createElement('span');
+                    dot.classList.add('dot');
+                    if (i === 0) dot.classList.add('active');
+                    dot.addEventListener('click', () => {
+                        goTo(totalOriginalCards + i * cardsToShow, true);
+                        resetAutoSlide();
+                    });
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            function nextSlide() {
+                if (isTransitioning) return;
+                isTransitioning = true;
+                goTo(currentIndex + 1, true);
+            }
+
+            function prevSlide() {
+                if (isTransitioning) return;
+                isTransitioning = true;
+                goTo(currentIndex - 1, true);
+            }
+
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 4000);
+            }
+
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+
+            function resetAutoSlide() {
+                stopAutoSlide();
+                startAutoSlide();
+            }
+
+            function init() {
+                cardsToShow = getCardsToShow();
+                setupClones();
+                createDots();
+                goTo(totalOriginalCards, false);
+                updateDots();
+            }
+
+            nextBtn.addEventListener('click', () => { nextSlide(); resetAutoSlide(); });
+            prevBtn.addEventListener('click', () => { prevSlide(); resetAutoSlide(); });
+
+            const sliderContainer = document.querySelector('.slider-container');
+            sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+            sliderContainer.addEventListener('mouseleave', startAutoSlide);
+
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    init();
+                    stopAutoSlide();
+                    startAutoSlide();
+                }, 250);
+            });
+
+            init();
+            startAutoSlide();
+        });
+    </script>
+</body>
+
+
+</html>

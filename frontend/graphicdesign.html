@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/asstes/Logo/new_favicon.png" type="image/png">
+    <title>Techorses - Graphic Design</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2YK4TXR4D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2YK4TXR4D');
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2YK4TXR4D"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+    <link rel="stylesheet" href="/css/Graphicdesign.css">
+    <link rel="stylesheet" href="/css/cursor.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR  -->
+    <header class="header">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <!-- Desktop logo -->
+                        <img src="/asstes/Logo/Main_Logo.png" alt="Company Logo" class="logo-desktop"
+                            draggable="false" />
+
+                        <!-- Mobile logo -->
+                        <img src="/asstes/Logo/Logo.svg" alt="Mobile Logo" class="logo-mobile" draggable="false" />
+                    </a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/company.html" class="nav-link">COMPANY</a>
+                    </li>
+
+                    <!-- PRODUCTS DROPDOWN - Single line style -->
+                    <li class="nav-item products-dropdown">
+                        <a href="#" class="nav-link products-toggle">
+                            PRODUCTS <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container products-dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="/thcore.html" class="dropdown-item">
+                                    <i class="fas fa-cube"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Core</span></span>
+                                    </div>
+                                </a>
+                                <a href="/thvend.html" class="dropdown-item">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Vend</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- SERVICES DROPDOWN (unchanged) -->
+                    <li class="nav-item services-dropdown">
+                        <a href="#" class="nav-link services-toggle active">
+                            SERVICES <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="webdevelopment.html" class="dropdown-item">
+                                    <i class="fas fa-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Web<br><span class="second-line">Development</span></span>
+                                    </div>
+                                </a>
+                                <a href="customsoftware.html" class="dropdown-item">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Custom<br><span class="second-line">Software</span></span>
+                                    </div>
+                                </a>
+                                <a href="marketingsolution.html" class="dropdown-item">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Marketing<br><span class="second-line">Solution</span></span>
+                                    </div>
+                                </a>
+                                <a href="graphicdesign.html" class="dropdown-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Graphic<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="uiux.html" class="dropdown-item">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>UI/UX<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="mobileapp.html" class="dropdown-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Mobile<br><span class="second-line">App</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="/portfolio" class="nav-link">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link btn-lets-talk">Let's Talk</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="lets-talk-modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-container">
+                <button class="modal-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-content">
+                    <h2>Let's Talk</h2>
+                    <p>Have a project in mind or want to discuss opportunities? We'd love to hear from you!</p>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LdlcuwrAAAAAASzygwkisSbTa_4Fo2dmt1wMCWO"></div>
+                        </div>
+
+
+                        <button type="submit" class="submit-btn lets-talk-style">
+                            <span class="lets-talk-sleeping">
+                                <img src="/asstes/Images/home/Icons/sleeping2.png" alt="Sleeping Icon" />
+                            </span>
+                            <span class="lets-talk-awake">
+                                <img src="/asstes/Images/home/Icons/awake2.png" alt="Awake Icon" />
+                            </span>
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;"></span>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HERO SECTION  -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">GRAPHIC<span>DESIGN</span></h1>
+            <p class="hero-subtitle">Visuals that win hearts –<span class="mobile-break"> Style. Symmetry.
+                    Standout.</span></p>
+            <a href="#" class="hero-btn" id="heroServiceBtn">Request Service</a>
+        </div>
+    </section>
+
+
+    <!-- INFO SECTION  -->
+    <section class="web-dev-info-section">
+        <!-- Floating shapes will be added here by JavaScript -->
+        <div class="floating-shapes-container"></div>
+
+        <div class="web-dev-info-container">
+            <p class="web-dev-info-text">
+                At <strong>TECHORSES</strong>, we help your business look professional, attractive, and trustworthy
+                through creative design. Whether you're starting fresh or want to improve your brand's look, we design
+                visuals that speak clearly to your audience. From your logo to your social media posts, we make sure
+                every design matches your style and sends the right message. Our designs aren't just pretty - they're
+                made to connect with your customers and help your business grow.
+            </p>
+            <a href="/portfolio" class="web-dev-info-btn">Built By US</a>
+        </div>
+    </section>
+
+
+    <section class="services-section">
+        <h2 class="section-title">What We Provide?</h2>
+        <p class="section-subtitle">"See everything we offer <span class="mobile-subtitle-br"><br></span> in graphic
+            design."</p>
+        <p class="section-desc">
+            We merge artistic vision, brand identity, and visual trends <span class="desktop-br"><br></span> to craft
+            stunning designs that communicate your message clearly.
+        </p>
+
+        <div class="services-wrapper">
+            <!-- Service Item 1 -->
+            <div class="service-box">
+                <div class="service-img left">
+                    <img src="/asstes/Images/GraphicDesign/Logo Design.webp" alt="Search Engine Optimization (SEO)" />
+                </div>
+                <div class="service-content right">
+                    <h3>Logo Design</h3>
+                    <p>We create simple, unique, and meaningful logos that show your brand identity clearly. A good logo
+                        makes your business look professional and easy to remember. </p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Increased efficiency and productivity</li>
+                            <li>Streamlined processes</li>
+                            <li>Enhanced user experience</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+            <!-- Service Item 2 -->
+            <div class="service-box reverse">
+                <div class="service-img right">
+                    <img src="/asstes/Images/GraphicDesign/Website Mockups.webp" alt="Social Media Marketing" />
+                </div>
+                <div class="service-content left">
+                    <h3>
+                        Website Mockups</h3>
+                    <p>Create a great online presence with a pro website mockup from Techorses. Our designers will build
+                        a stunning mockup that will capture your brand and engage your website visitors. Impress your
+                        audience with a website that is both visually appealing and user-friendly.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Increased brand awareness</li>
+                            <li>Higher engagement rates</li>
+                            <li>Improved customer loyalty</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+            <!-- Service Item 3 -->
+            <div class="service-box">
+                <div class="service-img left">
+                    <img src="/asstes/Images/GraphicDesign/Social Media Graphics.webp"
+                        alt="Content Marketing Services" />
+                </div>
+                <div class="service-content right">
+                    <h3>Social Media Graphics</h3>
+                    <p>Upgrade your social media game with stunning graphics from Techorses. Our design wizards will
+                        craft captivating visuals that turn heads and boost engagement on your feeds. Stand out with
+                        top-notch graphics that match your brand’s vibe and leave a lasting mark on your followers.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+            <!-- Service Item 4 -->
+            <div class="service-box reverse">
+                <div class="service-img right">
+                    <img src="/asstes/Images/GraphicDesign/Packaging & Branding.webp" alt="Social Media Audit" />
+                </div>
+                <div class="service-content left">
+                    <h3>Packaging & Branding</h3>
+                    <p>Improve your brand with TECHORSES packaging and branding services. We create unique packaging
+                        designs and establish a strong brand image to help your brand shine in the market.
+                    </p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+
+            <!-- Service Item 5 -->
+            <div class="service-box">
+                <div class="service-img left">
+                    <img src="/asstes/Images/GraphicDesign/Marketing Materials.webp"
+                        alt="Paid Advertising and Promotions" />
+                </div>
+                <div class="service-content right">
+                    <h3>Marketing Materials</h3>
+                    <p>BIf you need printed materials like brochures, booklets, flyers, company profiles, catalogs, or
+                        business cards, or anything, TECHORSES can help. Our marketing materials are created to attract
+                        your ideal customers and make a lasting impact. Our expert designs will present your brand in
+                        the best possible way.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+
+            <!-- Service Item 6 -->
+            <div class="service-box reverse">
+                <div class="service-img right">
+                    <img src="/asstes/Images/GraphicDesign/Video Editing.webp"
+                        alt="Influencer Marketing Collaboration" />
+                </div>
+                <div class="service-content left">
+                    <h3>
+                        Video Editing</h3>
+                    <p>Our team can help make your content stand out with our video editing services. Whether you want
+                        to make promotional videos or enhance existing footage, we’re here to help you share your story
+                        in an engaging way.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+
+            <!-- Service Item 7 -->
+            <div class="service-box">
+                <div class="service-img left">
+                    <img src="/asstes/Images/GraphicDesign/Business Card Design.webp"
+                        alt="Search Engine Optimization (SEO)" />
+                </div>
+                <div class="service-content right">
+                    <h3>Business Card Design</h3>
+                    <p>We design business cards that leave a strong first impression — with clean layout, right info,
+                        and your brand feel. </p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Increased efficiency and productivity</li>
+                            <li>Streamlined processes</li>
+                            <li>Enhanced user experience</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+            <!-- Service Item 8-->
+            <div class="service-box reverse">
+                <div class="service-img right">
+                    <img src="/asstes/Images/GraphicDesign/Brochure & Flyer Design.webp" alt="Social Media Marketing" />
+                </div>
+                <div class="service-content left">
+                    <h3>Brochure & Flyer Design</h3>
+                    <p>We make brochures and flyers that are easy to read, look attractive, and help people understand
+                        your services or products quickly.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Increased brand awareness</li>
+                            <li>Higher engagement rates</li>
+                            <li>Improved customer loyalty</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+            <!-- Service Item 9 -->
+            <div class="service-box">
+                <div class="service-img left">
+                    <img src="/asstes/Images/GraphicDesign/Social Media Post Design.webp"
+                        alt="Content Marketing Services" />
+                </div>
+                <div class="service-content right">
+                    <h3>Social Media Post Design</h3>
+                    <p>We create eye-catching and engaging post designs for platforms like Instagram and Facebook to
+                        boost your online presence.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+            <!-- Service Item 10 -->
+            <div class="service-box reverse">
+                <div class="service-img right">
+                    <img src="/asstes/Images/GraphicDesign/Banner & Poster Design.webp" alt="Social Media Audit" />
+                </div>
+                <div class="service-content left">
+                    <h3>Banner & Poster Design</h3>
+                    <p>We design bold and clear banners or posters for promotions, events, or ads — both for print and
+                        digital use.
+                    </p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+
+            <!-- Service Item 11 -->
+            <div class="service-box">
+                <div class="service-img left">
+                    <img src="/asstes/Images/GraphicDesign/Packaging & Branding.webp"
+                        alt="Paid Advertising and Promotions" />
+                </div>
+                <div class="service-content right">
+                    <h3>Packaging Design</h3>
+                    <p>We design creative and smart packaging that protects your product and grabs customer attention on
+                        shelves or online.</p>
+
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+
+            <!-- Service Item 12 -->
+            <div class="service-box reverse">
+                <div class="service-img right">
+                    <img src="/asstes/Images/GraphicDesign/Catalogue Design.webp"
+                        alt="Influencer Marketing Collaboration" />
+                </div>
+                <div class="service-content left">
+                    <h3>
+                        Catalogue Design</h3>
+                    <p>We make catalogues that showcase your products or services in a neat, clean, and professional way
+                        for easy browsing.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+            <!-- Service Item 13 -->
+            <!-- Service Item 17 -->
+            <div class="service-box">
+                <div class="service-img left">
+                    <img src="/asstes/Images/GraphicDesign/Presentation Design.webp"
+                        alt="Paid Advertising and Promotions" />
+                </div>
+                <div class="service-content right">
+                    <h3>Presentation Design (Pitch Decks, PPTs)</h3>
+                    <p>We design business presentations that look smart and help you explain your ideas clearly — useful
+                        for meetings, sales, and funding.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+            <!-- Service Item 14 -->
+            <div class="service-box reverse">
+                <div class="service-img right">
+                    <img src="/asstes/Images/GraphicDesign/Label Design.webp" alt="Social Media Marketing" />
+                </div>
+                <div class="service-content left">
+                    <h3>
+                        Label Design</h3>
+                    <p>We create neat and well-structured label designs that highlight product details while matching
+                        your brand style.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Increased brand awareness</li>
+                            <li>Higher engagement rates</li>
+                            <li>Improved customer loyalty</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+            <!-- Service Item 15 -->
+            <div class="service-box">
+                <div class="service-img left">
+                    <img src="/asstes/Images/GraphicDesign/Company Profile Design.webp"
+                        alt="Content Marketing Services" />
+                </div>
+                <div class="service-content right">
+                    <h3>Company Profile Design</h3>
+                    <p>We design professional company profiles that introduce your business, services, and values in a
+                        clean, branded format.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+            <!-- Service Item 16 -->
+            <div class="service-box reverse">
+                <div class="service-img right">
+                    <img src="/asstes/Images/GraphicDesign/Event Invitation & eCard Design.webp"
+                        alt="Social Media Audit" />
+                </div>
+                <div class="service-content left">
+                    <h3>Event Invitation & eCard Design</h3>
+                    <p>We make beautiful invitations and eCards for events, functions, and celebrations — personalized
+                        to your occasion and audience.
+                    </p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+
+            <!-- Service Item 17 -->
+            <div class="service-box">
+                <div class="service-img left">
+                    <img src="/asstes/Images/GraphicDesign/Ad Creatives.webp" alt="Paid Advertising and Promotions" />
+                </div>
+                <div class="service-content right">
+                    <h3>Ad Creatives (for Facebook, Instagram, Google, etc.)</h3>
+                    <p>We design scroll-stopping ad creatives that help you get clicks, leads, and better ad results on
+                        digital platforms.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+
+
+            <!-- Service Item 18 -->
+            <div class="service-box reverse">
+                <div class="service-img right">
+                    <img src="/asstes/Images//GraphicDesign/Print & Promotional Materials.webp"
+                        alt="Influencer Marketing Collaboration" />
+                </div>
+                <div class="service-content left">
+                    <h3>Print & Promotional Materials (Hoardings, Standees, etc.)</h3>
+                    <p>We create high-quality designs for big formats like hoardings, standees, and display boards that
+                        grab attention at events or public spaces.</p>
+                    <!-- <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Personalized solutions for your business</li>
+                            <li>Improved user experience</li>
+                            <li>Enhanced functionality for your applications</li>
+                        </ul>
+                    </div> -->
+                    <a href="#contact" class="service-btn">Get Inside</a>
+                </div>
+            </div>
+        </div>
+        <div class="services-btn-container">
+            <a href="/portfolio" class="web-dev-info-btn">Built By US</a>
+        </div>
+    </section>
+
+
+    <!----------------------- TECH STACK  -->
+
+    <section class="graphic-design-section">
+        <div class="container">
+            <h2 class="section-title"><span>Tech Stack</span></h2>
+
+            <div class="tech-categories">
+                <!-- Desktop Filter Buttons - Only "All" since single category -->
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                </div>
+
+                <!-- Mobile Slider - Not needed for single category but kept for consistency -->
+                <div class="mobile-tech-slider-container" style="display: none;">
+                    <div class="mobile-tech-slider">
+                        <div class="slider-track"></div>
+                        <div class="slider-dots"></div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Grid -->
+                <div class="tech-grid">
+                    <!-- Graphic Design Tools -->
+                    <div class="tech-item" data-category="design">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                                alt="Photoshop">
+                            <span class="tech-tooltip">Adobe Photoshop</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="design">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                                alt="Illustrator">
+                            <span class="tech-tooltip">Adobe Illustrator</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="design">
+                        <div class="tech-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/320px-Adobe_InDesign_CC_icon.svg.png"
+                                alt="InDesign">
+                            <span class="tech-tooltip">Adobe InDesign</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="design">
+                        <div class="tech-logo">
+                            <img src="https://images.seeklogo.com/logo-png/50/1/coreldraw-logo-png_seeklogo-500400.png"
+                                alt="CorelDRAW">
+                            <span class="tech-tooltip">CorelDRAW</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="design">
+                        <div class="tech-logo">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/canva-icon.svg"
+                                alt="Canva">
+                            <span class="tech-tooltip">Canva</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="design">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"
+                                alt="After Effects">
+                            <span class="tech-tooltip">Adobe After Effects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="quote-mark left">&ldquo;</div>
+                <div class="text-wrapper">
+                    <!-- Desktop Version -->
+                    <p class="cta-text desktop-text">
+                        More than decoration - it’s communication,<span class="nottabletbr"><br></span> designed <span class="tabletbr"><br></span> with <span>meaning</span>.
+                    </p>
+
+                    <!-- Mobile Version -->
+                    <p class="cta-text mobile-text">
+                        More than decoration<br>
+                        it’s communication,<br>
+                        designed with <span>meaning</span>.
+                    </p>
+                    <div class="quote-mark right">&rdquo;</div>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <!-- WhatsApp Link Button -->
+                <div class="cta-button-wrapper">
+                    <img src="/asstes/Images/home/Icons/donatello.png" alt="cartoon icon" class="icon-on-button" />
+                    <a href="https://wa.me/917778048992" class="cta-button" target="_blank" rel="noopener noreferrer">
+                        Let's Build
+                    </a>
+                </div>
+
+                <!-- Phone/WhatsApp Responsive Button -->
+                <a href="#" class="phone-button" id="callOrWhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    +91 7778048992
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Our Process SECTION -->
+    <section class="process-section" id="process">
+        <h2 class="process-heading">Our Process</h2>
+        <div class="process-container">
+            <!-- Step 1 -->
+            <div class="step">
+                <div class="icon-container">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3 class="step-title">Briefing</h3>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- Step 2 -->
+            <div class="step">
+                <div class="icon-container">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3 class="step-title">Research & <br>Inspiration</h3>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- Step 3 -->
+            <div class="step">
+                <div class="icon-container">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h3 class="step-title">Concept <br>Development</h3>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- Step 4 -->
+            <div class="step">
+                <div class="icon-container">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3 class="step-title">Design <br>Execution</h3>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- Step 5 -->
+            <div class="step">
+                <div class="icon-container">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <h3 class="step-title">Client <br>Review</h3>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- Step 6 -->
+            <div class="step">
+                <div class="icon-container">
+                    <i class="fas fa-pen-to-square"></i>
+                </div>
+                <h3 class="step-title">Revisions</h3>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- Step 7 -->
+            <div class="step">
+                <div class="icon-container">
+                    <i class="fas fa-box-open"></i>
+                </div>
+                <h3 class="step-title">Finalization & <br> Delivery</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- FAQS Section  -->
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">FAQs</h2>
+
+            <div class="faq-container">
+                <!-- Left Column -->
+                <div class="faq-column">
+                    <!-- FAQ 1 -->
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span>What sets Techorses apart from other graphic design service
+                            providers?
+                        </div>
+                        <div class="faq-answer">Techorses stands out for its commitment to excellence, creativity, and
+                            client satisfaction. Our team of skilled designers goes above and beyond to deliver
+                            high-quality graphic design solutions that exceed our clients’ expectations.</div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span>How long does it take to complete a graphic design project
+                            with Techorses?
+                        </div>
+                        <div class="faq-answer">The timeline for a graphic design project with Techorses varies
+                            depending on the scope and complexity of the project. Our team works efficiently to deliver
+                            high-quality designs within a reasonable timeframe.</div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span>Can I request revisions on my graphic design project?
+                        </div>
+                        <div class="faq-answer">Yes, Techorses offers revision options for all graphic design projects.
+                            We value client feedback and strive to ensure that our designs meet your expectations and
+                            requirements.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="faq-column">
+                    <!-- FAQ 4 -->
+
+
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span>What type of businesses can benefit from Techorses Graphic
+                            Design services?
+                        </div>
+                        <div class="faq-answer">Techorses Graphic Design services cater to businesses of all sizes and
+                            industries. Whether you are a startup or an established company, our services can help
+                            enhance your brand image and engage your target audience effectively.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span>Do you offer packaging design templates for selection?
+                        </div>
+                        <div class="faq-answer">Yes, we have a range of packaging design templates that you can
+                            choose from or customize.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span>How do I place an order for graphic design services?
+                        </div>
+                        <div class="faq-answer">You can contact us through our website or email to discuss your
+                            graphic design needs and place an order.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- FOOTER  -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main-row">
+                <!-- Logo Column -->
+                <div class="footer-column footer-logo-column">
+                    <img src="/asstes/Logo/Techorses Logo_03.png" alt="Techorses Logo">
+                    <p>Stay connected and join the digital conversation! Follow us on social media for the latest
+                        updates, tech insights, and creative inspirations. Let's build a vibrant digital community
+                        together.</p>
+                    <div class="footer-social-wrapper">
+                        <button class="client-btn-with-icon">
+                            <span class="plus-footer">+</span> Become a Client
+                            <!-- <img src="/asstes/Images/home/Icons/sitting.png" alt="Cartoon Icon" class="client-icon">  -->
+                        </button>
+                        <!-- Desktop Social Icons -->
+                        <div class="footer-socials desktop-social">
+                            <a href="https://www.facebook.com/people/Techorses/100089081915251/?mibextid=ZbWKwL"
+                                target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/techorses_?igsh=Zzh1ZDE0NHlvd3ht" target="_blank"
+                                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/techorses-ride-the-technology/" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explore Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Explore</h3>
+                 <ul>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="company.html" class="footer-link">Company</a></li>
+                        <li><a href="/portfolio" class="footer-link">Portfolio</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="terms-conditions.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html" class="footer-link">PrivacyPolicy</a></li>
+                        <li><a href="data-deletion.html" class="footer-link">Data Deletion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column mobile-none">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="thcore.html" class="footer-link">TH Core</a></li>
+                        <li><a href="thvend.html" class="footer-link">TH Vend</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Services</h3>
+                    <ul class="services-list">
+                        <li><a href="webdevelopment.html" class="footer-link">Web
+                                Development</a></li>
+                        <li><a href="customsoftware.html" class="footer-link">Custom
+                                Software</a></li>
+                        <li><a href="marketingsolution.html" class="footer-link">Marketing
+                                Solution</a></li>
+                        <li><a href="graphicdesign.html" class="footer-link">Graphic Design</a>
+                        </li>
+                        <li><a href="uiux.html" class="footer-link">UI/UX Design</a></li>
+                        <li><a href="mobileapp.html" class="footer-link">Mobile Application</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column - UPDATED STRUCTURE -->
+                <!-- Contact Column - UPDATED FOR MOBILE -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <!-- Address -->
+                        <div class="contact-line address-line">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://maps.google.com/?q=B-224+Samanvay+Silicon+Opp+Kalyan+Hotel+Dairy+Den+Circle+Sayajigunj+Vadodara+390020"
+                                target="_blank" rel="noopener noreferrer" class="address-text footer-link">
+                                B-224, Samanvay Silicon, Opp Kalyan Hotel, Dairy Den Circle, Sayajigunj, Vadodara,
+                                390020 (Gujarat, India)
+                            </a>
+                        </div>
+
+                        <!-- Phone Numbers -->
+                        <div class="contact-line phone-line">
+                            <div class="contact-items">
+                                <a href="tel:+917778048992" class="contact-item">
+                                    <i class="fas fa-phone-alt"></i> +91 7778048992
+                                </a>
+                                <span class="contact-separator">|</span>
+                                <a href="tel:+919328338281" class="contact-item">
+                                    <i class="fas fa-phone-alt"></i> +91 9328338281
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Emails -->
+                        <div class="contact-line email-line">
+                            <div class="contact-items">
+                                <a href="mailto:hey@techorses.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i> hey@techorses.com
+                                </a>
+                                <div class="contact-separator">|</div>
+                                <a href="mailto:sales@techorses.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i> sales@techorses.com
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Mobile Social Icons -->
+                        <div class="mobile-social">
+                            <div class="footer-socials">
+                                <a href="https://www.facebook.com/people/Techorses/100089081915251/?mibextid=ZbWKwL"
+                                    target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/techorses_?igsh=Zzh1ZDE0NHlvd3ht" target="_blank"
+                                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/techorses-ride-the-technology/"
+                                    target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Sections -->
+            <div class="footer-copyright-section desktop-copyright">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved. Designed by Techorses.
+                    <!-- <span>Privacy Policy</span>  -->
+                </p>
+            </div>
+            <div class="footer-copyright-section mobile-copyright">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved.<br>Designed by Techorses.
+                    <!-- <span>Privacy Policy</span>  -->
+                </p>
+            </div>
+        </div>
+
+        <!-- Go to Top Button -->
+        <button id="goToTopBtn" title="Go to top" aria-label="Go to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+
+    <!-- Service Inquiry Modal for Marketing Solutions -->
+    <div class="service-inquiry-modal">
+        <div class="service-modal-overlay"></div>
+        <div class="service-modal-container">
+            <button class="service-modal-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="service-modal-content">
+                <h2>Graphic Design</h2>
+                <p>Tell us about your graphic design needs and we'll get back to you soon!</p>
+
+                <form class="service-contact-form">
+                    <div class="service-form-group">
+                        <input type="text" id="service-name" name="name" required>
+                        <label for="service-name">Full Name</label>
+                    </div>
+
+                    <div class="service-form-group">
+                        <input type="tel" id="service-phone" name="phone" required>
+                        <label for="service-phone">Phone Number</label>
+                    </div>
+
+                    <div class="service-form-group">
+                        <input type="email" id="service-email" name="email" required>
+                        <label for="service-email">Email Address</label>
+                    </div>
+
+                    <div class="service-form-group">
+                        <select id="service-subject" name="subject">
+                            <option value="Graphic Design" selected>Graphic Design</option>
+
+                            <option value="Website Development">Website Development</option>
+                            <option value="Custom Software">Custom Software</option>
+                            <option value="Marketing Solution">Marketing Solution</option>
+
+                            <option value="UI/UX Design">UI/UX Design</option>
+                            <option value="Mobile App Development">Mobile App Development</option>
+                        </select>
+                        <label for="service-subject">Service</label>
+                    </div>
+                    <div class="service-form-group">
+                        <textarea id="service-message" name="message" rows="4"></textarea>
+                        <label for="service-message">Your Message</label>
+                    </div>
+
+                    <div class="service-form-group">
+                        <div class="g-recaptcha" data-sitekey="6LdlcuwrAAAAAASzygwkisSbTa_4Fo2dmt1wMCWO"></div>
+                    </div>
+
+                    <button type="submit" class="service-submit-btn service-style">
+                        <span class="service-sleeping">
+                            <img src="/asstes/Images/home/Icons/sleeping2.png" alt="Sleeping Icon" />
+                        </span>
+                        <span class="service-awake">
+                            <img src="/asstes/Images/home/Icons/awake2.png" alt="Awake Icon" />
+                        </span>
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display: none;"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Toast Container -->
+    <div class="toast-container"></div>
+    <audio id="successSound" src="/asstes/Images/Sound/notification.mp3" preload="auto"></audio>
+
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/917778048992" id="whatsappBtn" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Particle.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="/js/Graphicdesign.js"></script>
+    <script src="/js/cursor.js"></script>
+</body>
+
+</html>

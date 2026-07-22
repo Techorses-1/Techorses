@@ -1,0 +1,23 @@
+.follower-dot,
+.follower-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.follower-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #006400;
+  border-radius: 50%;
+}
+
+.follower-ring {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #006400;
+  border-radius: 50%;
+}

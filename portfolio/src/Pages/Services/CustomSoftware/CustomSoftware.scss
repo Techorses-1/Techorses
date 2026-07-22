@@ -1,0 +1,139 @@
+body {
+  padding-top: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.website-hero-container {
+  height: 83vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
+  background-color: #0a021a;
+  scroll-snap-align: start;
+
+  @media (max-width: 768px) {
+    height: 77vh !important;
+    flex-direction: column;
+    padding: 20px !important;
+    justify-content: center;
+  }
+}
+
+.hero-heading {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+}
+
+.hero-subheading {
+  font-family: 'Poppins', sans-serif;
+  color: #aaa;
+  font-size: 1.3rem;
+  max-width: 500px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+}
+
+.hero-left-text {
+  padding-right: 20px;
+  flex: 1;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+}
+
+.card-swap-wrapper {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+  }
+}
+
+.card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    object-position: center top;
+  }
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px !important;
+  }
+}
+
+
+
+
+
+.website-hero-bg {
+  background-color: #0a021a; // your hero background
+  width: 100%;
+}
+
+/* ===== FIX: Large Screen Gap Between Text and Cards ===== */
+@media (min-width: 1600px) {
+
+  /* Limit the hero container width so text & cards stay closer */
+  .website-hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Adjust the flex ratio: give text more space, cards slightly less */
+  .hero-left-text {
+    flex: 0 0 55%;
+  }
+
+  .card-swap-wrapper {
+    flex: 0 0 45%;
+  }
+
+  /* Move card stack slightly left and scale for balance */
+  .card-swap-container {
+    transform: translate(-5%, 20%) scale(1.05);
+  }
+}

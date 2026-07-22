@@ -1,0 +1,202 @@
+.bottom-service-bar-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-service-bar {
+    position: fixed;
+    background: #081427;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 15px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    border: 1px solid rgba(255, 94, 14, 0.2);
+
+    .service-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; // Added for vertical centering
+        font-size: 0.7rem;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        transition: all 0.3s ease;
+        min-height: 45px; // Fixed height for consistency
+        
+        .icon {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+            color: inherit;
+            display: flex;
+            align-items: center; // Center icon vertically
+            justify-content: center; // Center icon horizontally
+            line-height: 1; // Remove extra line height
+            height: 20px; // Fixed height for icon container
+        }
+
+        .label {
+            font-size: 0.65rem;
+            line-height: 1; // Remove extra line height
+            text-align: center;
+        }
+
+        &:hover {
+            color: #ff5e0e;
+        }
+
+        &.active {
+            color: #ff5e0e;
+            
+            .icon {
+                color: #ff5e0e;
+            }
+        }
+
+        &.has-dropdown {
+            cursor: pointer;
+        }
+
+        &.dropdown-active {
+            color: #ff5e0e;
+            
+            .icon {
+                color: #ff5e0e;
+            }
+        }
+    }
+
+    @media (min-width: 1050px) {
+        display: none;
+    }
+}
+
+// Mobile Dropdown Menu - Appears ABOVE the bottom bar (NO ARROW)
+.mobile-dropdown-menu {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    background: #081427;
+    border: 1px solid rgba(255, 94, 14, 0.3);
+    border-radius: 50px;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    z-index: 1001;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+    width: auto;
+    max-width: 90%;
+
+    // NO ARROW - removed the ::after pseudo-element completely
+
+    .mobile-dropdown-item {
+        display: flex;
+        align-items: center;
+        justify-content: center; // Center content vertically
+        gap: 0.5rem;
+        padding: 0.6rem 1.2rem;
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        background: rgba(255, 94, 14, 0.05);
+        min-height: 40px; // Fixed height for consistency
+
+        .dropdown-icon {
+            color: #ff5e0e;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center !important; // Center icon vertically
+            justify-content: center !important; 
+         margin-bottom: -16px !important;
+            height: 100%; // Take full height
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown-label {
+            line-height: 1;
+            display: flex;
+            align-items: center; // Center text vertically
+        }
+
+        &:hover {
+            background: rgba(255, 94, 14, 0.15);
+            color: #ff5e0e;
+            
+            .dropdown-icon {
+                transform: scale(1.1);
+            }
+        }
+
+        &:first-child {
+            border-right: 1px solid rgba(255, 94, 14, 0.2);
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &:last-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
+// Animation for dropdown
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+// Very small screens
+@media (max-width: 480px) {
+    .mobile-dropdown-menu {
+        padding: 0.4rem;
+        gap: 0.3rem;
+        
+        .mobile-dropdown-item {
+            padding: 0.5rem 1rem;
+            font-size: 0.7rem;
+            min-height: 35px;
+            
+            .dropdown-icon {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    
+    .bottom-service-bar {
+        .service-item {
+            min-height: 40px;
+            
+            .icon {
+                font-size: 1rem;
+                height: 18px;
+            }
+            
+            .label {
+                font-size: 0.6rem;
+            }
+        }
+    }
+}

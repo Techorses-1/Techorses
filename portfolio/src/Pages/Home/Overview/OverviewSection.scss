@@ -1,0 +1,186 @@
+@use "sass:string";
+@use "sass:math";
+$text-light: #fff;
+
+/* 1️⃣ Font imports (top of the file or in your global styles) */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Libre+Baskerville:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+@function multiple-box-shadow($n) {
+  $value: "#{math.random(2000)}px #{math.random(2000)}px #FFF"; // Changed to white
+  @for $i from 2 through $n {
+    $value: "#{$value}, #{math.random(2000)}px #{math.random(2000)}px #FFF"; // Changed to white
+  }
+  @return string.unquote($value);
+}
+
+/* 2️⃣ Root section */
+.overview-section {
+  position: relative; 
+  overflow: hidden;
+  background: #081427; 
+  padding: 4vw 5vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF; // Changed to white for better contrast
+  z-index: 0;
+}
+
+.overview-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(45deg, #FFFFFF, #FFFFFF 2px, transparent 2px, transparent 20px), // Changed to white
+    repeating-linear-gradient(-45deg, #FFFFFF, #FFFFFF 2px, transparent 2px, transparent 20px); // Changed to white
+  background-size: 70px 60px;
+  animation: glitchGrid 20s linear infinite;
+  opacity: 0.1; // Increased opacity slightly for better visibility
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes glitchGrid {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 100px;
+  }
+}
+
+/* 3️⃣ Constrain the content width */
+.overview-content {
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* 4️⃣ Heading */
+.overview-heading {
+    // font-family: "Chakra Petch", sans-serif;
+        font-family: "Playfair Display", serif;
+
+
+  font-size: clamp(28px, 6vw, 56px);
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  // -webkit-text-stroke: 1px rgba($text-light, 0.6);  
+  // color: transparent; 
+}
+
+/* 5️⃣ Paragraph container */
+.overview-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* 6️⃣ Paragraph style */
+.overview-paragraph.text-block {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+  font-size: clamp(14px, 4vw, 22px);
+  line-height: 1.7;
+  max-width: 750px;
+  color: rgba(255, 255, 255, 0.9); // Changed to white with slight transparency
+}
+
+/* 7️⃣ Medium screens */
+@media (max-width: 1024px) {
+  .overview-section {
+    padding: 10vw 6vw;
+  }
+  .overview-heading {
+    font-size: clamp(24px, 8vw, 52px);
+  }
+}
+
+/* 8️⃣ Small screens */
+@media (max-width: 600px) {
+  .overview-section {
+    padding: 12vw 4vw;
+  }
+  .overview-text {
+    gap: 1.5rem;
+  }
+  .overview-paragraph.text-block {
+    font-size: clamp(13px, 5vw, 20px);
+  }
+}
+
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+#stars, #stars2, #stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: #{multiple-box-shadow(700)};
+  animation: animStar 50s linear infinite;
+}
+#stars::after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: #{multiple-box-shadow(700)};
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  box-shadow: #{multiple-box-shadow(200)};
+  animation: animStar 100s linear infinite;
+}
+#stars2::after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  box-shadow: #{multiple-box-shadow(200)};
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: #{multiple-box-shadow(100)};
+  animation: animStar 150s linear infinite;
+}
+#stars3::after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: #{multiple-box-shadow(100)};
+}

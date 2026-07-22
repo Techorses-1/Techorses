@@ -1,0 +1,713 @@
+
+/*------------------------------------- FOOTER */
+.desktop-social {
+  display: flex;
+}
+
+.mobile-social {
+  display: none;
+}
+
+/* Active footer link styles */
+.active-footer-link {
+  color: #ff5e0e !important;
+  font-weight: 600;
+}
+
+.footer-link {
+  color: inherit;
+  /* Keeps the existing text color */
+  text-decoration: none;
+  /* Removes underline */
+  transition: color 0.1s ease;
+  /* Smooth color transition */
+  display: block;
+  /* Makes the entire list item clickable */
+}
+
+
+.footer-link:hover {
+  color: #ff5e0e;
+  /* or #006400 – your site's hover color */
+}
+
+.mobile-social .footer-socials {
+  justify-content: center;
+  /* margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,0.1); */
+}
+
+footer {
+  /* width: 100%; */
+  background: #d5ded5;
+  padding: 2rem 2rem 0;
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer-main-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column {
+  flex: 1 1 auto;
+  min-width: 90px;
+  /* Reduced from 200px */
+  padding: 0 0.5rem;
+}
+
+.footer-logo-column {
+  flex: 1 1 250px;
+  /* Give logo column more priority */
+  min-width: 20px;
+}
+
+/* Specific adjustments for Explore and Services columns */
+.footer-column:nth-child(2) {
+  flex: 0 1 90px;
+  /* Fixed width for these columns */
+  min-width: 90px;
+}
+
+.footer-column:nth-child(3) {
+  flex: 0 1 100px;
+  /* Fixed width for these columns */
+  min-width: 100px;
+}
+
+.footer-column:nth-child(4) {
+  flex: 0 1 160px;
+  /* Fixed width for these columns */
+  min-width: 160px;
+}
+
+/* Contact column should take remaining space */
+.footer-column:last-child {
+  flex: 1 1 250px;
+}
+
+.footer-logo-column img {
+  max-width: 120px;
+  margin-bottom: -0.5rem;
+  margin-top: -2rem;
+  transform: scale(1.8);
+  margin-left: 10%;
+}
+
+.footer-logo-column p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo-column button {
+  background-color: #ff5e0e;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #ff5e0e;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  /* margin-bottom: 1.5rem; */
+  display: block;
+  width: 100%;
+  max-width: 200px;
+}
+
+.footer-logo-column button:hover {
+  background-color: transparent;
+  color: #ff5e0e;
+}
+
+
+.client-btn-with-icon {
+  position: relative;
+}
+
+.client-btn-with-icon .client-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid red; */
+  pointer-events: none;
+  /* background: yellow; */
+}
+
+
+.footer-column h3 {
+  color: #ff5e0e;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-column li:hover {
+  color: #ff5e0e;
+}
+
+.footer-link {
+  color: inherit;
+  /* Keeps the existing text color */
+  text-decoration: none;
+  /* Removes underline */
+  transition: color 0.1s ease;
+  /* Smooth color transition */
+  display: block;
+  /* Makes the entire list item clickable */
+}
+
+/* CONTACT SECTION STYLES */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-line {
+  display: flex;
+  align-items: flex-start;
+  /* Changed from center to flex-start */
+  margin-bottom: 0.5rem;
+}
+
+.contact-icon {
+  color: #ff5e0e;
+  width: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-right: 5px;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+
+.contact-items {
+  display: flex;
+  align-items: center;
+  /* gap: 0.5rem;  */
+  line-height: 1.5;
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
+
+}
+
+
+.contact-item {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  /* gap: 0.5rem; */
+  height: 24px;
+
+}
+
+
+.contact-line .contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.contact-line .contact-item i {
+  align-self: center;
+  margin-top: 0;
+
+}
+
+.contact-item i {
+  align-self: center;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-separator {
+  color: #999;
+  padding: 0 0.5rem;
+}
+
+.contact-text {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.contact-separator {
+  color: #999;
+  padding: 0 0.5rem;
+}
+
+.address-item {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.address-item i {
+  color: #ff5e0e;
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+  min-width: 20px;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.contact-line i {
+  color: #ff5e0e;
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+  min-width: 20px;
+  text-align: center;
+  align-self: flex-start;
+
+}
+
+.address-text {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+
+
+
+
+/* SOCIAL MEDIA STYLES */
+/* Adjust social wrapper for better mobile */
+.footer-social-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  color: #ff5e0e;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ff5e0e;
+  text-decoration: none;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-3px);
+  background-color: #ff5e0e;
+  color: white;
+}
+
+/* COPYRIGHT SECTION */
+.footer-copyright-section {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Hide mobile copyright by default */
+.mobile-copyright {
+  display: none;
+}
+
+/* Desktop Copyright */
+.desktop-copyright {
+  display: block;
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+
+.footer-copyright span {
+  color: #ff5e0e;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* GO TO TOP BUTTON */
+#goToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #006400;
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#goToTopBtn:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+  background-color: white;
+  color: #006400;
+}
+
+
+
+/* Phone number links styling */
+.contact-text {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.whatsapp-link:hover,
+.call-link:hover,
+.email-link:hover {
+  color: #ff5e0e;
+  /* WhatsApp green */
+  text-decoration: none;
+}
+
+/* Show/hide phone versions based on device */
+.desktop-phone {
+  display: block;
+}
+
+.mobile-phone {
+  display: none;
+}
+
+/* Email links specific styling */
+.email-link:hover {
+  color: #ff5e0e;
+  /* Gmail red */
+}
+
+/* Mobile view adjustments */
+/* COMPLETE MOBILE VIEW STYLES */
+
+
+
+@media (max-width: 992px) {
+  .desktop-phone {
+    display: none !important;
+  }
+
+  .mobile-phone {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* General Mobile Footer Styles */
+  footer {
+    padding: 1.5rem 1rem 0;
+  }
+
+  .contact-separator {
+
+    display: none !important;
+  }
+
+  .footer-main-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-column {
+    padding: 0;
+    text-align: center;
+    flex: 1 1 100%;
+  }
+
+  /* Logo Column */
+  .footer-logo-column img {
+    margin: -30px auto -10px;
+    max-width: 150px;
+  }
+
+  .footer-logo-column p {
+    text-align: center;
+    padding: 0 10%;
+  }
+
+  .footer-logo-column button {
+    margin: 1rem auto;
+
+    max-width: 200px;
+  }
+
+  /* Hide desktop elements */
+  .desktop-copyright,
+  .desktop-social,
+  .mobile-none {
+    display: none !important;
+  }
+
+  /* Show mobile elements */
+  .mobile-copyright {
+    display: block;
+    margin-top: 1.5rem;
+  }
+
+  /* Contact Section - Mobile View */
+  .footer-column:last-child h3 {
+    display: none;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  /* Address Section */
+  .address-line {
+    display: flex;
+    /* gap: 0.8rem; */
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .address-line i {
+    color: #ff5e0e;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+  }
+
+  .address-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* Phone Numbers Section */
+  .phone-line .contact-items {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.8rem; */
+  }
+
+  .phone-line .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    text-align: left;
+  }
+
+  .phone-line .contact-item i {
+    color: #ff5e0e;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  /* Email Section */
+  .email-line .contact-items {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.8rem; */
+  }
+
+  .email-line .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+    text-align: left;
+  }
+
+  .email-line .contact-item i {
+    color: #ff5e0e;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  /* Mobile Social Icons */
+  .mobile-social {
+    margin-top: 1.5rem;
+  }
+
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-socials a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 94, 14, 0.1);
+    color: #ff5e0e;
+    transition: all 0.3s ease;
+  }
+
+  .footer-socials a:hover {
+    background: #ff5e0e;
+    color: white;
+  }
+
+  /* Keep the button in logo column */
+  .footer-logo-column button {
+    display: block !important;
+    /* Ensure button stays visible */
+  }
+
+  /* Move social icons below contact details */
+  .footer-social-wrapper {
+    order: 1;
+    /* Move after contact section */
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  /* Hide desktop social icons */
+  .desktop-social {
+    display: none !important;
+  }
+
+  /* Show mobile social icons in new position */
+  .mobile-social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  /* Adjust contact info spacing */
+  .contact-info {
+    gap: 1.2rem;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  footer {
+    padding: 1rem 0.5rem 0;
+  }
+
+  .footer-logo-column p,
+  .address-text,
+  .contact-item {
+    font-size: 0.85rem;
+  }
+
+  .contact-info {
+    padding: 0 5%;
+  }
+
+  .footer-socials a {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+}
+
+/* CONTACT SECTION STYLES - UPDATED FIX */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-line {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+/* Phone line specific styles */
+.phone-line .contact-items {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0;
+  line-height: 1.5;
+}
+
+/* Desktop phone numbers */
+.desktop-phone {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+}
+
+/* Contact items */
+.contact-item {
+  display: inline-flex;
+  /* Changed from flex to inline-flex */
+  align-items: center;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0 0.25rem;
+}
+
+.contact-item:hover {
+  color: #ff5e0e;
+}
+
+.contact-separator {
+  color: #999;
+  padding: 0 0.5rem;
+  display: inline-block;
+}
+

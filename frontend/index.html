@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/asstes/Logo/new_favicon.png" type="image/png">
+
+    <title>Techorses - Ride The Technology</title>
+
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2YK4TXR4D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2YK4TXR4D');
+    </script>
+
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+
+
+    <link rel="stylesheet" href="/css/Home.css">
+    <!-- In <head> -->
+    <link rel="stylesheet" href="/css/cursor.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <!-- Desktop logo -->
+                        <img src="/asstes/Logo/Main_Logo.png" alt="Company Logo" class="logo-desktop"
+                            draggable="false" />
+
+                        <!-- Mobile logo -->
+                        <img src="/asstes/Logo/Logo.svg" alt="Mobile Logo" class="logo-mobile" draggable="false" />
+                    </a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/company.html" class="nav-link">COMPANY</a>
+                    </li>
+
+                    <!-- PRODUCTS DROPDOWN - Single line style -->
+                    <li class="nav-item products-dropdown">
+                        <a href="#" class="nav-link products-toggle">
+                            PRODUCTS <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container products-dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="/thcore.html" class="dropdown-item">
+                                    <i class="fas fa-cube"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Core</span></span>
+                                    </div>
+                                </a>
+                                <a href="/thvend.html" class="dropdown-item">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Vend</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- SERVICES DROPDOWN (unchanged) -->
+                    <li class="nav-item services-dropdown">
+                        <a href="#" class="nav-link services-toggle">
+                            SERVICES <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="webdevelopment.html" class="dropdown-item">
+                                    <i class="fas fa-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Web<br><span class="second-line">Development</span></span>
+                                    </div>
+                                </a>
+                                <a href="customsoftware.html" class="dropdown-item">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Custom<br><span class="second-line">Software</span></span>
+                                    </div>
+                                </a>
+                                <a href="marketingsolution.html" class="dropdown-item">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Marketing<br><span class="second-line">Solution</span></span>
+                                    </div>
+                                </a>
+                                <a href="graphicdesign.html" class="dropdown-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Graphic<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="uiux.html" class="dropdown-item">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>UI/UX<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="mobileapp.html" class="dropdown-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Mobile<br><span class="second-line">App</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="/portfolio" class="nav-link">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link btn-lets-talk">Let's Talk</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="lets-talk-modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-container">
+                <button class="modal-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-content">
+                    <h2>Let's Talk</h2>
+                    <p>Have a project in mind or want to discuss opportunities? We'd love to hear from you!</p>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LdlcuwrAAAAAASzygwkisSbTa_4Fo2dmt1wMCWO"></div>
+                        </div>
+
+
+                        <button type="submit" class="submit-btn lets-talk-style">
+                            <span class="lets-talk-sleeping">
+                                <img src="/asstes/Images/home/Icons/sleeping2.png" alt="Sleeping Icon" />
+                            </span>
+                            <span class="lets-talk-awake">
+                                <img src="/asstes/Images/home/Icons/awake2.png" alt="Awake Icon" />
+                            </span>
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;"></span>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h2>Your Trusted Partner for IT Solutions and Services.</h2>
+            <h1>READY TO REDEFINE YOUR DIGITAL JOURNEY?</h1>
+            <!-- <h3>From seamless web development to captivating mobile apps, stunning graphics, and strategic marketing
+            solutions. We're here to elevate your digital presence.</h3> -->
+            <a href="https://calendly.com/techorses/discovery-call" target="_blank" rel="noopener noreferrer">
+                <button class="hero-btn">Need Assistance?</button>
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- Worldwide Projects Section - Fixed with Flag Images -->
+    <section class="worldwide-projects-section">
+        <div class="container">
+            <!-- Text Line with Highlighted Number -->
+            <div class="projects-text-wrapper">
+                <p class="projects-text">
+                    Over <span class="highlight-number">76+</span> projects delivered worldwide,
+                    both directly and through agency partnerships
+                </p>
+            </div>
+
+            <!-- Flags Slider - Using Actual Flag Images -->
+            <div class="flags-slider-container">
+                <div class="flags-track">
+                    <!-- First set of flags - WITH ACTUAL FLAG IMAGES -->
+                    <div class="flag-item" data-country="Canada">
+                        <img src="https://flagcdn.com/w320/ca.png" alt="Canada Flag" class="flag-image">
+                        <span class="flag-name">Canada</span>
+                    </div>
+                    <div class="flag-item" data-country="Australia">
+                        <img src="https://flagcdn.com/w320/au.png" alt="Australia Flag" class="flag-image">
+                        <span class="flag-name">Australia</span>
+                    </div>
+                    <div class="flag-item" data-country="European Union">
+                        <img src="https://flagcdn.com/w320/eu.png" alt="EU Flag" class="flag-image">
+                        <span class="flag-name">Europe </span>
+                    </div>
+                    <div class="flag-item" data-country="USA">
+                        <img src="https://flagcdn.com/w320/us.png" alt="USA Flag" class="flag-image">
+                        <span class="flag-name">USA</span>
+                    </div>
+                    <div class="flag-item" data-country="New Zealand">
+                        <img src="https://flagcdn.com/w320/nz.png" alt="New Zealand Flag" class="flag-image">
+                        <span class="flag-name">New Zealand</span>
+                    </div>
+                    <div class="flag-item" data-country="Germany">
+                        <img src="https://flagcdn.com/w320/de.png" alt="Germany Flag" class="flag-image">
+                        <span class="flag-name">Germany</span>
+                    </div>
+                    <div class="flag-item" data-country="UAE">
+                        <img src="https://flagcdn.com/w320/ae.png" alt="UAE Flag" class="flag-image">
+                        <span class="flag-name">UAE</span>
+                    </div>
+                    <div class="flag-item" data-country="UK">
+                        <img src="https://flagcdn.com/w320/gb.png" alt="UK Flag" class="flag-image">
+                        <span class="flag-name">UK</span>
+                    </div>
+                    <div class="flag-item" data-country="Finland">
+                        <img src="https://flagcdn.com/w320/fi.png" alt="Finland Flag" class="flag-image">
+                        <span class="flag-name">Finland</span>
+                    </div>
+
+                    <!-- Duplicate set for seamless looping -->
+                    <div class="flag-item" data-country="Canada">
+                        <img src="https://flagcdn.com/w320/ca.png" alt="Canada Flag" class="flag-image">
+                        <span class="flag-name">Canada</span>
+                    </div>
+                    <div class="flag-item" data-country="Australia">
+                        <img src="https://flagcdn.com/w320/au.png" alt="Australia Flag" class="flag-image">
+                        <span class="flag-name">Australia</span>
+                    </div>
+                    <div class="flag-item" data-country="European Union">
+                        <img src="https://flagcdn.com/w320/eu.png" alt="EU Flag" class="flag-image">
+                        <span class="flag-name">Europe </span>
+
+                    </div>
+                    <div class="flag-item" data-country="USA">
+                        <img src="https://flagcdn.com/w320/us.png" alt="USA Flag" class="flag-image">
+                        <span class="flag-name">USA</span>
+                    </div>
+                    <div class="flag-item" data-country="New Zealand">
+                        <img src="https://flagcdn.com/w320/nz.png" alt="New Zealand Flag" class="flag-image">
+                        <span class="flag-name">New Zealand</span>
+                    </div>
+                    <div class="flag-item" data-country="Germany">
+                        <img src="https://flagcdn.com/w320/de.png" alt="Germany Flag" class="flag-image">
+                        <span class="flag-name">Germany</span>
+                    </div>
+                    <div class="flag-item" data-country="UAE">
+                        <img src="https://flagcdn.com/w320/ae.png" alt="UAE Flag" class="flag-image">
+                        <span class="flag-name">UAE</span>
+                    </div>
+                    <div class="flag-item" data-country="UK">
+                        <img src="https://flagcdn.com/w320/gb.png" alt="UK Flag" class="flag-image">
+                        <span class="flag-name">UK</span>
+                    </div>
+                    <div class="flag-item" data-country="Finland">
+                        <img src="https://flagcdn.com/w320/fi.png" alt="Finland Flag" class="flag-image">
+                        <span class="flag-name">Finland</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="About Us"> -->
+                    <!-- <img src="/asstes/Images/home/About US (2).jpg"
+                        alt="About Us"> -->
+                    <!-- <img src="/asstes/Images/home/About US (3).jpg"
+                        alt="About Us"> -->
+                    <img src="/asstes/Images/home/About US.webp" alt="About Us">
+                </div>
+
+                <div class="about-text">
+                    <h3>Innovate. Automate. Dominate.</h3>
+                    <p>At Techorses, we’re your digital partners for success. From web and mobile app development to
+                        graphic design and digital marketing, we specialize in crafting solutions that propel your
+                        business forward.</p>
+                    <p>With a focus on innovation and customer satisfaction, we deliver cost-effective, high-quality
+                        services tailored to your needs.</p>
+                    <p>Let Techorses be your guide to navigating the digital realm and achieving your business goals.
+                    </p>
+
+                    <div class="counters">
+                        <div class="counter-item">
+                            <div class="counter-wrapper">
+                                <span class="counter" data-target="76">0</span><span>+</span>
+                            </div>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div class="counter-item">
+                            <div class="counter-wrapper">
+                                <span class="counter" data-target="45">0</span><span>+</span>
+                            </div>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="counter-item">
+                            <div class="counter-wrapper">
+                                <span class="counter" data-target="12">0</span><span>+</span>
+                            </div>
+                            <p>Team Members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+            </div>
+
+            <!-- Mobile Column View -->
+            <div class="mobile-column-view">
+                <!-- Web Development -->
+                <div class="mobile-service-column" data-service="web-development">
+                    <div class="mobile-service-header" data-number="1">
+                        <h3>Web Development</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="mobile-service-details">
+                        <a href="webdevelopment.html" target="_blank">
+                            <img src="/asstes/Images/home/Web Development.webp" alt="Web Development"
+                                class="mobile-service-image">
+                        </a>
+                        <p>TECHORSES offers web design services focused on user experience and lead generation. We
+                            create customized websites with responsive design and seamless navigation to make your
+                            website shine online. Partner with us for a professional website that drives growth and
+                            success.</p>
+                        <p>What they get: More website visitors, people who like the website, and more sales.</p>
+                        <div class="mobile-service-features">
+                            <a href="webdevelopment.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-laptop-code"></i><span>CUSTOM WEBSITE DESIGN</span></a>
+                            <a href="webdevelopment.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-mobile-alt"></i><span>RESPONSIVE DEVELOPMENT</span></a>
+                            <a href="webdevelopment.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-shopping-cart"></i><span>E-COMMERCE SOLUTION</span></a>
+                            <a href="webdevelopment.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-search"></i><span>SEO OPTIMIZATION</span></a>
+                            <a href="webdevelopment.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-cogs"></i><span>CONTENT MANAGEMENT</span></a>
+                            <a href="webdevelopment.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-shield-alt"></i><span>MAINTENANCE AND SUPPORT</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Software Development -->
+                <div class="mobile-service-column" data-service="custom-software">
+                    <div class="mobile-service-header" data-number="2">
+                        <h3>Custom Software Development</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="mobile-service-details">
+                        <a href="customsoftware.html" target="_blank">
+                            <img src="/asstes/Images/home/Custom Software Development.webp" alt="Custom Software"
+                                class="mobile-service-image">
+                        </a>
+                        <p>Our skilled team will design software just for you, making your operations smoother. With
+                            Techorses, you'll see better efficiency, productivity, and business growth. Invest in custom
+                            software development now and watch your business thrive.</p>
+                        <p>What we do: Techorse offers excellent custom software development services designed to meet
+                            your unique business requirements.</p>
+                        <div class="mobile-service-features">
+                            <a href="customsoftware.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-random"></i><span>SEAMLESS INTEGRATION</span></a>
+                            <a href="customsoftware.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-headset"></i><span>END-TO-END SUPPORT</span></a>
+                            <a href="customsoftware.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-code"></i><span>CUSTOM APP DEVELOPMENT</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marketing Solutions -->
+                <div class="mobile-service-column" data-service="marketing">
+                    <div class="mobile-service-header" data-number="3">
+                        <h3>Marketing Solutions</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="mobile-service-details">
+                        <a href="marketingsolution.html" target="_blank">
+                            <img src="/asstes/Images/home/Marketing Solutions.webp" alt="Marketing Solutions"
+                                class="mobile-service-image">
+                        </a>
+                        <p>TECHORSES offers powerful marketing strategies to help businesses succeed. We increase their
+                            online visibility, help them connect better with their customers, and boost their profits.
+                            Our expert methods and unique ideas will revolutionize your marketing game.</p>
+                        <p>Who we do it for: Businesses looking to increase their online presence. What do they get:
+                            Expert strategies tailored to their needs.</p>
+                        <div class="mobile-service-features">
+                            <a href="marketingsolution.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-search"></i><span>SEARCH ENGINE OPTIMIZATION (SEO)</span></a>
+                            <a href="marketingsolution.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-hashtag"></i><span>SOCIAL MEDIA MARKETING</span></a>
+                            <a href="marketingsolution.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-ad"></i><span>CONTENT MARKETING SERVICES</span></a>
+                            <a href="marketingsolution.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-chart-line"></i><span>SOCIAL MEDIA AUDIT AND STRATEGY
+                                    PLANNING</span></a>
+                            <a href="marketingsolution.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-envelope"></i><span>PAID ADVERTISING AND PROMOTIONS</span></a>
+                            <a href="marketingsolution.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-bullhorn"></i><span>INFLUENCER MARKETING COLLABORATION</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="mobile-service-column" data-service="graphic-design">
+                    <div class="mobile-service-header" data-number="4">
+                        <h3>Graphic Design</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="mobile-service-details">
+                        <a href="graphicdesign.html" target="_blank">
+                            <img src="/asstes/Images/home/Graphic Design.webp" alt="Graphic Design"
+                                class="mobile-service-image">
+                        </a>
+                        <p>TECHORSES Graphic Design is here to help! Our design wizards craft eye-catching graphics
+                            that'll make your business shine. From logos to website designs, we'll give you top-quality
+                            graphics that are perfect for your brand. With Techorses, you're guaranteed amazing designs,
+                            creativity, and a professional touch. Upgrade your brand with Techorses Graphic Design
+                            today!</p>
+                        <p>Unique and Creative Graphic Design Services for Businesses. High-Quality Graphics to Elevate
+                            your Brand Image. Tailored for A Diverse Range of Clients.</p>
+                        <div class="mobile-service-features">
+                            <a href="graphicdesign.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-palette"></i><span>LOGO DESIGN</span></a>
+                            <a href="graphicdesign.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-print"></i><span>WEBSITE MOCKUPS</span></a>
+                            <a href="graphicdesign.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-icons"></i><span>SOCIAL MEDIA GRAPHICS</span></a>
+                            <a href="graphicdesign.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-box-open"></i><span>PACKAGING & BRANDING</span></a>
+                            <a href="graphicdesign.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-file-alt"></i><span>MARKETING MATERIALS</span></a>
+                            <a href="graphicdesign.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-photo-video"></i><span>VIDEO EDITING</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="mobile-service-column" data-service="ui-ux">
+                    <div class="mobile-service-header" data-number="5">
+                        <h3>UI/UX Design</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="mobile-service-details">
+                        <a href="uiux.html" target="_blank">
+                            <img src="/asstes/Images/home/UI_UX Design.webp" alt="UI/UX Design"
+                                class="mobile-service-image">
+                        </a>
+                        <p>In the modern digital world, it's important to have a good-looking and easy-to-use interface
+                            to keep customers coming back. At Techorse, we're experts in designing interfaces that not
+                            only look great but also make it easy for users to navigate. When you work with us, you'll
+                            see happier customers, more interaction, and better sales. Let us turn your concepts into
+                            awesome designs that will make you stand out.</p>
+                        <p>What do they get: Improving customer happiness and loyalty with great website design.</p>
+                        <div class="mobile-service-features">
+                            <a href="uiux.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-user-friends"></i><span>SEAMLESS INTEGRATION</span></a>
+                            <a href="uiux.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-pencil-ruler"></i><span>MOBILE RESPONSIVE DESIGN</span></a>
+                            <a href="uiux.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-magic"></i><span>INTERACTIVE PROTOTYPES</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Development -->
+                <div class="mobile-service-column" data-service="mobile-app">
+                    <div class="mobile-service-header" data-number="6">
+                        <h3>Mobile App Development</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="mobile-service-details">
+                        <a href="mobileapp.html" target="_blank">
+                            <img src="/asstes/Images/home/Mobile App Development.webp" alt="Mobile App Development"
+                                class="mobile-service-image">
+                        </a>
+                        <p>At TECHORSES, we focus on making custom mobile apps that fit your business perfectly. Our
+                            skilled team works hard to make creative and easy-to-use apps that boost your brand and get
+                            customers interested. When you pick TECHORSES for your app needs, you'll get top-quality
+                            solutions that ensure you're completely happy.</p>
+                        <p>Who we do it for: We cater to businesses of all sizes looking to enhance their online
+                            presence and streamline operations with innovative mobile solutions.</p>
+                        <div class="mobile-service-features">
+                            <a href="mobileapp.html" target="_blank" class="mobile-feature"><i
+                                    class="fab fa-apple"></i><span>CUSTOM APP DEVELOPMENT</span></a>
+                            <a href="mobileapp.html" target="_blank" class="mobile-feature"><i
+                                    class="fab fa-android"></i><span>CROSS-PLATFORM COMPATIBILLITY</span></a>
+                            <a href="mobileapp.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-sync-alt"></i><span>MOBILE APP ANALYTICS</span></a>
+                            <a href="mobileapp.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-cloud"></i><span>APP STORE OPTIMIZATION</span></a>
+                            <a href="mobileapp.html" target="_blank" class="mobile-feature"><i
+                                    class="fas fa-chart-pie"></i><span>MAINTANANCE AND SUPPORT</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="services-container">
+                <!-- Services Menu - Left Side -->
+                <div class="services-menu">
+                    <div class="services-list">
+                        <div class="service-item active" data-service="web-development">
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="service-item" data-service="custom-software">
+                            <h3>Custom Software Development</h3>
+                        </div>
+                        <div class="service-item" data-service="marketing">
+                            <h3>Marketing Solutions</h3>
+                        </div>
+                        <div class="service-item" data-service="graphic-design">
+                            <h3>Graphic Design</h3>
+                        </div>
+                        <div class="service-item" data-service="ui-ux">
+                            <h3>UI/UX Design</h3>
+                        </div>
+                        <div class="service-item" data-service="mobile-app">
+                            <h3>Mobile App Development</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Content -->
+                <div class="service-content">
+
+                    <!-- Web Development -->
+                    <div class="service-details active" id="web-development">
+                        <a href="webdevelopment.html" target="_blank">
+                            <img src="/asstes/Images/home/Web Development.webp" alt="Web Development"
+                                class="service-image">
+                        </a>
+                        <p>TECHORSES offers web design services focused on user experience and lead generation. We
+                            create customized websites with responsive design and seamless navigation to make your
+                            website shine online. Partner with us for a professional website that drives growth and
+                            success.</p>
+                        <p>What they get: More website visitors, people who like the website, and more sales.</p>
+                        <div class="service-features">
+                            <a href="webdevelopment.html" target="_blank" class="feature"><i
+                                    class="fa-solid fa-laptop-code"></i><span>CUSTOM WEBSITE DESIGN</span></a>
+                            <a href="webdevelopment.html" target="_blank" class="feature"><i
+                                    class="fa-solid fa-mobile"></i><span>RESPONSIVE DEVELOPMENT</span></a>
+                            <a href="webdevelopment.html" target="_blank" class="feature"><i
+                                    class="fas fa-shopping-cart"></i><span>E-COMMERCE <br />SOLUTION</span></a>
+                            <a href="webdevelopment.html" target="_blank" class="feature"><i
+                                    class="fa-solid fa-magnifying-glass-minus"></i><span>SEO OPTIMIZATION</span></a>
+                            <a href="webdevelopment.html" target="_blank" class="feature"><i
+                                    class="fas fa-cogs"></i><span>CONTENT <br />MANAGEMENT</span></a>
+                            <a href="webdevelopment.html" target="_blank" class="feature"><i
+                                    class="fas fa-shield-alt"></i><span>MAINTENANCE & SUPPORT</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Custom Software Development -->
+
+                    <div class="service-details" id="custom-software">
+                        <a href="customsoftware.html" target="_blank">
+                            <img src="/asstes/Images/home/Custom Software Development.webp" alt="Custom Software"
+                                class="service-image">
+                        </a>
+                        <p>Our skilled team will design software just for you, making your operations smoother. With
+                            Techorses, you'll see better efficiency, productivity, and business growth. Invest in custom
+                            software development now and watch your business thrive.</p>
+                        <p>What we do: Techorse offers excellent custom software development services designed to meet
+                            your unique business requirements.</p>
+                        <div class="service-features">
+                            <a href="customsoftware.html" target="_blank" class="feature"><i
+                                    class="fas fa-random"></i><span>SEAMLESS<br /> INTEGRATION</span></a>
+                            <a href="customsoftware.html" target="_blank" class="feature"><i
+                                    class="fas fa-headset"></i><span>END-TO-END<br /> SUPPORT</span></a>
+                            <a href="customsoftware.html" target="_blank" class="feature"><i
+                                    class="fas fa-code"></i><span>CUSTOM APP DEVELOPMENT</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Marketing Solutions -->
+                    <div class="service-details" id="marketing">
+                        <a href="marketingsolution.html" target="_blank">
+                            <img src="/asstes/Images/home/Marketing Solutions.webp" alt="Marketing Solutions"
+                                class="service-image">
+                        </a>
+                        <p>TECHORSES offers powerful marketing strategies to help businesses succeed. We increase their
+                            online visibility, help them connect better with their customers, and boost their profits.
+                            Our expert methods and unique ideas will revolutionize your marketing game.</p>
+                        <p>Who we do it for: Businesses looking to increase their online presence. What do they get:
+                            Expert strategies tailored to their needs.</p>
+                        <div class="service-features">
+                            <a href="marketingsolution.html" target="_blank" class="feature"><i
+                                    class="fa-solid fa-magnifying-glass-minus"></i><span>SEARCH ENGINE OPTIMIZATION
+                                    (SEO)</span></a>
+                            <a href="marketingsolution.html" target="_blank" class="feature"><i
+                                    class="fas fa-hashtag"></i><span>SOCIAL MEDIA MARKETING</span></a>
+                            <a href="marketingsolution.html" target="_blank" class="feature"><i
+                                    class="fas fa-ad"></i><span>CONTENT MARKETING SERVICES</span></a>
+                            <a href="marketingsolution.html" target="_blank" class="feature"><i
+                                    class="fas fa-chart-line"></i><span>SOCIAL MEDIA AUDIT & STRATEGY
+                                    PLANNING</span></a>
+                            <a href="marketingsolution.html" target="_blank" class="feature"><i
+                                    class="fas fa-envelope"></i><span>PAID ADVERTISING & PROMOTIONS</span></a>
+                            <a href="marketingsolution.html" target="_blank" class="feature"><i
+                                    class="fa-solid fa-bullhorn"></i><span>INFLUENCER MARKETING COLLABORATION</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Graphic Design -->
+                    <div class="service-details" id="graphic-design">
+                        <a href="graphicdesign.html" target="_blank">
+                            <img src="/asstes/Images/home/Graphic Design.webp" alt="Graphic Design"
+                                class="service-image">
+                        </a>
+                        <p>TECHORSES Graphic Design is here to help! Our design wizards craft eye-catching graphics
+                            that'll make your business shine. From logos to website designs, we'll give you top-quality
+                            graphics that are perfect for your brand. With Techorses, you're guaranteed amazing designs,
+                            creativity, and a professional touch. Upgrade your brand with Techorses Graphic Design
+                            today!</p>
+                        <p>Unique and Creative Graphic Design Services for Businesses. High-Quality Graphics to Elevate
+                            your Brand Image. Tailored for A Diverse Range of Clients.</p>
+                        <div class="service-features">
+                            <a href="graphicdesign.html" target="_blank" class="feature"><i
+                                    class="fas fa-palette"></i><span>LOGO DESIGN</span></a>
+                            <a href="graphicdesign.html" target="_blank" class="feature"><i
+                                    class="fas fa-print"></i><span>WEBSITE <br />MOCKUPS</span></a>
+                            <a href="graphicdesign.html" target="_blank" class="feature"><i
+                                    class="fas fa-icons"></i><span>SOCIAL MEDIA <br />GRAPHICS</span></a>
+                            <a href="graphicdesign.html" target="_blank" class="feature"><i
+                                    class="fas fa-box-open"></i><span>PACKAGING & BRANDING</span></a>
+                            <a href="graphicdesign.html" target="_blank" class="feature"><i
+                                    class="fas fa-file-alt"></i><span>MARKETING <br />MATERIALS</span></a>
+                            <a href="graphicdesign.html" target="_blank" class="feature"><i
+                                    class="fas fa-photo-video"></i><span>VIDEO <br />EDITING</span></a>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Design -->
+                    <div class="service-details" id="ui-ux">
+                        <a href="uiux.html" target="_blank">
+                            <img src="/asstes/Images/home/UI_UX Design.webp" alt="UI/UX Design" class="service-image">
+                        </a>
+                        <p>In the modern digital world, it's important to have a good-looking and easy-to-use interface
+                            to keep customers coming back. At Techorse, we're experts in designing interfaces that not
+                            only look great but also make it easy for users to navigate. When you work with us, you'll
+                            see happier customers, more interaction, and better sales. Let us turn your concepts into
+                            awesome designs that will make you stand out.</p>
+                        <p>What do they get: Improving customer happiness and loyalty with great website design.</p>
+                        <div class="service-features">
+                            <a href="uiux.html" target="_blank" class="feature"><i
+                                    class="fas fa-user-friends"></i><span>SEAMLESS <br />INTEGRATION</span></a>
+                            <a href="uiux.html" target="_blank" class="feature"><i
+                                    class="fas fa-pencil-ruler"></i><span>MOBILE RESPONSIVE DESIGN</span></a>
+                            <a href="uiux.html" target="_blank" class="feature"><i
+                                    class="fas fa-magic"></i><span>INTERACTIVE PROTOTYPES</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile App Development -->
+                    <div class="service-details" id="mobile-app">
+                        <a href="mobileapp.html" target="_blank">
+                            <img src="/asstes/Images/home/Mobile App Development.webp" alt="Mobile App Development"
+                                class="service-image">
+                        </a>
+                        <p>At TECHORSES, we focus on making custom mobile apps that fit your business perfectly. Our
+                            skilled team works hard to make creative and easy-to-use apps that boost your brand and get
+                            customers interested. When you pick TECHORSES for your app needs, you'll get top-quality
+                            solutions that ensure you're completely happy.</p>
+                        <p>Who we do it for: We cater to businesses of all sizes looking to enhance their online
+                            presence and streamline operations with innovative mobile solutions.</p>
+                        <div class="service-features">
+                            <a href="mobileapp.html" target="_blank" class="feature"><i
+                                    class="fab fa-apple"></i><span>CUSTOM APP DEVELOPMENT</span></a>
+                            <a href="mobileapp.html" target="_blank" class="feature"><i
+                                    class="fab fa-android"></i><span>CROSS-PLATFORM COMPATIBILLITY</span></a>
+                            <a href="mobileapp.html" target="_blank" class="feature"><i
+                                    class="fas fa-sync-alt"></i><span>MOBILE APP <br />ANALYTICS</span></a>
+                            <a href="mobileapp.html" target="_blank" class="feature"><i
+                                    class="fas fa-cloud"></i><span>APP STORE OPTIMIZATION</span></a>
+                            <a href="mobileapp.html" target="_blank" class="feature"><i
+                                    class="fas fa-chart-pie"></i><span>MAINTANANCE AND SUPPORT</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="client-section">
+        <div class="container">
+            <h2 class="section-title">Our Clients</h2>
+
+            <div class="client-grid">
+                <!-- Row 1 (Left to Right) - 17 logos + 1 new (sfp.png) = 18 logos -->
+                <div class="client-row row-1">
+                    <!-- 17 original unique logos -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Pidilite.webp" alt="Pidilite">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/MTM Store.webp" alt="MTM Store">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Marcost.webp" alt="Marcost">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Lemontree.webp" alt="Lemon Tree">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Unicrop Biochem.webp" alt="Unicrop Biochem">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Vrajdev Mobility.webp" alt="Vrajdev Mobility">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/ferrotube.png" alt="Ferro Tube">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/gemsparx.png" alt="Gemsparx">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/jass.png" alt="Jass Perfumes">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/newglamour.png" alt="Glamour Decor">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/bymythology.png" alt="Bymythology">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/hks.png" alt="HKS Investment">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/jladgroup.png" alt="Jlad Group">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/trisa.png" alt="Trisa">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/pankaj.png" alt="Pankaj Jewellers">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/lnt.png" alt="L&T">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/aif.png" alt="American India Foundation">
+                    </div>
+
+                    <!-- ROW 1 NEW LOGO: sfp.png -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/sfp.png" alt="SFP Perfumes">
+                    </div>
+
+                    <!-- Duplicate set for seamless loop (original 17 + 1 new = 18) -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Pidilite.webp" alt="Pidilite">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/MTM Store.webp" alt="MTM Store">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Marcost.webp" alt="Marcost">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Lemontree.webp" alt="Lemon Tree">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Unicrop Biochem.webp" alt="Unicrop Biochem">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Vrajdev Mobility.webp" alt="Vrajdev Mobility">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/ferrotube.png" alt="Ferro Tube">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/gemsparx.png" alt="Gemsparx">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/jass.png" alt="Jass Perfumes">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/newglamour.png" alt="Glamour Decor">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/bymythology.png" alt="Bymythology">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/hks.png" alt="HKS Investment">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/jladgroup.png" alt="Jlad Group">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/trisa.png" alt="Trisa">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/pankaj.png" alt="Pankaj Jewellers">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/lnt.png" alt="L&T">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/aif.png" alt="American India Foundation">
+                    </div>
+
+                    <!-- Duplicate set NEW LOGO: sfp.png -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/sfp.png" alt="SFP Perfumes">
+                    </div>
+                </div>
+
+                <!-- Row 2 (Right to Left) - 16 logos + 1 new (tara-assurance.webp) = 17 logos -->
+                <div class="client-row row-2">
+                    <!-- 16 original unique logos -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Anzel Ridez.webp" alt="Anzel Ridez">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Devkrupa corporation.webp" alt="Devkrupa Corporation">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/C.R.Kothari & Sons.webp" alt="C.R.Kothari & Sons">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Vivekanand.webp" alt="Vivekanand School">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/faithline.webp" alt="Faithline">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/DCI.webp" alt="Divine Coaching Institute">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/gurandian.png" alt="Guardian Academy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/ntplastic.png" alt="NT Plastics">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/vise organic.webp" alt="Vise Organic">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/bulkagro.png" alt="Bulkagrochem">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Biowave.webp" alt="Biowave">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/agroniv.com.webp" alt="Agroniv">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/satvsar.png" alt="Satvsar">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/newelement.png" alt="Element Corporation">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/glamartistry.png" alt="Glam Artistry">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/pmpartner.png" alt="PM Partner">
+                    </div>
+
+                    <!-- ROW 2 NEW LOGO: tara-assurance.webp -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/tara-assurance.webp" alt="Tara Assurance">
+                    </div>
+
+                    <!-- Duplicate set for seamless loop (original 16 + 1 new = 17) -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Anzel Ridez.webp" alt="Anzel Ridez">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Devkrupa corporation.webp" alt="Devkrupa Corporation">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/C.R.Kothari & Sons.webp" alt="C.R.Kothari & Sons">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Vivekanand.webp" alt="Vivekanand School">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/faithline.webp" alt="Faithline">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/DCI.webp" alt="Divine Coaching Institute">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/gurandian.png" alt="Guardian Academy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/ntplastic.png" alt="NT Plastics">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/vise organic.webp" alt="Vise Organic">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/bulkagro.png" alt="Bulkagrochem">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Biowave.webp" alt="Biowave">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/agroniv.com.webp" alt="Agroniv">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/satvsar.png" alt="Satvsar">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/newelement.png" alt="Element Corporation">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/glamartistry.png" alt="Glam Artistry">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/pmpartner.png" alt="PM Partner">
+                    </div>
+
+                    <!-- Duplicate set NEW LOGO: tara-assurance.webp -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/tara-assurance.webp" alt="Tara Assurance">
+                    </div>
+                </div>
+
+                <!-- Row 3 (Left to Right) - 17 logos + 1 new (kahal.png) = 18 logos -->
+                <div class="client-row row-3">
+                    <!-- 17 original unique logos -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Thebigday.webp" alt="The Big Day">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Sunshine.webp" alt="Sunshine">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Neshaytech.webp" alt="Neshaytech">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Schreett.webp" alt="Schreett">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Dhruv E.webp" alt="Dhruv Enterprises">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/9 to 69.webp" alt="9 to 69">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/SC Smart Class.webp" alt="SC Smart Class">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Pragmatic Treasure.webp" alt="Pragmatic Treasure">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Parth E.webp" alt="Parth Enterprise">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Damru.webp" alt="Damru">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Trans Oceanic.webp" alt="Transoceanic">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Nikunj Koladia.webp" alt="Nikunj Koladiya">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Praytnaa Education.webp" alt="Prayatnaa Education">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Infinymed.png" alt="Infinymed">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/nandghar.png" alt="Nandghar">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/JK.webp" alt="JK Creation">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/shivbuilder.png" alt="Shiv Builder">
+                    </div>
+
+                    <!-- ROW 3 NEW LOGO: kahal.png -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/kahal.png" alt="Kahal">
+                    </div>
+
+                    <!-- Duplicate set for seamless loop (original 17 + 1 new = 18) -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Thebigday.webp" alt="The Big Day">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Sunshine.webp" alt="Sunshine">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Neshaytech.webp" alt="Neshaytech">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Schreett.webp" alt="Schreett">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Dhruv E.webp" alt="Dhruv Enterprises">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/9 to 69.webp" alt="9 to 69">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/SC Smart Class.webp" alt="SC Smart Class">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Pragmatic Treasure.webp" alt="Pragmatic Treasure">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Parth E.webp" alt="Parth Enterprise">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Damru.webp" alt="Damru">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Trans Oceanic.webp" alt="Transoceanic">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Nikunj Koladia.webp" alt="Nikunj Koladiya">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Praytnaa Education.webp" alt="Prayatnaa Education">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/Infinymed.png" alt="Infinymed">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/nandghar.png" alt="Nandghar">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/JK.webp" alt="JK Creation">
+                    </div>
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/shivbuilder.png" alt="Shiv Builder">
+                    </div>
+
+                    <!-- Duplicate set NEW LOGO: kahal.png -->
+                    <div class="client-logo">
+                        <img src="/asstes/Clients/kahal.png" alt="Kahal">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Review Section - UPDATED with new card design -->
+    <section class="review-section">
+        <div class="testimonials-section">
+            <!-- Left Side -->
+            <div class="left-heading">
+                <div class="quote-top">&ldquo;</div>
+                <h2>Hear from<br>our clients!</h2>
+                <div class="quote-bottom">&rdquo;</div>
+            </div>
+
+            <!-- Right Side - Vertical Carousel -->
+            <div class="testimonials-right">
+                <div class="testimonials-carousel">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-box">
+                        <div class="testimonial-user">
+                            <!-- <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop"
+                                    alt="Harish Abubaker">
+                            </div> -->
+                            <div class="user-details">
+                                <span class="user-name">Harish Abubaker</span>
+                                <span class="user-rating">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="review-quote"><span class="quote">&ldquo;</span></div>
+                        <div class="text">
+                            I have done a project with them recently. Their attitude and professionalism is exceptional.
+                            The budget was reasonable and all deadlines were promptly met. The work quality is also
+                            excellent. Highly recommend for anyone looking for software solutions.
+                        </div>
+                        <div class="review-author">
+                            <div class="author-designation">~ Director</div>
+                            <div class="author-company">Smart Class</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 (Center) -->
+                    <div class="testimonial-box center">
+                        <div class="testimonial-user">
+                            <!-- <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop"
+                                    alt="Parth Dhanekar">
+                            </div> -->
+                            <div class="user-details">
+                                <span class="user-name">Parth Dhanekar</span>
+                                <span class="user-rating">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="review-quote"><span class="quote">&ldquo;</span></div>
+                        <div class="text">
+                            Techorses did an amazing job on my graphic design project. The design was creative, and
+                            professional, and understood my vision perfectly. The final result was fantastic. Highly
+                            recommend!
+                        </div>
+                        <div class="review-author">
+                            <div class="author-designation">~ Owner</div>
+                            <div class="author-company">Damru | Parth Enterprise</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-box">
+                        <div class="testimonial-user">
+                            <!-- <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
+                                    alt="Dev Mhatre">
+                            </div> -->
+                            <div class="user-details">
+                                <span class="user-name">Dev Mhatre</span>
+                                <span class="user-rating">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="review-quote"><span class="quote">&ldquo;</span></div>
+                        <div class="text">
+                            If you're searching for a reliable, innovative, and one-stop solution IT company, look no
+                            further than Techorses. Their team of seasoned professionals consistently exceeds
+                            expectations, offering cutting-edge solutions and exceptional customer service.
+                        </div>
+                        <div class="review-author">
+                            <div class="author-designation">~ Managing Director</div>
+                            <div class="author-company">CR Kothari & Sons</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-box">
+                        <div class="testimonial-user">
+                            <!-- <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108777-466fd06c7a63?w=150&h=150&fit=crop"
+                                    alt="Sameera Hussain">
+                            </div> -->
+                            <div class="user-details">
+                                <span class="user-name">Sameera Hussain</span>
+                                <span class="user-rating">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="review-quote"><span class="quote">&ldquo;</span></div>
+                        <div class="text">
+                            Work was professionally done according to our requirements and given on time. Thank you.
+                        </div>
+                        <div class="review-author">
+                            <div class="author-designation">~ Principal</div>
+                            <div class="author-company">Sunshine School</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-box">
+                        <div class="testimonial-user">
+                            <!-- <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop"
+                                    alt="Nirav Dhrangdhariya">
+                            </div> -->
+                            <div class="user-details">
+                                <span class="user-name">Nirav Dhrangdhariya</span>
+                                <span class="user-rating">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="review-quote"><span class="quote">&ldquo;</span></div>
+                        <div class="text">
+                            Superior service for Graphics Solutions. A step ahead of imagination to exploration.
+                        </div>
+                        <div class="review-author">
+                            <div class="author-designation">~ CEO</div>
+                            <div class="author-company">Schreett Corporation | Glides</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-box">
+                        <div class="testimonial-user">
+                            <!-- <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop"
+                                    alt="Dhruv Dave">
+                            </div> -->
+                            <div class="user-details">
+                                <span class="user-name">Dhruv Dave</span>
+                                <span class="user-rating">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="review-quote"><span class="quote">&ldquo;</span></div>
+                        <div class="text">
+                            Excellent experience with Techorses for my project. They delivered a stunning website that
+                            was not only visually appealing but also highly functional. The whole process was smooth and
+                            professional. I highly recommend Techorses for top-notch web design and development
+                            services.
+                        </div>
+                        <div class="review-author">
+                            <div class="author-designation">~ Founder</div>
+                            <div class="author-company">Elements</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 7 -->
+                    <div class="testimonial-box">
+                        <div class="testimonial-user">
+                            <!-- <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150&h=150&fit=crop"
+                                    alt="Kaushal Joshi">
+                            </div> -->
+                            <div class="user-details">
+                                <span class="user-name">Kaushal Joshi</span>
+                                <span class="user-rating">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="review-quote"><span class="quote">&ldquo;</span></div>
+                        <div class="text">
+                            We JK Creation partnered with Techorses for multiple IT projects, including digital
+                            marketing and design work, and the experience has been excellent. Their team is responsive,
+                            creative, and committed to delivering quality results.
+                        </div>
+                        <div class="review-author">
+                            <div class="author-designation">~ Creative Director</div>
+                            <div class="author-company">JK Creation</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 8 -->
+                    <div class="testimonial-box">
+                        <div class="testimonial-user">
+                            <!-- <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?w=150&h=150&fit=crop"
+                                    alt="Shivang Dave">
+                            </div> -->
+                            <div class="user-details">
+                                <span class="user-name">Shivang Dave</span>
+                                <span class="user-rating">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="review-quote"><span class="quote">&ldquo;</span></div>
+                        <div class="text">
+                            We at TransOceanic.Tech are extremely pleased with the services provided by Techorses. they
+                            truly understand our business and have done a wonderful job with our digital marketing.
+                            Their strategies are effective, and the results speak for themselves.
+                        </div>
+                        <div class="review-author">
+                            <div class="author-designation">~ Director</div>
+                            <div class="author-company">TransOceanic.Tech</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 9 -->
+                    <div class="testimonial-box">
+                        <div class="testimonial-user">
+                            <!-- <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop"
+                                    alt="Jeel Bhanushali">
+                            </div> -->
+                            <div class="user-details">
+                                <span class="user-name">Jeel Bhanushali</span>
+                                <span class="user-rating">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="review-quote"><span class="quote">&ldquo;</span></div>
+                        <div class="text">
+                            I recently hired Techorses to manage the digital marketing and social media for my cafe,
+                            9to69, and I'm really happy with their work! They take care of everything from social
+                            media management to marketing campaigns.
+                        </div>
+                        <div class="review-author">
+                            <div class="author-designation">~ Owner</div>
+                            <div class="author-company">9TO69</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 10 -->
+                    <div class="testimonial-box">
+                        <div class="testimonial-user">
+                            <!-- <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop"
+                                    alt="Muhammad Saad">
+                            </div> -->
+                            <div class="user-details">
+                                <span class="user-name">Muhammad Saad</span>
+                                <span class="user-rating">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="review-quote"><span class="quote">&ldquo;</span></div>
+                        <div class="text">
+                            Like the Perfection at the end.
+                        </div>
+                        <div class="review-author">
+                            <div class="author-designation">~ Founder</div>
+                            <div class="author-company">Angel Ridez</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="quote-mark left">&ldquo;</div>
+                <div class="text-wrapper">
+                    <!-- Desktop Version -->
+                    <p class="cta-text desktop-text">
+                        We work with all kinds of industries to<br>deliver the best <span>IT services</span>.
+                    </p>
+
+                    <!-- Mobile Version -->
+                    <p class="cta-text mobile-text">
+                        We work with all kinds<br>
+                        of industries to deliver<br>
+                        the best <span>IT services</span>.
+                    </p>
+                    <div class="quote-mark right">&rdquo;</div>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <!-- WhatsApp Link Button -->
+                <div class="cta-button-wrapper">
+                    <img src="/asstes/Images/home/Icons/donatello.png" alt="cartoon icon" class="icon-on-button" />
+                    <a href="https://wa.me/917778048992" class="cta-button" target="_blank" rel="noopener noreferrer">
+                        Let's Build
+                    </a>
+                </div>
+
+                <!-- Phone/WhatsApp Responsive Button -->
+                <a href="#" class="phone-button" id="callOrWhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    +91 7778048992
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Tech Stack Section -->
+    <!-- Tech Stack Section -->
+    <section class="tech-stack-section">
+        <div class="container1">
+            <h2 class="section-title desktop-title">Our <span>Tools & Tech Stack</span></h2>
+            <h2 class="section-title mobile-title">Our <span>Tools &</span><br><span>Tech Stack</span></h2>
+
+            <div class="tech-categories">
+                <!-- Category Filter Buttons -->
+                <button class="filter-toggle">Categories <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg></button>
+
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="designing">Designing</button>
+                    <button class="filter-btn" data-category="mobile">
+                        <span class="desktop-text">Mobile App Dev</span>
+                        <span class="mobile-text">Mobile App</span>
+                    </button>
+                    <button class="filter-btn" data-category="frontend">Frontend</button>
+                    <button class="filter-btn" data-category="backend">Backend</button>
+                    <button class="filter-btn" data-category="ecommerce">E-commerce</button>
+                    <button class="filter-btn" data-category="database">Databases</button>
+                    <button class="filter-btn" data-category="cloud">
+                        <span class="desktop-text">Cloud & DevOps</span>
+                        <span class="mobile-text">Cloud</span>
+                    </button>
+                    <button class="filter-btn" data-category="all">All</button>
+                </div>
+
+                <!-- Add this inside the tech-stack-section after category-filter -->
+                <div class="mobile-tech-slider-container">
+                    <div class="mobile-tech-slider">
+                        <div class="slider-track">
+                            <div class="slider-slide">
+                                <div class="category-name">Design</div>
+                            </div>
+                            <div class="slider-slide active">
+                                <div class="category-name">Mobile App</div>
+                            </div>
+                            <div class="slider-slide">
+                                <div class="category-name">Frontend</div>
+                            </div>
+                            <div class="slider-slide">
+                                <div class="category-name">Backend</div>
+                            </div>
+                            <div class="slider-slide">
+                                <div class="category-name">Cloud</div>
+                            </div>
+                        </div>
+                        <div class="slider-dots">
+                            <div class="slider-dot active"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Grid - Complete List -->
+                <div class="tech-grid">
+                    <!-- Designing -->
+                    <div class="tech-item" data-category="designing">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                                alt="Adobe Photoshop" loading="lazy">
+                            <span class="tech-tooltip">Adobe Photoshop</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="designing">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                                alt="Adobe Illustrator" loading="lazy">
+                            <span class="tech-tooltip">Adobe Illustrator</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="designing">
+                        <div class="tech-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Adobe_InDesign_CC_icon.svg"
+                                alt="Adobe InDesign">
+
+
+                            <span class="tech-tooltip">Adobe InDesign</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="designing">
+                        <div class="tech-logo">
+                            <img src="https://images.seeklogo.com/logo-png/50/1/coreldraw-logo-png_seeklogo-500400.png"
+                                alt="CorelDRAW" loading="lazy">
+                            <span class="tech-tooltip">CorelDRAW</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="designing">
+                        <div class="tech-logo">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/canva-icon.svg"
+                                alt="Canva Logo" />
+
+
+
+                            <span class="tech-tooltip">Canva</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="designing">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                alt="Figma" loading="lazy">
+                            <span class="tech-tooltip">Figma</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="designing">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD"
+                                loading="lazy">
+                            <span class="tech-tooltip">Adobe XD</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="designing">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-plain.svg"
+                                alt="After Effects" loading="lazy">
+                            <span class="tech-tooltip">After Effects</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile App Development -->
+                    <div class="tech-item" data-category="mobile">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                                alt="Flutter" loading="lazy">
+                            <span class="tech-tooltip">Flutter</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="mobile">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="React Native" loading="lazy">
+                            <span class="tech-tooltip">React Native</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="mobile">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+                                alt="Android" loading="lazy">
+                            <span class="tech-tooltip">Android</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="mobile">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
+                                alt="iOS" loading="lazy">
+                            <span class="tech-tooltip">iOS</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="mobile">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
+                                alt="Kotlin" loading="lazy">
+                            <span class="tech-tooltip">Kotlin</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="mobile">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg"
+                                alt="Ionic" loading="lazy">
+                            <span class="tech-tooltip">Ionic</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="mobile">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+                                alt="Unity" loading="lazy">
+                            <span class="tech-tooltip">Unity</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Development -->
+                    <div class="tech-item" data-category="frontend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="HTML" loading="lazy">
+                            <span class="tech-tooltip">HTML</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="frontend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                alt="CSS" loading="lazy">
+                            <span class="tech-tooltip">CSS</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="frontend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript" loading="lazy">
+                            <span class="tech-tooltip">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="frontend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                alt="TypeScript" loading="lazy">
+                            <span class="tech-tooltip">TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="frontend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="React JS" loading="lazy">
+                            <span class="tech-tooltip">React JS</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="frontend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                                alt="Angular JS" loading="lazy">
+                            <span class="tech-tooltip">Angular JS</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="frontend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                                alt="Vue JS" loading="lazy">
+                            <span class="tech-tooltip">Vue JS</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="frontend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+                                alt="Bootstrap" loading="lazy">
+                            <span class="tech-tooltip">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="frontend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                                alt="JQuery" loading="lazy">
+                            <span class="tech-tooltip">JQuery</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend Development -->
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                alt="Node.js" loading="lazy">
+                            <span class="tech-tooltip">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python" loading="lazy">
+                            <span class="tech-tooltip">Python</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                                alt="Django" loading="lazy">
+                            <span class="tech-tooltip">Django</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+                                loading="lazy">
+                            <span class="tech-tooltip">PHP</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg" alt="Laravel"
+                                loading="lazy">
+                            <span class="tech-tooltip">Laravel</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+                                alt=".NET" loading="lazy">
+                            <span class="tech-tooltip">.NET</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+                                alt="ASP.NET" loading="lazy">
+                            <span class="tech-tooltip">ASP.NET</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                                alt="C#" loading="lazy">
+                            <span class="tech-tooltip">C#</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                alt="Java" loading="lazy">
+                            <span class="tech-tooltip">Java</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg"
+                                alt="CodeIgniter" loading="lazy">
+                            <span class="tech-tooltip">CodeIgniter</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg"
+                                alt="Ruby on Rails" loading="lazy">
+                            <span class="tech-tooltip">Ruby on Rails</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                alt="Express.js" loading="lazy">
+                            <span class="tech-tooltip">Express.js</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://jsonnet.org/img/isologo.svg" alt="JSON.NET" loading="lazy">
+                            <span class="tech-tooltip">JSON.NET</span>
+                        </div>
+
+
+                    </div>
+                    <div class="tech-item" data-category="backend">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
+                                alt="REST API" loading="lazy">
+                            <span class="tech-tooltip">REST API</span>
+                        </div>
+                    </div>
+
+                    <!-- E-commerce Platforms -->
+                    <div class="tech-item" data-category="ecommerce">
+                        <div class="tech-logo">
+                            <img src="https://www.vectorlogo.zone/logos/shopify/shopify-icon.svg" alt="Shopify"
+                                loading="lazy">
+                            <span class="tech-tooltip">Shopify</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="ecommerce">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg"
+                                alt="WooCommerce" loading="lazy">
+                            <span class="tech-tooltip">WooCommerce</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="ecommerce">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                                alt="Wix" loading="lazy">
+                            <span class="tech-tooltip">Wix</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="tech-item" data-category="database">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MySQL" loading="lazy">
+                            <span class="tech-tooltip">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="database">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB" loading="lazy">
+                            <span class="tech-tooltip">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="database">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                alt="PostgreSQL" loading="lazy">
+                            <span class="tech-tooltip">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="database">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                                alt="Firebase" loading="lazy">
+                            <span class="tech-tooltip">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="database">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-plain.svg"
+                                alt="DynamoDB">
+                            <span class="tech-tooltip">DynamoDB</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="database">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+                                alt="Oracle">
+
+                            <span class="tech-tooltip">Oracle</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="database">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+                                alt="SQLite" loading="lazy">
+                            <span class="tech-tooltip">SQLite</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="tech-item" data-category="cloud">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                                alt="AWS" loading="lazy"> <span class="tech-tooltip">AWS</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="cloud">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                                alt="Microsoft Azure" loading="lazy">
+                            <span class="tech-tooltip">Microsoft Azure</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="cloud">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+                                alt="Google Cloud" loading="lazy">
+                            <span class="tech-tooltip">Google Cloud</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="cloud">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                alt="Docker" loading="lazy">
+                            <span class="tech-tooltip">Docker</span>
+                        </div>
+                    </div>
+                    <div class="tech-item" data-category="cloud">
+                        <div class="tech-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                                alt="Kubernetes" loading="lazy">
+                            <span class="tech-tooltip">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Techorses Section -->
+
+
+    <section class="why-techorses-section">
+        <div class="container">
+            <h2 class="section-title">Why Techorses?</h2>
+            <p class="section-subtitle">Take your First-Step & Let our Experts do the Rest!</p>
+
+
+            <div class="reasons-slider">
+                <div class="slider-mask">
+                    <!-- Slider Container -->
+                    <div class="slider-container">
+                        <!-- Slide 1 -->
+                        <div class="reason-slide">
+                            <div class="reason-card">
+                                <div class="reason-img">
+                                    <img src="/asstes/Images/home/expert_team.webp" loading="lazy" alt="Expert Team">
+                                </div>
+                                <h3 class="reason-title">Expert Team</h3>
+                                <p class="reason-desc">Our team consists of certified professionals with years of
+                                    industry
+                                    experience.</p>
+                                <p class="reason-desc">We stay updated with the latest technologies to deliver
+                                    cutting-edge
+                                    solutions.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="reason-slide">
+                            <div class="reason-card">
+                                <div class="reason-img">
+                                    <img src="/asstes/Images/home/customsolutions.webp" loading="lazy"
+                                        alt="Custom Solutions">
+                                </div>
+                                <h3 class="reason-title">Custom Solutions</h3>
+                                <p class="reason-desc">We tailor our services to meet your specific business needs and
+                                    goals.</p>
+                                <p class="reason-desc">No one-size-fits-all approach - we build what your business truly
+                                    requires.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="reason-slide">
+                            <div class="reason-card">
+                                <div class="reason-img">
+                                    <img src="/asstes/Images/home/proven_results.webp" loading="lazy"
+                                        alt="Proven Results">
+                                </div>
+                                <h3 class="reason-title">Proven Results</h3>
+                                <p class="reason-desc">We've helped 250+ clients achieve their digital transformation
+                                    goals.
+                                </p>
+                                <p class="reason-desc">Our portfolio showcases successful projects across various
+                                    industries.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="reason-slide">
+                            <div class="reason-card">
+                                <div class="reason-img">
+                                    <img src="/asstes/Images/home/transperent_process.webp" loading="lazy"
+                                        alt="Transparent Process">
+                                </div>
+                                <h3 class="reason-title">Transparent Process</h3>
+                                <p class="reason-desc">Clear communication and regular updates throughout the project
+                                    lifecycle.</p>
+                                <p class="reason-desc">No hidden costs - we provide detailed estimates upfront.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="reason-slide">
+                            <div class="reason-card">
+                                <div class="reason-img">
+                                    <img src="/asstes/Images/home/support&maintanance.webp" alt="Support & Maintenance">
+                                </div>
+                                <h3 class="reason-title">Support & Maintenance</h3>
+                                <p class="reason-desc">We don't just deliver projects - we provide ongoing support.</p>
+                                <p class="reason-desc">Regular updates and maintenance to keep your solutions running
+                                    smoothly.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 6 -->
+                        <div class="reason-slide">
+                            <div class="reason-card">
+                                <div class="reason-img">
+                                    <img src="/asstes/Images/home/competitive_pricing.webp" loading="lazy"
+                                        alt="Competitive Pricing">
+                                </div>
+                                <h3 class="reason-title">Competitive Pricing</h3>
+                                <p class="reason-desc">High-quality solutions at affordable rates without compromising
+                                    quality.</p>
+                                <p class="reason-desc">Flexible engagement models to suit different budget requirements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Navigation -->
+                <div class="slider-navigation">
+                    <button class="slider-arrow prev-arrow">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+
+                    <!-- Slider Dots - All 6 dots -->
+                    <div class="reason-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                    </div>
+
+                    <button class="slider-arrow next-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Inquiry Section -->
+
+    <section class="inquiry-section">
+        <div class="background-icons">
+            <i class="fas fa-location-dot icon-bg icon-1"></i>
+            <i class="fas fa-envelope icon-bg icon-2"></i>
+            <i class="fas fa-comment-dots icon-bg icon-3"></i>
+            <i class="fas fa-phone icon-bg icon-4"></i>
+        </div>
+
+        <h2 class="section-title">Inquiry<span>?</span></h2>
+
+        <div class="inquiry-box">
+            <!-- Left: Form Section -->
+            <div class="form-box">
+                <h3>Ready to make a move?</h3>
+                <form id="general-inquiry-form">
+                    <input type="text" id="inquiry-name" placeholder="Full name" required />
+                    <input type="email" id="inquiry-email" placeholder="Email Address" required />
+                    <input type="text" id="inquiry-phone" placeholder="Mobile Number" required />
+                    <input type="text" id="inquiry-subject" placeholder="Subject" />
+                    <textarea id="inquiry-message" placeholder="Your Question or Comments"></textarea>
+
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6LdlcuwrAAAAAASzygwkisSbTa_4Fo2dmt1wMCWO"></div>
+                    </div>
+
+                    <button type="submit" id="inquiry-submit-btn" class="corner-style">
+                        <span class="corner-icon sleeping">
+                            <img src="/asstes/Images/home/Icons/sleeping2.png" alt="Sleeping Icon" />
+                        </span>
+                        <span class="corner-icon awake">
+                            <img src="/asstes/Images/home/Icons/awake2.png" alt="Awake Icon" />
+                        </span>
+                        <span class="btn-text">Submit Inquiry!</span>
+                        <span class="btn-loader" style="display: none;"></span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Right: Office Info with clickable links -->
+            <div class="office-info">
+                <h3>Our Office!</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://maps.google.com/?q=B-224+Samanvay+Silicon+Opp+Kalyan+Hotel+Dairy+Den+Circle+Sayajigunj+Vadodara+390020"
+                        target="_blank" rel="noopener noreferrer" class="office-link">
+                        B-224, Samanvay Silicon,<br />
+                        Opp Kalyan Hotel,<br />
+                        Dairy Den Circle,<br />
+                        Sayajigunj, Vadodara <br>
+                        390020 (Gujarat, India).
+                    </a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="phone-links">
+                        <a href="tel:+917778048992" class="office-link">+91 7778048992</a><br />
+                        <a href="tel:+919328338281" class="office-link">+91 9328338281</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="email-links">
+                        <a href="mailto:hey@techorses.com" class="office-link">hey@techorses.com</a><br />
+                        <a href="mailto:sales@techorses.com" class="office-link">sales@techorses.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer  -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main-row">
+                <!-- Logo Column -->
+                <div class="footer-column footer-logo-column">
+                    <img src="/asstes/Logo/Techorses Logo_03.png" alt="Techorses Logo">
+                    <p>Stay connected and join the digital conversation! Follow us on social media for the latest
+                        updates, tech insights, and creative inspirations. Let's build a vibrant digital community
+                        together.</p>
+                    <div class="footer-social-wrapper">
+                        <button class="client-btn-with-icon">
+                            <span class="plus-footer">+</span> Become a Client
+                            <!-- <img src="/asstes/Images/home/Icons/sitting.png" alt="Cartoon Icon" class="client-icon">  -->
+                        </button>
+                        <!-- Desktop Social Icons -->
+                        <div class="footer-socials desktop-social">
+                            <a href="https://www.facebook.com/people/Techorses/100089081915251/?mibextid=ZbWKwL"
+                                target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/techorses_?igsh=Zzh1ZDE0NHlvd3ht" target="_blank"
+                                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/techorses-ride-the-technology/" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explore Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Explore</h3>
+                   <ul>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="company.html" class="footer-link">Company</a></li>
+                        <li><a href="/portfolio" class="footer-link">Portfolio</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="terms-conditions.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html" class="footer-link">PrivacyPolicy</a></li>
+                        <li><a href="data-deletion.html" class="footer-link">Data Deletion</a></li>
+                    </ul>
+                  
+                </div>
+                <div class="footer-column mobile-none">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="thcore.html" class="footer-link">TH Core</a></li>
+                        <li><a href="thvend.html" class="footer-link">TH Vend</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Services</h3>
+                    <ul class="services-list">
+                        <li><a href="webdevelopment.html" class="footer-link">Web
+                                Development</a></li>
+                        <li><a href="customsoftware.html" class="footer-link">Custom
+                                Software</a></li>
+                        <li><a href="marketingsolution.html" class="footer-link">Marketing
+                                Solution</a></li>
+                        <li><a href="graphicdesign.html" class="footer-link">Graphic Design</a>
+                        </li>
+                        <li><a href="uiux.html" class="footer-link">UI/UX Design</a></li>
+                        <li><a href="mobileapp.html" class="footer-link">Mobile Application</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column - UPDATED STRUCTURE -->
+                <!-- Contact Column - UPDATED FOR MOBILE -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <!-- Address -->
+                        <div class="contact-line address-line">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://maps.google.com/?q=B-224+Samanvay+Silicon+Opp+Kalyan+Hotel+Dairy+Den+Circle+Sayajigunj+Vadodara+390020"
+                                target="_blank" rel="noopener noreferrer" class="address-text footer-link">
+                                B-224, Samanvay Silicon, Opp Kalyan Hotel, Dairy Den Circle, Sayajigunj, Vadodara,
+                                390020 (Gujarat, India)
+                            </a>
+                        </div>
+
+                        <!-- Phone Numbers -->
+                        <div class="contact-line phone-line">
+                            <div class="contact-items">
+                                <a href="tel:+917778048992" class="contact-item">
+                                    <i class="fas fa-phone-alt"></i> +91 7778048992
+                                </a>
+                                <span class="contact-separator">|</span>
+                                <a href="tel:+919328338281" class="contact-item">
+                                    <i class="fas fa-phone-alt"></i> +91 9328338281
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Emails -->
+                        <div class="contact-line email-line">
+                            <div class="contact-items">
+                                <a href="mailto:hey@techorses.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i> hey@techorses.com
+                                </a>
+                                <div class="contact-separator">|</div>
+                                <a href="mailto:sales@techorses.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i> sales@techorses.com
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Mobile Social Icons -->
+                        <div class="mobile-social">
+                            <div class="footer-socials">
+                                <a href="https://www.facebook.com/people/Techorses/100089081915251/?mibextid=ZbWKwL"
+                                    target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/techorses_?igsh=Zzh1ZDE0NHlvd3ht" target="_blank"
+                                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/techorses-ride-the-technology/"
+                                    target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Sections -->
+            <div class="footer-copyright-section desktop-copyright">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved. Designed by Techorses.
+                    <!-- <span>Privacy Policy</span>  -->
+                </p>
+            </div>
+            <div class="footer-copyright-section mobile-copyright">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved.<br> Designed by Techorses.
+                    <!-- <span>Privacy Policy</span>  -->
+                </p>
+            </div>
+        </div>
+
+        <!-- Go to Top Button -->
+        <button id="goToTopBtn" title="Go to top" aria-label="Go to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+
+
+    <div class="toast-container"></div>
+    <audio id="successSound" src="/asstes/Images/Sound/notification.mp3" preload="auto"></audio>
+
+
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/917778048992" id="whatsappBtn" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Load particles.js library first -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Then your custom script -->
+    <script src="/js/Home.js"></script>
+
+    <script src="/js/cursor.js"></script>
+
+
+
+</body>
+
+</html>

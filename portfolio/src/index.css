@@ -1,0 +1,25 @@
+/* Reset margin, padding, and box-sizing */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Optional: set full height */
+html,
+body {
+  height: 100%;
+}
+
+/* Optional: default font family */
+body {
+  font-family: sans-serif;
+  /* cursor: none;  */
+
+}

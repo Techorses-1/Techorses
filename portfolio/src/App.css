@@ -1,0 +1,28 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fafafa;
+}
+
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/logo-font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+#page-wrapper {
+  min-height: 100%;
+  /* padding-bottom: var(--footer-h, 200px); */
+}

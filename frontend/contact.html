@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/asstes/Logo/new_favicon.png" type="image/png">
+    <title>Techorses - Contact</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2YK4TXR4D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2YK4TXR4D');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2YK4TXR4D"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=initRecaptchas&render=explicit" async defer></script>
+
+
+
+    <link rel="stylesheet" href="/css/Contact.css">
+    <!-- <link rel="stylesheet" href="/css/Home.css"> -->
+    <link rel="stylesheet" href="/css/cursor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <!-- Desktop logo -->
+                        <img src="/asstes/Logo/Main_Logo.png" alt="Company Logo" class="logo-desktop"
+                            draggable="false" />
+
+                        <!-- Mobile logo -->
+                        <img src="/asstes/Logo/Logo.svg" alt="Mobile Logo" class="logo-mobile" draggable="false" />
+                    </a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/company.html" class="nav-link">COMPANY</a>
+                    </li>
+
+                    <!-- PRODUCTS DROPDOWN - Single line style -->
+                    <li class="nav-item products-dropdown">
+                        <a href="#" class="nav-link products-toggle">
+                            PRODUCTS <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container products-dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="/thcore.html" class="dropdown-item">
+                                    <i class="fas fa-cube"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Core</span></span>
+                                    </div>
+                                </a>
+                                <a href="/thvend.html" class="dropdown-item">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Vend</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- SERVICES DROPDOWN (unchanged) -->
+                    <li class="nav-item services-dropdown">
+                        <a href="#" class="nav-link services-toggle">
+                            SERVICES <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="webdevelopment.html" class="dropdown-item">
+                                    <i class="fas fa-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Web<br><span class="second-line">Development</span></span>
+                                    </div>
+                                </a>
+                                <a href="customsoftware.html" class="dropdown-item">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Custom<br><span class="second-line">Software</span></span>
+                                    </div>
+                                </a>
+                                <a href="marketingsolution.html" class="dropdown-item">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Marketing<br><span class="second-line">Solution</span></span>
+                                    </div>
+                                </a>
+                                <a href="graphicdesign.html" class="dropdown-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Graphic<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="uiux.html" class="dropdown-item">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>UI/UX<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="mobileapp.html" class="dropdown-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Mobile<br><span class="second-line">App</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="/portfolio" class="nav-link">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link btn-lets-talk">Let's Talk</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="lets-talk-modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-container">
+                <button class="modal-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-content">
+                    <h2>Let's Talk</h2>
+                    <p>Have a project in mind or want to discuss opportunities? We'd love to hear from you!</p>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LdlcuwrAAAAAASzygwkisSbTa_4Fo2dmt1wMCWO"></div>
+                        </div>
+
+
+                        <button type="submit" class="submit-btn lets-talk-style">
+                            <span class="lets-talk-sleeping">
+                                <img src="/asstes/Images/home/Icons/sleeping2.png" alt="Sleeping Icon" />
+                            </span>
+                            <span class="lets-talk-awake">
+                                <img src="/asstes/Images/home/Icons/awake2.png" alt="Awake Icon" />
+                            </span>
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;"></span>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h2>CONTACT US</h2>
+            <h1>How can we help you?</h1>
+            <a href="#">
+                <button class="hero-btn" id="reachOutBtn">Reach Out</button>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-bg-image"></div>
+        <div class="contact-content-wrapper">
+            <div class="contact-content">
+                <div class="contact-heading-wrapper">
+                    <h2 class="main-heading">Let's talk</h2>
+                    <p class="sub-heading">
+                        Fill up the form and our team will be <span class="mobile-only-break"><br></span>get back to you
+                        soon!
+                    </p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-left">
+                        <div class="floating-shapes">
+                            <div class="shape-1"></div>
+                            <div class="shape-2"></div>
+                        </div>
+                        <h2 class="contact-heading">
+                            Let's Scale your <br><strong>brand, together!</strong>
+                        </h2>
+                        <p class="contact-subtext">Any question or remark? Just <br> write us a message!</p>
+                        <a href="#" class="contact-phone phone-link">
+                            <span>📞</span> +91 7778048992
+                        </a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form id="contact-page-form" class="contact-us-form">
+                            <input type="text" id="contact-name" placeholder="Name" required />
+                            <input type="text" id="contact-phone" placeholder="Mobile No." required />
+                            <input type="email" id="contact-email" placeholder="Email" required />
+                            <input type="text" id="contact-subject" placeholder="Subject" />
+                            <textarea id="contact-message" placeholder="Your Message" rows="4"></textarea>
+
+                            <div class="form-group">
+                                <div id="contact-recaptcha" class="g-recaptcha"
+                                    data-sitekey="6LdlcuwrAAAAAASzygwkisSbTa_4Fo2dmt1wMCWO"></div>
+                            </div>
+                            <button type="submit" id="contact-submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader" style="display: none;"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main-contact-container1">
+        <section class="contact-container1">
+            <div class="contact-card" onclick="window.location.href='mailto:hey@techorses.com'">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-label">Email:</div>
+                <a class="contact-value" href="mailto:hey@techorses.com">hey@techorses.com</a>
+            </div>
+
+            <div class="contact-card phone-contact-card">
+                <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="contact-label">Phone:</div>
+                <a class="contact-value phone-link" href="#">+91 7778048992</a>
+            </div>
+
+            <div class="contact-card"
+                onclick="window.open('https://www.google.com/maps/dir//Samanvay+Silicon+2nd+Floor,+Samanvay+silicon+A-+215,+opp.+kalyan+Hotel,+Sarod,+Sayajiganj+Vadodara,+Gujarat+390020/@22.3084881,73.1845833,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x395fcfd7cddb4697:0x7c96c11e8726b438!2m2!1d73.1845833!2d22.3084881?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D', '_blank')">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="contact-label">Address:</div>
+                <a class="contact-value" href="https://www.google.com/maps/place/Vadodara,+Gujarat,+India"
+                    target="_blank">
+                    Vadodara, Gujarat, India
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <!-- Map Section -->
+    <section class="location-section">
+        <div class="location-left">
+            <img src="/asstes/Images/contact/company.webp" alt="Office Building" />
+        </div>
+
+        <div class="location-right">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.1848603493168!2d73.18460139999999!3d22.308847399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5f44f41d005%3A0xfc130d2b96305eea!2sTechorses!5e0!3m2!1sen!2sin!4v1751691683551!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="quote-mark left">&ldquo;</div>
+                <div class="text-wrapper">
+                    <!-- Desktop Version -->
+                    <p class="cta-text desktop-text">
+                        Turn your idea into reality<br>be at any<span> scale </span>, we can<span> help!</span>
+                    </p>
+
+                    <!-- Mobile Version -->
+                    <p class="cta-text mobile-text">
+                        Turn your idea into <br>
+                        reality be at any<span> scale,</span><br>
+                        we can<span> help!</span>
+                    </p>
+                    <div class="quote-mark right">&rdquo;</div>
+
+
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <!-- WhatsApp Link Button -->
+                <div class="cta-button-wrapper">
+                    <img src="/asstes/Images/home/Icons/donatello.png" alt="cartoon icon" class="icon-on-button" />
+                    <a href="https://wa.me/917778048992" class="cta-button" target="_blank" rel="noopener noreferrer">
+                        Let's Build
+                    </a>
+                </div>
+
+                <!-- Phone/WhatsApp Responsive Button -->
+                <a href="#" class="phone-button" id="callOrWhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    +91 7778048992
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">FAQs</h2>
+
+            <div class="faq-container">
+                <!-- Left Column -->
+                <div class="faq-column">
+                    <!-- FAQ 1 -->
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span> What sets Techorses apart from other digital agencies?
+                        </div>
+                        <div class="faq-answer">Techorses stands out for its commitment to innovation, client-centric
+                            approach, and multidisciplinary delivery of comprehensive digital solutions.</div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span> How can I track the progress of my project during
+                            development?
+                        </div>
+                        <div class="faq-answer">We provide regular updates and access to project management tools,
+                            ensuring
+                            transparency and collaboration throughout the development lifecycle.
+                        </div>
+                    </div>
+
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span> Do you offer maintenance and support services after the
+                            project
+                            is completed?
+                        </div>
+                        <div class="faq-answer">Absolutely. We provide ongoing maintenance and support services to
+                            ensure
+                            your digital assets remain up-to-date and secure.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="faq-column">
+                    <!-- FAQ 4 -->
+
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span> What is the cost structure for your services?
+                        </div>
+                        <div class="faq-answer">Our pricing is tailored to the scope and complexity of each project. We
+                            provide detailed, transparent quotes to ensure clarity on costs.</div>
+                    </div>
+
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span> What is the Techorses development process like?
+                        </div>
+                        <div class="faq-answer">Our development process is collaborative and iterative, ensuring client
+                            involvement at key stages for feedback and adjustments.</div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-box" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span class="plus-icon">+</span> What support do you provide if issues arise after the
+                            project
+                            is completed?
+                        </div>
+                        <div class="faq-answer">Our post-launch support includes troubleshooting, bug fixes, and ongoing
+                            assistance to address any issues that may arise, ensuring a smooth and reliable digital
+                            experience.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main-row">
+                <!-- Logo Column -->
+                <div class="footer-column footer-logo-column">
+                    <img src="/asstes/Logo/Techorses Logo_03.png" alt="Techorses Logo">
+                    <p>Stay connected and join the digital conversation! Follow us on social media for the latest
+                        updates, tech insights, and creative inspirations. Let's build a vibrant digital community
+                        together.</p>
+                    <div class="footer-social-wrapper">
+                        <button class="client-btn-with-icon">
+                            <span class="plus-footer">+</span> Become a Client
+                            <!-- <img src="/asstes/Images/home/Icons/sitting.png" alt="Cartoon Icon" class="client-icon">  -->
+                        </button>
+                        <!-- Desktop Social Icons -->
+                        <div class="footer-socials desktop-social">
+                            <a href="https://www.facebook.com/people/Techorses/100089081915251/?mibextid=ZbWKwL"
+                                target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/techorses_?igsh=Zzh1ZDE0NHlvd3ht" target="_blank"
+                                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/techorses-ride-the-technology/" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explore Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="company.html" class="footer-link">Company</a></li>
+                        <li><a href="/portfolio" class="footer-link">Portfolio</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="terms-conditions.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html" class="footer-link">PrivacyPolicy</a></li>
+                        <li><a href="data-deletion.html" class="footer-link">Data Deletion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column mobile-none">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="thcore.html" class="footer-link">TH Core</a></li>
+                        <li><a href="thvend.html" class="footer-link">TH Vend</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Services</h3>
+                    <ul class="services-list">
+                        <li><a href="webdevelopment.html" class="footer-link">Web
+                                Development</a></li>
+                        <li><a href="customsoftware.html" class="footer-link">Custom
+                                Software</a></li>
+                        <li><a href="marketingsolution.html" class="footer-link">Marketing
+                                Solution</a></li>
+                        <li><a href="graphicdesign.html" class="footer-link">Graphic Design</a>
+                        </li>
+                        <li><a href="uiux.html" class="footer-link">UI/UX Design</a></li>
+                        <li><a href="mobileapp.html" class="footer-link">Mobile Application</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column - UPDATED STRUCTURE -->
+                <!-- Contact Column - UPDATED FOR MOBILE -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <!-- Address -->
+                        <div class="contact-line address-line">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://maps.google.com/?q=B-224+Samanvay+Silicon+Opp+Kalyan+Hotel+Dairy+Den+Circle+Sayajigunj+Vadodara+390020"
+                                target="_blank" rel="noopener noreferrer" class="address-text footer-link">
+                                B-224, Samanvay Silicon, Opp Kalyan Hotel, Dairy Den Circle, Sayajigunj, Vadodara,
+                                390020 (Gujarat, India)
+                            </a>
+                        </div>
+
+                        <!-- Phone Numbers -->
+                        <div class="contact-line phone-line">
+                            <div class="contact-items">
+                                <a href="tel:+917778048992" class="contact-item">
+                                    <i class="fas fa-phone-alt"></i> +91 7778048992
+                                </a>
+                                <span class="contact-separator">|</span>
+                                <a href="tel:+919328338281" class="contact-item">
+                                    <i class="fas fa-phone-alt"></i> +91 9328338281
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Emails -->
+                        <div class="contact-line email-line">
+                            <div class="contact-items">
+                                <a href="mailto:hey@techorses.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i> hey@techorses.com
+                                </a>
+                                <div class="contact-separator">|</div>
+                                <a href="mailto:sales@techorses.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i> sales@techorses.com
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Mobile Social Icons -->
+                        <div class="mobile-social">
+                            <div class="footer-socials">
+                                <a href="https://www.facebook.com/people/Techorses/100089081915251/?mibextid=ZbWKwL"
+                                    target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/techorses_?igsh=Zzh1ZDE0NHlvd3ht" target="_blank"
+                                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/techorses-ride-the-technology/"
+                                    target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Sections -->
+            <div class="footer-copyright-section desktop-copyright">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved. Designed by Techorses.
+                    <!-- <span>Privacy Policy</span>  -->
+                </p>
+            </div>
+            <div class="footer-copyright-section mobile-copyright">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved.<br>Designed by Techorses.
+                    <!-- <span>Privacy Policy</span>  -->
+                </p>
+            </div>
+        </div>
+
+        <!-- Go to Top Button -->
+        <button id="goToTopBtn" title="Go to top" aria-label="Go to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+
+    <div class="toast-container"></div>
+    <audio id="successSound" src="/asstes/Images/Sound/notification.mp3" preload="auto"></audio>
+
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/917778048992" id="whatsappBtn" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- Load particles.js library first -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Then your custom script -->
+    <script src="/js/Contact.js"></script>
+    <script src="/js/Home.js"></script>
+    <script src="/js/cursor.js"></script>
+</body>
+
+</html>

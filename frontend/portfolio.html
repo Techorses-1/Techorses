@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/asstes/Logo/new_favicon.png" type="image/png">
+    <title>Techorses - Portfolio</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2YK4TXR4D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2YK4TXR4D');
+    </script>
+    <link rel="stylesheet" href="/css/Portfolio.css">
+    <link rel="stylesheet" href="/css/cursor.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <!-- Desktop logo -->
+                        <img src="/asstes/Logo/Main_Logo.png" alt="Company Logo" class="logo-desktop"
+                            draggable="false" />
+
+                        <!-- Mobile logo -->
+                        <img src="/asstes/Logo/Logo.svg" alt="Mobile Logo" class="logo-mobile" draggable="false" />
+                    </a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="company.html" class="nav-link">COMPANY</a>
+                    </li>
+                    <li class="nav-item services-dropdown">
+                        <a href="#" class="nav-link services-toggle">
+                            SERVICES <i class="fas fa-chevron-right  dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="webdevelopment.html" class="dropdown-item">
+                                    <i class="fas fa-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Web<br><span class="second-line">Development</span></span>
+                                    </div>
+                                </a>
+                                <a href="customsoftware.html" class="dropdown-item">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Custom<br><span class="second-line">Software</span></span>
+                                    </div>
+                                </a>
+                                <a href="marketingsolution.html" class="dropdown-item">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Marketing<br><span class="second-line">Solution</span></span>
+                                    </div>
+                                </a>
+                                <a href="graphicdesign.html" class="dropdown-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Graphic<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="uiux.html" class="dropdown-item">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>UI/UX<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="mobileapp.html" class="dropdown-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Mobile<br><span class="second-line">App</span></span>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/portfolio" class="nav-link active">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link btn-lets-talk">Let's Talk</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+
+        <div class="lets-talk-modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-container">
+                <button class="modal-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-content">
+                    <h2>Let's Talk</h2>
+                    <p>Have a project in mind or want to discuss opportunities? We'd love to hear from you!</p>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn lets-talk-style">
+                            <span class="lets-talk-sleeping">
+                                <img src="/asstes/Images/home/Icons/sleeping2.png" alt="Sleeping Icon" />
+                            </span>
+                            <span class="lets-talk-awake">
+                                <img src="/asstes/Images/home/Icons/awake2.png" alt="Awake Icon" />
+                            </span>
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;"></span>
+                        </button><button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="main-animation">
+        <!-- Background shapes -->
+        <div class="shape circle shape-1"></div>
+        <div class="shape rectangle shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape circle shape-4"></div>
+        <div class="shape rectangle shape-5"></div>
+        <div class="shape circle shape-6"></div>
+        <!-- New shapes -->
+        <div class="shape shape-7"></div> <!-- Square on left -->
+        <div class="shape shape-8"></div> <!-- Unique circle on right -->
+        <div class="shape shape-9"></div> <!-- Another circle variation on right -->
+
+        <div class="main-wrapper">
+            <h1 class="top-text">Ideas in progress.</h1>
+
+            <div class="animation-container" id="lottie-animation"></div>
+
+            <p class="bottom-text">Soon you'll see the proof <span class="mobile-br"><br></span>of our passion!</p>
+        </div>
+    </div>
+
+
+    <div class="toast-container"></div>
+        <audio id="successSound" src="/asstes/Images/Sound/notification.mp3" preload="auto"></audio>
+
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/917778048992" id="whatsappBtn" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+    <script src="/js/Portfolio.js"></script>
+    <script src="/js/cursor.js"></script>
+</body>
+
+</html>

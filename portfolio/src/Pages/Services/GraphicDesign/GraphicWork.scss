@@ -1,0 +1,330 @@
+.graphic-design-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #081427;
+    overflow: hidden;
+    padding: 6rem 2rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image:
+            repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 80px),
+            repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 80px);
+        background-size: 160px 160px;
+        animation: grid-shift 30s linear infinite;
+    }
+}
+
+.graphic-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5rem;
+    position: relative;
+    z-index: 2;
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 1.5rem;
+        font-family: 'Playfair Display', serif;
+        position: relative;
+        display: inline-block;
+
+        .highlight {
+            color: white;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+                width: 100%;
+                height: 12px;
+                background: rgba(59, 130, 246, 0.2);
+                z-index: -1;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+        color: white;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            border-radius: 3px;
+        }
+    }
+}
+
+.graphic-container {
+    position: relative;
+    width: 100%;
+    min-height: 2500px;
+    overflow: hidden;
+    // margin-top: -7rem; 
+    z-index: 1;
+
+   
+
+    .glass-card {
+        position: absolute;
+        z-index: 2;
+        transform: translateX(-50%);
+        cursor: pointer;
+        transition: transform 0.28s ease, box-shadow 0.28s ease;
+
+        .glass-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+            background: rgba(255, 255, 255, 0.15);
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+                border-radius: 20px;
+                background: radial-gradient(circle at var(--glow-x) var(--glow-y),
+                        var(--glow-color) 0%,
+                        rgba(155, 81, 224, 0.589) 8%,
+                        rgba(155, 81, 224, 0.45) 20%,
+                        rgba(155, 81, 224, 0.18) 35%,
+                        rgba(155, 81, 224, 0.06) 50%,
+                        transparent 70%);
+                transition: transform 0.8s ease, filter 0.8s ease;
+                z-index: 0;
+            }
+
+            .glass-card-front,
+            .glass-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                backface-visibility: hidden;
+            }
+
+            .glass-card-front {
+                background: rgba(255, 255, 255, 0.03);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                backdrop-filter: blur(12px);
+                transform: rotateY(180deg); // hide by default
+                z-index: 2;
+
+                .company-logo {
+                    width: 150px;
+                    height: auto;
+                    transition: transform 0.4s ease, opacity 0.4s ease;
+                    z-index: 2;
+                }
+            }
+
+            .glass-card-back {
+                // background: #0814279d; 
+                background: #081427c8;
+                z-index: 1;
+
+                .company-name {
+                    color: #fff;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 0 1rem;
+                }
+            }
+        }
+
+        // Flip effect + glow scaling on desktop only
+        // Desktop hover: 769px → 1550px
+        @media (min-width: 769px) and (max-width: 1550px) {
+            &:hover {
+                transform: translateX(-50%) scale(1.12);
+
+                .glass-card-inner {
+                    transform: rotateY(180deg);
+                }
+
+                .glass-card-inner::before {
+                    transform: scale(1.8);
+                    filter: blur(100px); // default blur
+                    opacity: 1;
+                    background: radial-gradient(ellipse 70% 120% at var(--glow-x) var(--glow-y),
+                            rgba(255, 255, 255, 1) 0%,
+                            rgba(255, 255, 255, 0.9) 12%,
+                            rgba(255, 255, 255, 0.6) 28%,
+                            rgba(255, 255, 255, 0.3) 55%,
+                            rgba(255, 255, 255, 0.15) 75%,
+                            transparent 95%);
+                }
+            }
+        }
+
+        // Large screens: 1551px → 2500px
+        @media (min-width: 1551px) and (max-width: 2500px) {
+            &:hover {
+                transform: translateX(-50%) scale(1.12);
+
+                .glass-card-inner {
+                    transform: rotateY(180deg);
+                }
+
+                .glass-card-inner::before {
+                    transform: scale(1.8);
+                    filter: blur(200px); // stronger blur for larger screens
+                    opacity: 1;
+                    background: radial-gradient(ellipse 70% 120% at var(--glow-x) var(--glow-y),
+                            rgba(255, 255, 255, 1) 0%,
+                            rgba(255, 255, 255, 0.9) 12%,
+                            rgba(255, 255, 255, 0.6) 28%,
+                            rgba(255, 255, 255, 0.3) 55%,
+                            rgba(255, 255, 255, 0.15) 75%,
+                            transparent 95%);
+                }
+            }
+        }
+
+    }
+}
+
+@keyframes grid-shift {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -160px -160px;
+    }
+}
+
+// Mobile / tablet fallback: keep cards static
+// Mobile / tablet view
+// Mobile / tablet view
+@media (max-width: 768px) {
+    .graphic-design-wrapper {
+        padding: 3rem 1rem;
+    }
+
+    .graphic-header {
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+        }
+    }
+
+    .graphic-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        min-height: auto;
+        padding: 0 1rem;
+    }
+
+    .glass-card {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: calc(33.33% - 12px) !important;
+        min-width: 100px;
+        height: 140px !important;
+        transform: none !important;
+        margin-bottom: 16px;
+
+        .glass-card-inner {
+            transform: none !important;
+            height: 100%;
+        }
+
+        // Toggle flip on click/tap
+        &.flipped .glass-card-inner {
+            transform: rotateY(180deg) !important;
+        }
+    }
+}
+
+// For very small screens
+@media (max-width: 480px) {
+    .graphic-design-wrapper {
+        padding: 2rem 0.5rem;
+    }
+
+    .graphic-header {
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+        }
+    }
+
+    .glass-card {
+        width: calc(33.33% - 10px) !important;
+        height: 120px !important;
+
+        .company-name {
+            font-size: 0.9rem !important;
+        }
+
+        .company-logo {
+            width: 80px !important;
+        }
+    }
+}
+
+// For extremely small screens
+@media (max-width: 360px) {
+    .glass-card {
+        width: calc(50% - 8px) !important; // 2 cards per row on very small screens
+    }
+}
+
+
+
+@media (min-width: 1600px) {
+    .glass-card:hover .glass-card-inner::before {
+        transform: scale(2.8); // bigger glow
+        filter: blur(150px); // stronger blur
+        opacity: 1;
+        background: radial-gradient(ellipse 70% 120% at var(--glow-x) var(--glow-y),
+                rgba(255, 255, 255, 1) 0%,
+                rgba(255, 255, 255, 0.9) 12%,
+                rgba(255, 255, 255, 0.6) 28%,
+                rgba(255, 255, 255, 0.3) 55%,
+                rgba(255, 255, 255, 0.15) 75%,
+                transparent 95%);
+    }
+}

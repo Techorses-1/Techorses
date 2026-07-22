@@ -1,0 +1,12 @@
+
+
+body {
+  padding-top: 130px; /* Default for desktop and larger screens */
+}
+
+/* For mobile view (devices with width 768px or less) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 90px; /* Adjust this value as needed for mobile */
+  }
+}

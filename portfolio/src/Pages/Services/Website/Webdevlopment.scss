@@ -1,0 +1,296 @@
+body {
+  padding-top: 60px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.website-hero-container {
+  height: 83vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
+  background-color: #0a021a;
+  scroll-snap-align: start;
+
+  @media (max-width: 768px) {
+    height: 63vh !important;
+    flex-direction: column;
+    padding: 20px !important;
+    justify-content: center;
+  }
+}
+
+.hero-heading {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 2.9rem !important;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem !important;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.34rem !important;
+    margin-bottom: 15px;
+  }
+}
+
+.hero-subheading {
+  font-family: 'Poppins', sans-serif;
+  color: #aaa;
+  font-size: 1.3rem;
+  max-width: 650px !important;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem !important;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem !important;
+  }
+}
+
+.hero-left-text {
+  padding-right: 20px;
+  flex: 1;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+}
+
+.card-swap-wrapper {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+  }
+}
+
+.card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    object-position: center top;
+  }
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px !important;
+  }
+}
+
+.website-hero-bg {
+  background-color: #0a021a; // your hero background
+  width: 100%;
+}
+
+/* ===== FIX: Large Screen Gap Between Text and Cards ===== */
+@media (min-width: 1600px) {
+
+  /* Limit the hero container width so text & cards stay closer */
+  .website-hero-container {
+    // max-width: 1400px; 
+    margin: 0 auto;
+  }
+
+  /* Adjust the flex ratio: give text more space, cards slightly less */
+  .hero-left-text {
+    flex: 0 0 55%;
+    margin-left: 80px;
+  }
+
+  .hero-heading {
+    font-size: 3.5rem !important;
+    /* bigger heading */
+  }
+
+  .hero-subheading {
+    font-size: 1.5rem !important;
+    /* slightly bigger subtext */
+    max-width: 700px;
+    /* allow more width */
+  }
+
+  // .card-swap-wrapper {
+  //   flex: 0 0 45%;
+  // }
+
+  .card-swap-container {
+    transform: translate(-5%, 10%) scale(1.5);
+    /* enlarge + shift left */
+  }
+
+  .card {
+    width: 110% !important;
+    /* make individual cards bigger */
+    height: 110% !important;
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .card-swap-container {
+    transform: translate(-5%, 10%) scale(1.3);
+  }
+
+  .card {
+    width: 600px !important;
+    height: 450px !important;
+  }
+}
+
+
+.custom-software-projects .project-item:nth-child(2) .project-text {
+  margin-left: 8rem !important;
+  /* Adjust as needed */
+}
+
+.custom-software-projects .project-item:nth-child(4) .project-text {
+  margin-left: 6.5rem !important;
+  /* Adjust as needed */
+}
+
+// .custom-software-projects .project-item:nth-child(6) .project-text {
+//       margin-left: 4rem !important;
+//       /* Adjust as needed */
+//     }
+
+
+@media (max-width: 768px) {
+  .custom-software-projects .project-item:nth-child(2) .project-text {
+    margin-left: 0 !important;
+    /* Adjust as needed */
+  }
+
+  .custom-software-projects .project-item:nth-child(4) .project-text {
+    margin-left: 0 !important;
+    /* Adjust as needed */
+  }
+
+
+  .card video {
+    height: 90% !important;
+    width: 99.5% !important;
+  }
+
+}
+
+.mobile-break {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .website-hero-container {
+    height: 70vh !important;
+    flex-direction: column;
+    padding: 20px !important;
+    justify-content: center;
+  }
+
+  .hero-heading {
+    font-size: 2rem !important;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .hero-subheading {
+    font-size: 1.2rem !important;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-left-text {
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 0;
+    flex: 0 0 auto;
+  }
+
+  .card-swap-wrapper {
+    width: 100%;
+    height: 75% !important;
+    margin-top: 10px;
+  }
+
+
+  .card video {
+    height: 95% !important;
+    width: 99.5% !important;
+  }
+}
+
+
+
+
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .website-hero-container {
+    height: 70vh !important;
+
+  }
+}
+
+
+.hero-heading-sub {
+  font-size: 2rem !important; // slightly smaller than 2.9rem desktop
+
+  @media (min-width: 800px) and (max-width: 1024px) {
+    display: block; // break to new line on tablet
+    font-size: 1.2rem !important; // slightly smaller than 1.8rem tablet
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem !important; // slightly smaller than 1.34rem mobile
+  }
+}
+
+
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+
+  .hero-heading {
+    font-size: 2.4rem !important;
+  }
+
+  .hero-heading-sub
+  {
+    font-size: 1.5rem !important;
+  }
+}

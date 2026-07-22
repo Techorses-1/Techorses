@@ -1,0 +1,158 @@
+.go-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #ffffffdd;
+  outline: none;
+  padding: 28px 28px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 999;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+
+  /* Fancy button effects */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* New Gradient Flow Animation (modified for your colors) */
+  background-size: 400% auto;
+  /* Increased from 280% for more dramatic movement */
+  background-image: linear-gradient(325deg,
+      #2e1b8f 0%,
+      /* Dark purple */
+      #a560f7 25%,
+      /* Medium purple */
+      #723cff 50%,
+      /* Bright purple */
+      #a560f7 75%,
+      /* Medium purple */
+      #2e1b8f 100%
+      /* Dark purple */
+    );
+  animation:
+    jump 2s infinite ease-in-out,
+    gradientFlow 3s infinite linear;
+  /* Faster animation (2s instead of 3s) */
+
+  /* Enhanced Glow Effect */
+  box-shadow:
+    0 0 12px rgba(165, 96, 247, 0.7),
+    /* Stronger glow */
+    0 0 24px rgba(114, 60, 255, 0.5),
+    0 0 36px rgba(114, 60, 255, 0.3),
+    0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+  /* Gradient border effect (kept original) */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, #a560f7, #2e1b8f);
+    z-index: -1;
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+  }
+
+  /* Press down effect */
+  &:active {
+    transform: scale(0.95) translateY(0);
+  }
+
+  @media (max-width: 768px) {
+    bottom: 15px;
+    right: 15px;
+    font-size: 18px;
+    padding: 24px 24px;
+  }
+
+  .arrow {
+    position: absolute;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+  }
+
+  .arrow-default {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .arrow-hover {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  &:hover {
+    .arrow-default {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    .arrow-hover {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+}
+
+/* New Gradient Flow Animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+    filter: brightness(1);
+    box-shadow:
+      0 0 12px rgba(165, 96, 247, 0.7),
+      0 0 24px rgba(114, 60, 255, 0.5),
+      0 0 36px rgba(114, 60, 255, 0.3);
+  }
+
+  50% {
+    background-position: 100% 50%;
+    filter: brightness(1.1);
+    box-shadow:
+      0 0 16px rgba(165, 96, 247, 0.8),
+      /* Pulse effect */
+      0 0 32px rgba(114, 60, 255, 0.6),
+      0 0 48px rgba(114, 60, 255, 0.4);
+  }
+
+  100% {
+    background-position: 0% 50%;
+    filter: brightness(1);
+    box-shadow:
+      0 0 12px rgba(165, 96, 247, 0.7),
+      0 0 24px rgba(114, 60, 255, 0.5),
+      0 0 36px rgba(114, 60, 255, 0.3);
+  }
+}
+
+/* Original Jump Animation */
+@keyframes jump {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}

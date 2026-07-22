@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/asstes/Logo/new_favicon.png" type="image/png">
+    <title>Techorses - Privacy Policy</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/css/privacy-policy.css">
+    <link rel="stylesheet" href="/css/cursor.css">
+</head>
+
+<body>
+
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header class="header">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/asstes/Logo/Main_Logo.png" alt="Company Logo" class="logo-desktop" draggable="false" />
+                        <img src="/asstes/Logo/Logo.svg" alt="Mobile Logo" class="logo-mobile" draggable="false" />
+                    </a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="/company.html" class="nav-link">COMPANY</a></li>
+
+                    <!-- PRODUCTS DROPDOWN -->
+                    <li class="nav-item products-dropdown">
+                        <a href="#" class="nav-link products-toggle">
+                            PRODUCTS <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container products-dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="/thcore.html" class="dropdown-item">
+                                    <i class="fas fa-cube"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Core</span></span>
+                                    </div>
+                                </a>
+                                <a href="/thvend.html" class="dropdown-item">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Vend</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- SERVICES DROPDOWN -->
+                    <li class="nav-item services-dropdown">
+                        <a href="#" class="nav-link services-toggle">
+                            SERVICES <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="webdevelopment.html" class="dropdown-item">
+                                    <i class="fas fa-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Web<br><span class="second-line">Development</span></span>
+                                    </div>
+                                </a>
+                                <a href="customsoftware.html" class="dropdown-item">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Custom<br><span class="second-line">Software</span></span>
+                                    </div>
+                                </a>
+                                <a href="marketingsolution.html" class="dropdown-item">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Marketing<br><span class="second-line">Solution</span></span>
+                                    </div>
+                                </a>
+                                <a href="graphicdesign.html" class="dropdown-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Graphic<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="uiux.html" class="dropdown-item">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>UI/UX<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="mobileapp.html" class="dropdown-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Mobile<br><span class="second-line">App</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="/portfolio" class="nav-link">PORTFOLIO</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link btn-lets-talk">Let's Talk</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Let's Talk Modal -->
+        <div class="lets-talk-modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-container">
+                <button class="modal-close-btn"><i class="fas fa-times"></i></button>
+                <div class="modal-content">
+                    <h2>Let's Talk</h2>
+                    <p>Have a project in mind or want to discuss opportunities? We'd love to hear from you!</p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn lets-talk-style">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== POLICY PAGE CONTENT ========== -->
+    <main class="policy-page">
+        <div class="policy-hero">
+            <h1>Privacy Policy</h1>
+            <p>Your privacy matters. Read how we protect your data.</p>
+        </div>
+
+        <div class="policy-container">
+            <div class="policy-card">
+                <div class="policy-content">
+                    <div class="effective-date">
+                        <strong>Effective Date:</strong> May 18, 2026
+                    </div>
+
+                    <div class="policy-section">
+                        <p>At Techorses ("Company", "we", "our", or "us"), we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, process, and protect information when you use our website, software platforms, applications, APIs, automation systems, and related services.</p>
+                        <p>By using our services, you agree to the terms described in this Privacy Policy.</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>1. Company Information</h2>
+                        <div class="info-box">
+                            <p><strong>Company Name:</strong> Techorses</p>
+                            <p><strong>Website:</strong> https://techorses.com</p>
+                            <p><strong>Email:</strong> hey@techorses.com</p>
+                            <p><strong>Phone:</strong> +91 7778048992</p>
+                            <p><strong>Address:</strong> B-224, Samanvay Silicon, Opp Kalyan Hotel, Dairy Den Circle, Sayajigunj, Vadodara, Gujarat, India – 390020</p>
+                        </div>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>2. Information We Collect</h2>
+                        <p>We may collect and process the following information:</p>
+                        <h3>Personal Information</h3>
+                        <ul>
+                            <li>Name</li>
+                            <li>Email address</li>
+                            <li>Phone number</li>
+                            <li>Business information</li>
+                            <li>Billing information</li>
+                            <li>Company details</li>
+                        </ul>
+                        <h3>Technical Information</h3>
+                        <ul>
+                            <li>IP address</li>
+                            <li>Browser type</li>
+                            <li>Device information</li>
+                            <li>Operating system</li>
+                            <li>Cookies and analytics data</li>
+                        </ul>
+                        <h3>Service Usage Information</h3>
+                        <ul>
+                            <li>CRM usage data</li>
+                            <li>API activity</li>
+                            <li>Automation logs</li>
+                            <li>Messaging activity</li>
+                            <li>Customer communication records</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>3. How We Use Information</h2>
+                        <p>We use collected information to:</p>
+                        <ul>
+                            <li>Provide software and automation services</li>
+                            <li>Operate CRM and WhatsApp communication systems</li>
+                            <li>Improve platform performance</li>
+                            <li>Provide customer support</li>
+                            <li>Process transactions and billing</li>
+                            <li>Maintain security and fraud prevention</li>
+                            <li>Analyze service usage and performance</li>
+                            <li>Comply with legal obligations</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>4. WhatsApp and Meta Platform Integration</h2>
+                        <p>Techorses may use Meta and WhatsApp APIs to facilitate communication services, automation systems, customer engagement tools, CRM integrations, and business messaging services.</p>
+                        <p>By using services connected with WhatsApp or Meta platforms, users acknowledge and agree that message processing, delivery, and communication data may pass through Meta infrastructure and services in accordance with Meta's policies and terms.</p>
+                        <p><strong>We do not sell private conversation content to third parties.</strong></p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>5. Cookies and Analytics</h2>
+                        <p>We may use cookies, analytics tools, and similar technologies to:</p>
+                        <ul>
+                            <li>Improve website functionality</li>
+                            <li>Analyze traffic and user behavior</li>
+                            <li>Enhance user experience</li>
+                            <li>Maintain session security</li>
+                        </ul>
+                        <p>Users may disable cookies through browser settings.</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>6. Data Storage and Security</h2>
+                        <p>We implement reasonable technical and organizational security measures to protect user data against unauthorized access, misuse, disclosure, or destruction.</p>
+                        <p>However, no online platform or internet transmission can be guaranteed completely secure.</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>7. Third-Party Services</h2>
+                        <p>Our services may integrate with third-party providers including but not limited to:</p>
+                        <ul>
+                            <li>Meta Platforms</li>
+                            <li>WhatsApp Cloud API</li>
+                            <li>Payment gateways</li>
+                            <li>Cloud hosting providers</li>
+                            <li>Analytics providers</li>
+                            <li>CRM and automation integrations</li>
+                        </ul>
+                        <p>These providers may process data according to their own privacy policies.</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>8. Data Retention</h2>
+                        <p>We retain information only as long as necessary for:</p>
+                        <ul>
+                            <li>Service operation</li>
+                            <li>Legal compliance</li>
+                            <li>Security monitoring</li>
+                            <li>Business and accounting purposes</li>
+                        </ul>
+                        <p>We may remove inactive or unnecessary data periodically.</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>9. User Rights</h2>
+                        <p>Users may request to:</p>
+                        <ul>
+                            <li>Access their information</li>
+                            <li>Correct inaccurate information</li>
+                            <li>Request deletion of data</li>
+                            <li>Withdraw consent where applicable</li>
+                        </ul>
+                        <p>Requests may be submitted to: <strong>hey@techorses.com</strong></p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>10. Data Deletion Requests</h2>
+                        <p>Users and clients may request deletion of their data by contacting us at:</p>
+                        <p><strong>Email:</strong> hey@techorses.com</p>
+                        <p>We will process eligible deletion requests within a reasonable timeframe subject to legal, operational, and compliance obligations.</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>11. Children's Privacy</h2>
+                        <p>Our services are not intended for children under 13 years of age. We do not knowingly collect information from children.</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>12. Changes to This Policy</h2>
+                        <p>We may update this Privacy Policy periodically. Updated versions will be published on this page with a revised effective date.</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>13. Contact Information</h2>
+                        <div class="info-box">
+                            <p><strong>Techorses</strong></p>
+                            <p>Website: https://techorses.com</p>
+                            <p>Email: hey@techorses.com</p>
+                            <p>Phone: +91 7778048992</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER (SAME AS INDEX) ========== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main-row">
+                <div class="footer-column footer-logo-column">
+                    <img src="/asstes/Logo/Techorses Logo_03.png" alt="Techorses Logo">
+                    <p>Stay connected and join the digital conversation! Follow us on social media for the latest updates, tech insights, and creative inspirations. Let's build a vibrant digital community together.</p>
+                    <div class="footer-social-wrapper">
+                        <button class="client-btn-with-icon">+ Become a Client</button>
+                        <div class="footer-socials desktop-social">
+                            <a href="https://www.facebook.com/people/Techorses/100089081915251/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/techorses_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/techorses-ride-the-technology/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-column mobile-none">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="company.html" class="footer-link">Company</a></li>
+                        <li><a href="/portfolio" class="footer-link">Portfolio</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="terms-conditions.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html" class="footer-link">PrivacyPolicy</a></li>
+                        <li><a href="data-deletion.html" class="footer-link">Data Deletion</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column mobile-none">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="thcore.html">TH Core</a></li>
+                        <li><a href="thvend.html">TH Vend</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column mobile-none">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="webdevelopment.html">Web Development</a></li>
+                        <li><a href="customsoftware.html">Custom Software</a></li>
+                        <li><a href="marketingsolution.html">Marketing Solution</a></li>
+                        <li><a href="graphicdesign.html">Graphic Design</a></li>
+                        <li><a href="uiux.html">UI/UX Design</a></li>
+                        <li><a href="mobileapp.html">Mobile Application</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-line">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://maps.google.com/?q=B-224+Samanvay+Silicon+Opp+Kalyan+Hotel+Dairy+Den+Circle+Sayajigunj+Vadodara+390020" target="_blank" class="address-text">
+                                B-224, Samanvay Silicon, Opp Kalyan Hotel, Dairy Den Circle, Sayajigunj, Vadodara, 390020
+                            </a>
+                        </div>
+                        <div class="contact-line">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <a href="tel:+917778048992">+91 7778048992</a> | <a href="tel:+919328338281">+91 9328338281</a>
+                            </div>
+                        </div>
+                        <div class="contact-line">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="mailto:hey@techorses.com">hey@techorses.com</a> | <a href="mailto:sales@techorses.com">sales@techorses.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-social">
+                        <div class="footer-socials">
+                            <a href="https://www.facebook.com/people/Techorses/100089081915251/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/techorses_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/techorses-ride-the-technology/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright-section">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved. Designed by Techorses.</p>
+            </div>
+        </div>
+        <button id="goToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+
+    <a href="https://wa.me/917778048992" id="whatsappBtn" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <!-- JS File -->
+    <script src="/js/privacy-policy.js"></script>
+</body>
+
+</html>

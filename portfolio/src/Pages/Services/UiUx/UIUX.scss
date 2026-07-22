@@ -1,0 +1,62 @@
+.uiux-zigzag {
+  width: 100%;
+  position: relative;
+  background: #0a021a;
+  padding: 120px 0;
+
+  .zigzag-row {
+    position: absolute; // key change: overlap freely
+    width: 50%;         // half width so they sit left/right
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 350px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+  }
+
+  // stagger images in zigzag
+  .zigzag-row.left {
+    left: 0;
+  }
+  .zigzag-row.right {
+    right: 0;
+  }
+
+  // create zigzag effect by shifting each row vertically
+  .zigzag-row:nth-child(1) { top: 0; }
+  .zigzag-row:nth-child(2) { top: 60%; }
+  .zigzag-row:nth-child(3) { top: 120%; }
+  .zigzag-row:nth-child(4) { top: 180%; }
+  .zigzag-row:nth-child(5) { top: 240%; }
+  .zigzag-row:nth-child(6) { top: 300%; }
+  .zigzag-row:nth-child(7) { top: 360%; }
+  .zigzag-row:nth-child(8) { top: 420%; }
+
+  // Tablet
+  @media (max-width: 1024px) {
+    .zigzag-row img {
+      width: 280px;
+    }
+  }
+
+  // Mobile (stacked normally)
+  @media (max-width: 768px) {
+    .zigzag-row {
+      position: relative;
+      width: 100%;
+      top: auto !important; // disable stagger
+      margin-bottom: 40px;
+      justify-content: center;
+
+      img {
+        width: 90%;
+        max-width: 400px;
+      }
+    }
+  }
+}
