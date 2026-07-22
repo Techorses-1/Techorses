@@ -289,7 +289,7 @@ const Webdevlopment = () => {
     {
       id: "direct-15",
       title: "C.R. Kothari & Sons",
-      subtitle: "Business Solutions",
+      subtitle: "Business solutions",
       description: "A professional corporate website for a legacy business with structured content and brand identity.",
       images: [crksons1, crksons2, crksons3],
       layout: "image-left",
