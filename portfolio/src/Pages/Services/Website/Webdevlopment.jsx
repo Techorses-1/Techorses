@@ -61,9 +61,9 @@ import faithline1 from "../../../assets/Services/Website/faithline/img1.png";
 import faithline2 from "../../../assets/Services/Website/faithline/img2.png";
 import faithline3 from "../../../assets/Services/Website/faithline/img3.png";
 
-import bymythology1 from "../../../assets/Services/Website/bymythology/img1.png";
-import bymythology2 from "../../../assets/Services/Website/bymythology/img2.png";
-import bymythology3 from "../../../assets/Services/Website/bymythology/img3.png";
+import bymythology1 from "../../../assets/Services/Website/bymythology/byimg1.png";
+import bymythology2 from "../../../assets/Services/Website/bymythology/byimg2.png";
+import bymythology3 from "../../../assets/Services/Website/bymythology/byimg3.png";
 
 import glamour1 from "../../../assets/Services/Website/glamour/img1.png";
 import glamour2 from "../../../assets/Services/Website/glamour/img2.png";
