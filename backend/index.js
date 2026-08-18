@@ -181,7 +181,7 @@ app.post('/general-inquiry', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Hello, World!');
+  res.send('Hello World From Techorses!');
 });
 
 app.listen(PORT, () => {
