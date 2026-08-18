@@ -57,7 +57,7 @@ async function verifyRecaptcha(recaptchaResponse) {
 }
 
 // ✅ Route: POST /api/service-inquiry (UPDATED WITH reCAPTCHA)
-app.post('/api/service-inquiry', async (req, res) => {
+app.post('/service-inquiry', async (req, res) => {
   const { name, phone, email, subject, message, 'g-recaptcha-response': recaptchaResponse } = req.body;
 
   try {
@@ -98,7 +98,7 @@ app.post('/api/service-inquiry', async (req, res) => {
 });
 
 // ✅ Route: POST /api/lets-talk (ALREADY HAS reCAPTCHA)
-app.post('/api/lets-talk', async (req, res) => {
+app.post('/lets-talk', async (req, res) => {
   const { name, phone, email, message, 'g-recaptcha-response': recaptchaResponse } = req.body;
 
   try {
@@ -140,7 +140,7 @@ app.post('/api/lets-talk', async (req, res) => {
 });
 
 // ✅ Route: POST /api/general-inquiry (UPDATED WITH reCAPTCHA)
-app.post('/api/general-inquiry', async (req, res) => {
+app.post('/general-inquiry', async (req, res) => {
   const { name, email, phone, subject, message, 'g-recaptcha-response': recaptchaResponse } = req.body;
 
   try {

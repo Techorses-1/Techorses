@@ -189,7 +189,7 @@ const Navbar = () => {
     }
 
     try {
-      const response = await fetch('https://api.techorses.com/api/lets-talk', {
+      const response = await fetch('https://techorses.com/api/lets-talk', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

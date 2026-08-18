@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 btnText.textContent = 'Sending...';
 
                 try {
-                    const res = await fetch('https://api.techorses.com/api/lets-talk', {
+                    const res = await fetch('https://techorses.com/api/lets-talk', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(formData)

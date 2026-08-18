@@ -749,7 +749,7 @@ document.addEventListener('DOMContentLoaded', function () {
       submitBtn.disabled = true;
 
       try {
-        const res = await fetch('https://api.techorses.com/api/service-inquiry', {
+        const res = await fetch('https://techorses.com/api/service-inquiry', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData)
