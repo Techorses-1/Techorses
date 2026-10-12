@@ -7,8 +7,8 @@
 
     // ---------- CONFIG ----------
     const WHATSAPP_NUMBER = '917778048992'; // no "+"
-    // const API_URL = 'https://techorses.com/api/global-inquiry'; 
-    const API_URL = 'http://localhost:3000/global-inquiry';
+    const API_URL = 'https://techorses.com/api/global-inquiry'; 
+    // const API_URL = 'http://localhost:3000/global-inquiry';
 
     const WHATSAPP_BASE_MESSAGE =
         "Hello Techorses! I'm looking for reliable software & digital solutions for my business. " +
