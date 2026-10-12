@@ -278,7 +278,7 @@ app.post('/global-inquiry', globalInquiryLimiter, async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('New Hello World From Techorses!');
+  res.send('New Hello World From Updated Techorses!');
 });
 
 app.listen(PORT, () => {
