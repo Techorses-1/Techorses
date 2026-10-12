@@ -3,324 +3,377 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Global Contact - Techorses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/asstes/Logo/new_favicon.png" type="image/png">
+    <title>Global Contact - Techorses</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2YK4TXR4D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P2YK4TXR4D');
+    </script>
+
+    <!-- Shared styles (navbar, footer, toast, loader) -->
+    <link rel="stylesheet" href="/css/Contact.css">
+    <!-- Page styles -->
+    <link rel="stylesheet" href="/css/GlobalContact.css">
+    <link rel="stylesheet" href="/css/cursor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        :root {
-            --green: #006400;
-            --orange: #ff5e0e;
-            --bg: #eff3ef;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            background-color: var(--bg);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* ambient circuit background, matching About section language */
-        body::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="rgba(0,100,0,0.06)" stroke-width="0.5"/><path d="M20,20 L80,20 L80,80 L20,80 Z" fill="none" stroke="rgba(0,100,0,0.06)" stroke-width="0.5"/><path d="M40,40 L60,40 L60,60 L40,60 Z" fill="none" stroke="rgba(0,100,0,0.06)" stroke-width="0.5"/></svg>'); */
-            background-size: 100px 100px;
-            animation: circuitMove 60s linear infinite;
-            z-index: 0;
-            background: white;
-        }
-
-        @keyframes circuitMove {
-            0% {
-                background-position: 0 0;
-            }
-
-            100% {
-                background-position: 1000px 1000px;
-            }
-        }
-
-        /* floating tech icons, same family as the rest of the site */
-        .bg-icons {
-            position: absolute;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            display: none;
-        }
-
-        .bg-icons i {
-            position: absolute;
-            color: rgba(0, 100, 0, 0.15);
-            animation: floatIcon 14s infinite ease-in-out;
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
-        }
-
-        @keyframes floatIcon {
-
-            0%,
-            100% {
-                transform: translateY(0) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(-22px) rotate(6deg);
-            }
-        }
-
-        /* the road: a signature element referencing "Techorses - ride the technology" */
-        .road {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 90px;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        .road::before {
-            content: "";
-            position: absolute;
-            top: 18px;
-            left: 0;
-            width: 200%;
-            height: 4px;
-            background-image: linear-gradient(90deg, var(--green) 0 40px, transparent 40px 70px);
-            background-size: 70px 4px;
-            animation: roadMove 3.5s linear infinite;
-            opacity: 0.35;
-        }
-
-        @keyframes roadMove {
-            from {
-                transform: translateX(0);
-            }
-
-            to {
-                transform: translateX(-70px);
-            }
-        }
-
-        .horse {
-            position: absolute;
-            bottom: 22px;
-            left: -80px;
-            font-size: 2.2rem;
-            color: var(--orange);
-            animation: gallop 15s linear infinite;
-            display: none;
-        }
-
-        @keyframes gallop {
-            0% {
-                left: -80px;
-                transform: translateY(0) scaleX(-1);
-            }
-
-            48% {
-                transform: translateY(-6px) scaleX(-1);
-            }
-
-            50% {
-                left: 105%;
-                transform: translateY(0) scaleX(-1);
-            }
-
-            50.01% {
-                transform: translateY(0) scaleX(-1);
-            }
-
-            100% {
-                left: 105%;
-                transform: translateY(0) scaleX(-1);
-            }
-        }
-
-        /* main card */
-        .wrap {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            max-width: 640px;
-            padding: 3rem 2.5rem;
-        }
-
-        .logo-mark {
-            margin-bottom: 2rem;
-        }
-
-        .logo-mark img {
-            height: 100px;
-            width: auto;
-        }
-
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--green);
-            font-weight: 600;
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            border: 1px solid rgba(0, 100, 0, 0.25);
-            padding: 0.4rem 1rem;
-            border-radius: 50px;
-            margin-bottom: 1.5rem;
-            background: rgba(0, 100, 0, 0.05);
-        }
-
-        .eyebrow .dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: var(--orange);
-            animation: pulseDot 1.6s ease-in-out infinite;
-        }
-
-        @keyframes pulseDot {
-
-            0%,
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-
-            50% {
-                transform: scale(1.5);
-                opacity: 0.5;
-            }
-        }
-
-        h1 {
-            font-size: clamp(2.2rem, 6vw, 3.4rem);
-            font-weight: 800;
-            color: #111;
-            line-height: 1.15;
-            margin-bottom: 1.1rem;
-            letter-spacing: -0.5px;
-        }
-
-        h1 span {
-            color: var(--green);
-            position: relative;
-            white-space: nowrap;
-        }
-
-        h1 span::after {
-            content: '';
-            position: absolute;
-            bottom: 6px;
-            left: 0;
-            width: 100%;
-            height: 8px;
-            background-color: rgba(0, 100, 0, 0.15);
-            z-index: -1;
-        }
-
-        p.lede {
-            font-size: 1.05rem;
-            color: #555;
-            line-height: 1.7;
-            margin-bottom: 2.4rem;
-        }
-
-        .home-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.6rem;
-            background-color: var(--orange);
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            padding: 0.85rem 2rem;
-            border-radius: 0.5rem;
-            border: 1px solid var(--orange);
-            transition: all 0.3s ease;
-        }
-
-        .home-btn:hover {
-            background-color: transparent;
-            color: var(--orange);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(255, 94, 14, 0.2);
-        }
-
-        .home-btn i {
-            transition: transform 0.3s ease;
-        }
-
-        .home-btn:hover i {
-            transform: translateX(-4px);
-        }
-
-        @media (max-width: 480px) {
-            .wrap {
-                padding: 2rem 1.2rem;
-            }
-
-            .horse {
-                font-size: 1.7rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="header">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/asstes/Logo/Main_Logo.png" alt="Company Logo" class="logo-desktop"
+                            draggable="false" />
+                        <img src="/asstes/Logo/Logo.svg" alt="Mobile Logo" class="logo-mobile" draggable="false" />
+                    </a>
+                </div>
 
-    <div class="bg-icons">
-        <i class="fas fa-code" style="left:8%; top:18%; font-size:2rem; animation-delay:0s;"></i>
-        <i class="fas fa-mobile-alt" style="left:85%; top:22%; font-size:2.2rem; animation-delay:2s;"></i>
-        <i class="fas fa-cloud" style="left:15%; top:75%; font-size:2.4rem; animation-delay:4s;"></i>
-        <i class="fas fa-bullhorn" style="left:78%; top:70%; font-size:2rem; animation-delay:6s;"></i>
-        <i class="fas fa-paint-brush" style="left:50%; top:12%; font-size:1.8rem; animation-delay:3s;"></i>
-        <i class="fas fa-server" style="left:5%; top:45%; font-size:2rem; animation-delay:5s;"></i>
-    </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/company.html" class="nav-link">COMPANY</a>
+                    </li>
 
-    <div class="road">
-        <i class="fa-solid fa-horse-head horse"></i>
-    </div>
+                    <!-- PRODUCTS DROPDOWN -->
+                    <li class="nav-item products-dropdown">
+                        <a href="#" class="nav-link products-toggle">
+                            PRODUCTS <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container products-dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="/thcore.html" class="dropdown-item">
+                                    <i class="fas fa-cube"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Core</span></span>
+                                    </div>
+                                </a>
+                                <a href="/thvend.html" class="dropdown-item">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>TH <span class="second-line">Vend</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
 
-    <div class="wrap">
-        <div class="logo-mark">
-            <img src="/asstes/Logo/th-logo.png" alt="Techorses" onerror="this.style.display='none'">
+                    <!-- SERVICES DROPDOWN -->
+                    <li class="nav-item services-dropdown">
+                        <a href="#" class="nav-link services-toggle">
+                            SERVICES <i class="fas fa-chevron-right dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="webdevelopment.html" class="dropdown-item">
+                                    <i class="fas fa-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Web<br><span class="second-line">Development</span></span>
+                                    </div>
+                                </a>
+                                <a href="customsoftware.html" class="dropdown-item">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Custom<br><span class="second-line">Software</span></span>
+                                    </div>
+                                </a>
+                                <a href="marketingsolution.html" class="dropdown-item">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Marketing<br><span class="second-line">Solution</span></span>
+                                    </div>
+                                </a>
+                                <a href="graphicdesign.html" class="dropdown-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Graphic<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="uiux.html" class="dropdown-item">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>UI/UX<br><span class="second-line">Design</span></span>
+                                    </div>
+                                </a>
+                                <a href="mobileapp.html" class="dropdown-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <div class="dropdown-item-content">
+                                        <span>Mobile<br><span class="second-line">App</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/portfolio" class="nav-link">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#inquiry-form" class="nav-link btn-lets-talk" id="navLetsTalk">Let's Talk</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= GLOBAL CONTACT ================= -->
+    <main class="gc-section">
+
+        <!-- floating tech icons -->
+        <div class="gc-bg-icons" aria-hidden="true">
+            <i class="fas fa-code" style="left:6%; top:14%; font-size:2rem; animation-delay:0s;"></i>
+            <i class="fas fa-mobile-alt" style="left:90%; top:18%; font-size:2.2rem; animation-delay:2s;"></i>
+            <i class="fas fa-cloud" style="left:10%; top:78%; font-size:2.4rem; animation-delay:4s;"></i>
+            <i class="fas fa-bullhorn" style="left:84%; top:74%; font-size:2rem; animation-delay:6s;"></i>
+            <i class="fas fa-paint-brush" style="left:48%; top:6%; font-size:1.8rem; animation-delay:3s;"></i>
+            <i class="fas fa-server" style="left:3%; top:46%; font-size:2rem; animation-delay:5s;"></i>
         </div>
 
-        <div class="eyebrow"><span class="dot"></span> Coming Soon</div>
+        <!-- road + horse -->
+        <div class="gc-road" aria-hidden="true">
+            <i class="fa-solid fa-horse-head gc-horse"></i>
+        </div>
 
-        <h1>Global Contact is <span>saddling up</span></h1>
+        <div class="gc-wrap">
 
-        <p class="lede">
-            We're building a faster way to reach every Techorses office, wherever you are in the world.
-            This page isn't live yet - check back soon.
-        </p>
+            <!-- LEFT: intro + WhatsApp -->
+            <div class="gc-left">
+                <div class="gc-eyebrow"><span class="dot"></span> Global Contact</div>
 
-        <a href="index.html" class="home-btn">
-            <i class="fas fa-arrow-left"></i> Back to Home
-        </a>
-    </div>
+                <h1 class="gc-title">Reliable solutions, <span>Anywhere</span> in the world</h1>
 
+                <p class="gc-lede">
+                    Tell us what you need and our team will get back to you shortly. Prefer a quick chat?
+                    Message us on WhatsApp and we'll reply right away.
+                </p>
+
+                <ul class="gc-points">
+                    <li><i class="fas fa-check-circle"></i> Quick response from a real team</li>
+                    <li><i class="fas fa-check-circle"></i> Web, software, apps, design &amp; marketing</li>
+                    <li><i class="fas fa-check-circle"></i> Clients served across the globe</li>
+                </ul>
+
+                <a href="#" id="gcWhatsappBtn" class="gc-whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+
+            <!-- RIGHT: form -->
+            <div class="gc-right">
+                <form id="inquiry-form" class="gc-form" novalidate>
+                    <h2 class="gc-form-title">Send us a message</h2>
+                    <p class="gc-form-sub">Fields marked <span class="req">*</span> are required.</p>
+
+                    <div class="gc-field">
+                        <input type="text" id="gc-name" name="name" placeholder="Full Name *" aria-label="Full Name"
+                            autocomplete="name" />
+                        <small class="gc-error"></small>
+                    </div>
+
+                    <div class="gc-field">
+                        <input type="email" id="gc-email" name="email" placeholder="Email Address *"
+                            aria-label="Email Address" autocomplete="email" />
+                        <small class="gc-error"></small>
+                    </div>
+
+                    <div class="gc-field">
+                        <input type="tel" id="gc-phone" name="phone" placeholder="Phone Number *"
+                            aria-label="Phone Number" autocomplete="tel" />
+                        <small class="gc-error"></small>
+                    </div>
+
+                    <div class="gc-field">
+                        <div class="gc-select-wrap">
+                            <select id="gc-service" name="service" aria-label="Service (optional)">
+                                <option value="">Select a service (optional)</option>
+                                <option value="Custom Software">Custom Software</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Marketing Solution">Marketing Solution</option>
+                                <option value="Graphic Design">Graphic Design</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="Mobile App">Mobile App</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="gc-field">
+                        <textarea id="gc-message" name="message" rows="3" aria-label="Message (optional)"
+                            placeholder="Message (optional)"></textarea>
+                    </div>
+
+                    <!-- Honeypot (spam trap) - keep hidden -->
+                    <div class="gc-hp" aria-hidden="true">
+                        <input type="text" id="gc-website" name="website" tabindex="-1" autocomplete="off"
+                            aria-label="Website" placeholder="Website" />
+                    </div>
+
+                    <button type="submit" id="gc-submit-btn" class="gc-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display: none;"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main-row">
+                <!-- Logo Column -->
+                <div class="footer-column footer-logo-column">
+                    <img src="/asstes/Logo/Techorses Logo_03.png" alt="Techorses Logo">
+                    <p>Stay connected and join the digital conversation! Follow us on social media for the latest
+                        updates, tech insights, and creative inspirations. Let's build a vibrant digital community
+                        together.</p>
+                    <div class="footer-social-wrapper">
+                        <button class="client-btn-with-icon">
+                            <span class="plus-footer">+</span> Become a Client
+                        </button>
+                        <div class="footer-socials desktop-social">
+                            <a href="https://www.facebook.com/people/Techorses/100089081915251/?mibextid=ZbWKwL"
+                                target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/techorses_?igsh=Zzh1ZDE0NHlvd3ht" target="_blank"
+                                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/techorses-ride-the-technology/" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explore Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="company.html" class="footer-link">Company</a></li>
+                        <li><a href="/portfolio" class="footer-link">Portfolio</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="terms-conditions.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html" class="footer-link">PrivacyPolicy</a></li>
+                        <li><a href="data-deletion.html" class="footer-link">Data Deletion</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="thcore.html" class="footer-link">TH Core</a></li>
+                        <li><a href="thvend.html" class="footer-link">TH Vend</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-column mobile-none">
+                    <h3>Services</h3>
+                    <ul class="services-list">
+                        <li><a href="webdevelopment.html" class="footer-link">Web Development</a></li>
+                        <li><a href="customsoftware.html" class="footer-link">Custom Software</a></li>
+                        <li><a href="marketingsolution.html" class="footer-link">Marketing Solution</a></li>
+                        <li><a href="graphicdesign.html" class="footer-link">Graphic Design</a></li>
+                        <li><a href="uiux.html" class="footer-link">UI/UX Design</a></li>
+                        <li><a href="mobileapp.html" class="footer-link">Mobile Application</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-line address-line">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://maps.google.com/?q=B-224+Samanvay+Silicon+Opp+Kalyan+Hotel+Dairy+Den+Circle+Sayajigunj+Vadodara+390020"
+                                target="_blank" rel="noopener noreferrer" class="address-text footer-link">
+                                B-224, Samanvay Silicon, Opp Kalyan Hotel, Dairy Den Circle, Sayajigunj, Vadodara,
+                                390020 (Gujarat, India)
+                            </a>
+                        </div>
+
+                        <div class="contact-line phone-line">
+                            <div class="contact-items">
+                                <a href="tel:+917778048992" class="contact-item">
+                                    <i class="fas fa-phone-alt"></i> +91 7778048992
+                                </a>
+                                <span class="contact-separator">|</span>
+                                <a href="tel:+919328338281" class="contact-item">
+                                    <i class="fas fa-phone-alt"></i> +91 9328338281
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-line email-line">
+                            <div class="contact-items">
+                                <a href="mailto:hey@techorses.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i> hey@techorses.com
+                                </a>
+                                <div class="contact-separator">|</div>
+                                <a href="mailto:sales@techorses.com" class="contact-item">
+                                    <i class="fas fa-envelope"></i> sales@techorses.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Social Icons -->
+                        <div class="mobile-social">
+                            <div class="footer-socials">
+                                <a href="https://www.facebook.com/people/Techorses/100089081915251/?mibextid=ZbWKwL"
+                                    target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/techorses_?igsh=Zzh1ZDE0NHlvd3ht" target="_blank"
+                                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/techorses-ride-the-technology/"
+                                    target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright-section desktop-copyright">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved. Designed by Techorses.
+                </p>
+            </div>
+            <div class="footer-copyright-section mobile-copyright">
+                <p class="footer-copyright">Copyright © 2025 Techorses, All rights reserved.<br>Designed by Techorses.
+                </p>
+            </div>
+        </div>
+
+        <!-- Go to Top Button -->
+        <button id="goToTopBtn" title="Go to top" aria-label="Go to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <div class="toast-container"></div>
+    <audio id="successSound" src="/asstes/Images/Sound/notification.mp3" preload="auto"></audio>
+
+    <script src="/js/Contact.js"></script>
+    <script src="/js/GlobalContact.js"></script>
+    <script src="/js/cursor.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,508 @@
+/* =========================================================
+   GLOBAL CONTACT PAGE
+   Navbar, footer, toast & loader styles come from Contact.css
+   ========================================================= */
+
+:root {
+    --green: #006400;
+    --orange: #ff5e0e;
+    --bg: #eff3ef;
+    --wa-green: #25D366;
+}
+
+/* ---------- Section ---------- */
+.gc-section {
+    position: relative;
+    background-color: var(--bg);
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem 8rem;
+    overflow: hidden;
+}
+
+/* ---------- Floating icons ---------- */
+.gc-bg-icons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.gc-bg-icons i {
+    position: absolute;
+    color: rgba(0, 100, 0, 0.15);
+    animation: gcFloat 14s infinite ease-in-out;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
+}
+
+@keyframes gcFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-22px) rotate(6deg);
+    }
+}
+
+/* ---------- Road + horse ---------- */
+.gc-road {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.gc-road::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 200%;
+    height: 4px;
+    background-image: linear-gradient(90deg, var(--green) 0 40px, transparent 40px 70px);
+    background-size: 70px 4px;
+    animation: gcRoadMove 3.5s linear infinite;
+    opacity: 0.35;
+}
+
+@keyframes gcRoadMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-70px);
+    }
+}
+
+.gc-horse {
+    position: absolute;
+    bottom: 22px;
+    left: -80px;
+    font-size: 2.2rem;
+    color: var(--orange);
+    animation: gcGallop 15s linear infinite;
+}
+
+@keyframes gcGallop {
+    0% {
+        left: -80px;
+        transform: translateY(0) scaleX(-1);
+    }
+
+    48% {
+        transform: translateY(-6px) scaleX(-1);
+    }
+
+    50% {
+        left: 105%;
+        transform: translateY(0) scaleX(-1);
+    }
+
+    100% {
+        left: 105%;
+        transform: translateY(0) scaleX(-1);
+    }
+}
+
+/* ---------- Layout ---------- */
+.gc-wrap {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+/* ---------- Left side ---------- */
+.gc-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--green);
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 100, 0, 0.25);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    background: rgba(0, 100, 0, 0.05);
+}
+
+.gc-eyebrow .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--orange);
+    animation: gcPulseDot 1.6s ease-in-out infinite;
+}
+
+@keyframes gcPulseDot {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+}
+
+.gc-title {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: 800;
+    color: #111;
+    line-height: 1.15;
+    margin-bottom: 1.1rem;
+    letter-spacing: -0.5px;
+}
+
+.gc-title span {
+    color: var(--green);
+    position: relative;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.gc-title span::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(0, 100, 0, 0.15);
+    z-index: -1;
+}
+
+.gc-lede {
+    font-size: 1.02rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.gc-points {
+    list-style: none;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.gc-points li {
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.gc-points li i {
+    color: var(--green);
+}
+
+/* WhatsApp button */
+.gc-whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    background-color: var(--green);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.85rem 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--green);
+    transition: all 0.3s ease;
+}
+
+.gc-whatsapp-btn i {
+    font-size: 1.4rem;
+}
+
+.gc-whatsapp-btn:hover {
+    background-color: transparent;
+    color: var(--wa-green);
+    border-color: var(--wa-green);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2);
+}
+
+/* ---------- Form card ---------- */
+.gc-form {
+    background: #fff;
+    border-radius: 20px;
+    padding: 1.8rem 1.8rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--orange);
+}
+
+.gc-form-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.3rem;
+}
+
+.gc-form-sub {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 1.2rem;
+}
+
+.gc-form .req {
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.gc-field {
+    margin-bottom: 0.85rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.gc-field input,
+.gc-field select,
+.gc-field textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #d5ded5;
+    border-radius: 0.6rem;
+    font-size: 0.95rem;
+    background: #f9fbf9;
+    color: #222;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gc-field textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.gc-field input:focus,
+.gc-field select:focus,
+.gc-field textarea:focus {
+    outline: none;
+    border-color: var(--green);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 100, 0, 0.1);
+}
+
+.gc-field input::placeholder,
+.gc-field textarea::placeholder {
+    color: #aab3aa;
+}
+
+/* select */
+.gc-select-wrap {
+    position: relative;
+}
+
+.gc-select-wrap select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+.gc-select-wrap i {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    color: var(--green);
+    pointer-events: none;
+}
+
+/* errors */
+.gc-error {
+    display: none;
+    color: #dc3545;
+    font-size: 0.75rem;
+    margin-top: 0.3rem;
+}
+
+.gc-field.has-error input {
+    border-color: #dc3545;
+    background: #fff7f7;
+}
+
+.gc-field.has-error .gc-error {
+    display: block;
+}
+
+/* honeypot */
+.gc-hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* submit */
+.gc-submit {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+    color: #fff;
+    border: 1px solid var(--orange);
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.gc-submit:hover {
+    background-color: transparent;
+    color: var(--orange);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 94, 14, 0.2);
+}
+
+.gc-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* loader colour flips on hover so it stays visible */
+.gc-submit:hover .btn-loader {
+    border-color: var(--orange);
+    border-top-color: transparent;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+    .gc-section {
+        padding: 3rem 1.5rem 7rem;
+        align-items: flex-start;
+    }
+
+    .gc-wrap {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .gc-left {
+        text-align: center;
+    }
+
+    .gc-points {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .gc-section {
+        padding: 2rem 1rem 7rem;
+    }
+
+    .gc-form {
+        padding: 1.6rem 1.2rem;
+    }
+
+    .gc-form-title {
+        font-size: 1.3rem;
+    }
+
+    .gc-horse {
+        font-size: 1.7rem;
+    }
+
+    .gc-whatsapp-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* select looks like a placeholder until a service is picked */
+.gc-select-wrap select:has(option[value=""]:checked) {
+    color: #aab3aa;
+}
+
+.gc-select-wrap select option {
+    color: #222;
+}
+
+/* =========================================================
+   NAVBAR DROPDOWNS (Services / Products) - NO HERO ON THIS PAGE
+   Always use the "after hero" look: solid background, dark text
+   Desktop only - mobile is already white
+   ========================================================= */
+@media (min-width: 993px) {
+
+    .header .dropdown-container,
+    .header .products-dropdown-container {
+        background: #ffffff;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: 1px solid rgba(0, 100, 0, 0.12);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .header .dropdown-item,
+    .header .products-dropdown .dropdown-item {
+        background: #e7fff2;
+        color: #333;
+        border: 1px solid rgba(0, 100, 0, 0.1);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    .header .dropdown-item span,
+    .header .products-dropdown .dropdown-item span {
+        color: #333;
+    }
+
+    .header .dropdown-item span .second-line,
+    .header .products-dropdown .dropdown-item .second-line {
+        color: #666;
+    }
+
+    .header .dropdown-item:hover,
+    .header .products-dropdown .dropdown-item:hover {
+        background: #d3f5e2;
+        color: #333;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 100, 0, 0.25);
+    }
+
+    .header .dropdown-item:hover span,
+    .header .products-dropdown .dropdown-item:hover span {
+        color: #333;
+    }
+
+    .header .dropdown-item:hover span .second-line,
+    .header .products-dropdown .dropdown-item:hover .second-line {
+        color: #666;
+    }
+}
