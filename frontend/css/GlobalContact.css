@@ -220,17 +220,66 @@
     color: var(--green);
 }
 
-/* WhatsApp button */
-.gc-whatsapp-btn {
+/* Phone numbers (click = call) */
+.gc-phones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+}
+
+.gc-phone-btn {
     display: inline-flex;
     align-items: center;
+    gap: 0.6rem;
+    color: var(--green);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--green);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.gc-phone-btn i {
+    color: var(--orange);
+    transition: color 0.3s ease;
+}
+
+.gc-phone-btn:hover {
+    background-color: var(--green);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 100, 0, 0.2);
+}
+
+.gc-phone-btn:hover i {
+    color: #fff;
+}
+
+/* ---------- Right card ---------- */
+.gc-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 1.8rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--orange);
+}
+
+/* WhatsApp button (top of card) */
+.gc-whatsapp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 0.7rem;
+    width: 100%;
     background-color: var(--green);
     color: #fff;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    padding: 0.85rem 2rem;
+    padding: 0.85rem 1rem;
     border-radius: 0.5rem;
     border: 1px solid var(--green);
     transition: all 0.3s ease;
@@ -248,33 +297,27 @@
     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2);
 }
 
-/* ---------- Form card ---------- */
-.gc-form {
-    background: #fff;
-    border-radius: 20px;
-    padding: 1.8rem 1.8rem;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    border-top: 4px solid var(--orange);
+/* OR divider */
+.gc-or {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.2rem 0;
+    color: #999;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
-.gc-form-title {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 0.3rem;
+.gc-or::before,
+.gc-or::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #d5ded5;
 }
 
-.gc-form-sub {
-    font-size: 0.85rem;
-    color: #777;
-    margin-bottom: 1.2rem;
-}
-
-.gc-form .req {
-    color: var(--orange);
-    font-weight: 700;
-}
-
+/* ---------- Form ---------- */
 .gc-field {
     margin-bottom: 0.85rem;
     display: flex;
@@ -282,8 +325,7 @@
 }
 
 .gc-field input,
-.gc-field select,
-.gc-field textarea {
+.gc-field select {
     width: 100%;
     padding: 0.8rem 1rem;
     border: 1px solid #d5ded5;
@@ -295,22 +337,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.gc-field textarea {
-    resize: vertical;
-    min-height: 90px;
-}
-
 .gc-field input:focus,
-.gc-field select:focus,
-.gc-field textarea:focus {
+.gc-field select:focus {
     outline: none;
     border-color: var(--green);
     background: #fff;
     box-shadow: 0 0 0 3px rgba(0, 100, 0, 0.1);
 }
 
-.gc-field input::placeholder,
-.gc-field textarea::placeholder {
+.gc-field input::placeholder {
     color: #aab3aa;
 }
 
@@ -334,6 +369,15 @@
     font-size: 0.8rem;
     color: var(--green);
     pointer-events: none;
+}
+
+/* select looks like a placeholder until a service is picked */
+.gc-select-wrap select:has(option[value=""]:checked) {
+    color: #aab3aa;
+}
+
+.gc-select-wrap select option {
+    color: #222;
 }
 
 /* errors */
@@ -377,7 +421,7 @@
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
     transition: all 0.3s ease;
 }
 
@@ -398,59 +442,6 @@
 .gc-submit:hover .btn-loader {
     border-color: var(--orange);
     border-top-color: transparent;
-}
-
-/* ---------- Responsive ---------- */
-@media (max-width: 992px) {
-    .gc-section {
-        padding: 3rem 1.5rem 7rem;
-        align-items: flex-start;
-    }
-
-    .gc-wrap {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-
-    .gc-left {
-        text-align: center;
-    }
-
-    .gc-points {
-        align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .gc-section {
-        padding: 2rem 1rem 7rem;
-    }
-
-    .gc-form {
-        padding: 1.6rem 1.2rem;
-    }
-
-    .gc-form-title {
-        font-size: 1.3rem;
-    }
-
-    .gc-horse {
-        font-size: 1.7rem;
-    }
-
-    .gc-whatsapp-btn {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-/* select looks like a placeholder until a service is picked */
-.gc-select-wrap select:has(option[value=""]:checked) {
-    color: #aab3aa;
-}
-
-.gc-select-wrap select option {
-    color: #222;
 }
 
 /* =========================================================
@@ -504,5 +495,53 @@
     .header .dropdown-item:hover span .second-line,
     .header .products-dropdown .dropdown-item:hover .second-line {
         color: #666;
+    }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+    .gc-section {
+        padding: 3rem 1.5rem 7rem;
+        align-items: flex-start;
+    }
+
+    .gc-wrap {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .gc-left {
+        text-align: center;
+    }
+
+    .gc-points {
+        align-items: center;
+    }
+
+    .gc-phones {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .gc-section {
+        padding: 2rem 1rem 7rem;
+    }
+
+    .gc-card {
+        padding: 1.4rem 1.2rem;
+    }
+
+    .gc-horse {
+        font-size: 1.7rem;
+    }
+
+    .gc-phones {
+        flex-direction: column;
+    }
+
+    .gc-phone-btn {
+        width: 100%;
+        justify-content: center;
     }
 }

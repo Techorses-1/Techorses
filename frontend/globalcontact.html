@@ -174,66 +174,73 @@
                     <li><i class="fas fa-check-circle"></i> Clients served across the globe</li>
                 </ul>
 
-                <a href="#" id="gcWhatsappBtn" class="gc-whatsapp-btn" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
-                </a>
+                <div class="gc-phones">
+                    <a href="tel:+919328338281" class="gc-phone-btn">
+                        <i class="fas fa-phone-alt"></i> +91 9328338281
+                    </a>
+                    <a href="tel:+917778048992" class="gc-phone-btn">
+                        <i class="fas fa-phone-alt"></i> +91 7778048992
+                    </a>
+                </div>
             </div>
 
             <!-- RIGHT: form -->
             <div class="gc-right">
-                <form id="inquiry-form" class="gc-form" novalidate>
-                    <h2 class="gc-form-title">Send us a message</h2>
-                    <p class="gc-form-sub">Fields marked <span class="req">*</span> are required.</p>
+                <div class="gc-card">
 
-                    <div class="gc-field">
-                        <input type="text" id="gc-name" name="name" placeholder="Full Name *" aria-label="Full Name"
-                            autocomplete="name" />
-                        <small class="gc-error"></small>
-                    </div>
+                    <a href="#" id="gcWhatsappBtn" class="gc-whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
 
-                    <div class="gc-field">
-                        <input type="email" id="gc-email" name="email" placeholder="Email Address *"
-                            aria-label="Email Address" autocomplete="email" />
-                        <small class="gc-error"></small>
-                    </div>
+                    <div class="gc-or"><span>OR</span></div>
 
-                    <div class="gc-field">
-                        <input type="tel" id="gc-phone" name="phone" placeholder="Phone Number *"
-                            aria-label="Phone Number" autocomplete="tel" />
-                        <small class="gc-error"></small>
-                    </div>
+                    <form id="inquiry-form" class="gc-form" novalidate>
 
-                    <div class="gc-field">
-                        <div class="gc-select-wrap">
-                            <select id="gc-service" name="service" aria-label="Service (optional)">
-                                <option value="">Select a service (optional)</option>
-                                <option value="Custom Software">Custom Software</option>
-                                <option value="Web Development">Web Development</option>
-                                <option value="Marketing Solution">Marketing Solution</option>
-                                <option value="Graphic Design">Graphic Design</option>
-                                <option value="UI/UX Design">UI/UX Design</option>
-                                <option value="Mobile App">Mobile App</option>
-                            </select>
-                            <i class="fas fa-chevron-down"></i>
+                        <div class="gc-field">
+                            <input type="text" id="gc-name" name="name" placeholder="Full Name *" aria-label="Full Name"
+                                autocomplete="name" />
+                            <small class="gc-error"></small>
                         </div>
-                    </div>
 
-                    <div class="gc-field">
-                        <textarea id="gc-message" name="message" rows="3" aria-label="Message (optional)"
-                            placeholder="Message (optional)"></textarea>
-                    </div>
+                        <div class="gc-field">
+                            <input type="email" id="gc-email" name="email" placeholder="Email Address *"
+                                aria-label="Email Address" autocomplete="email" />
+                            <small class="gc-error"></small>
+                        </div>
 
-                    <!-- Honeypot (spam trap) - keep hidden -->
-                    <div class="gc-hp" aria-hidden="true">
-                        <input type="text" id="gc-website" name="website" tabindex="-1" autocomplete="off"
-                            aria-label="Website" placeholder="Website" />
-                    </div>
+                        <div class="gc-field">
+                            <input type="tel" id="gc-phone" name="phone" placeholder="Phone Number *"
+                                aria-label="Phone Number" autocomplete="tel" />
+                            <small class="gc-error"></small>
+                        </div>
 
-                    <button type="submit" id="gc-submit-btn" class="gc-submit">
-                        <span class="btn-text">Send Message</span>
-                        <span class="btn-loader" style="display: none;"></span>
-                    </button>
-                </form>
+                        <div class="gc-field">
+                            <div class="gc-select-wrap">
+                                <select id="gc-service" name="service" aria-label="Service (optional)">
+                                    <option value="">Select a service (optional)</option>
+                                    <option value="Custom Software">Custom Software</option>
+                                    <option value="Web Development">Web Development</option>
+                                    <option value="Marketing Solution">Marketing Solution</option>
+                                    <option value="Graphic Design">Graphic Design</option>
+                                    <option value="UI/UX Design">UI/UX Design</option>
+                                    <option value="Mobile App">Mobile App</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <!-- Honeypot (spam trap) - keep hidden -->
+                        <div class="gc-hp" aria-hidden="true">
+                            <input type="text" id="gc-website" name="website" tabindex="-1" autocomplete="off"
+                                aria-label="Website" placeholder="Website" />
+                        </div>
+
+                        <button type="submit" id="gc-submit-btn" class="gc-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;"></span>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>

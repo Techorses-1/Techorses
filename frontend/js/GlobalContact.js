@@ -7,8 +7,7 @@
 
     // ---------- CONFIG ----------
     const WHATSAPP_NUMBER = '917778048992'; // no "+"
-    const API_URL = 'https://techorses.com/api/global-inquiry'; 
-    // const API_URL = 'http://localhost:3000/global-inquiry';
+    const API_URL = 'https://techorses.com/api/global-inquiry'; // change when backend is ready
 
     const WHATSAPP_BASE_MESSAGE =
         "Hello Techorses! I'm looking for reliable software & digital solutions for my business. " +
@@ -20,7 +19,6 @@
     const emailInput = document.getElementById('gc-email');
     const phoneInput = document.getElementById('gc-phone');
     const serviceInput = document.getElementById('gc-service');
-    const messageInput = document.getElementById('gc-message');
     const honeypot = document.getElementById('gc-website');
     const submitBtn = document.getElementById('gc-submit-btn');
     const waBtn = document.getElementById('gcWhatsappBtn');
@@ -150,8 +148,7 @@
             name: nameInput.value.trim(),
             email: emailInput.value.trim(),
             phone: phoneInput.value.trim(),
-            service: serviceInput.value, // optional
-            message: messageInput.value.trim() // optional
+            service: serviceInput.value // optional (message is not on this form)
         };
 
         const btnText = submitBtn.querySelector('.btn-text');
