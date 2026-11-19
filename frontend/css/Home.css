@@ -764,138 +764,138 @@ body {
 /* TABLET VIEW NAVBAR FIXES (768px to 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
 
-  /* Fix navbar menu width */
-  .nav-menu {
-    width: 80% !important;
-    max-width: 450px !important;
-    top: 5rem;
-    padding: 2rem 1.5rem !important;
-  }
-
-  /* ADJUST DROPDOWN POSITIONING */
-  .services-dropdown.active .dropdown-container {
-    left: 0% !important;
-    width: 40% !important;
-    top: 45% !important;
-    max-width: 240px !important;
-    background: white !important;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2) !important;
-    border-radius: 12px !important;
-    padding: 0.8rem !important;
-  }
-
-  .products-dropdown.active .dropdown-container {
-    left: 0% !important;
-    width: 30% !important;
-    top: 25% !important;
-    background: white !important;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2) !important;
-    border-radius: 12px !important;
-    padding: 0.8rem !important;
-  }
-
-  /* FIX TEXT COLOR ISSUE - THIS IS THE IMPORTANT PART */
-  .services-dropdown.active .dropdown-item,
-  .products-dropdown.active .dropdown-item {
-    color: #333333 !important;
-    /* Dark color for text */
-    background: white !important;
-    padding: 0.6rem 0.8rem !important;
-    margin-bottom: 0.4rem !important;
-    border: 1px solid #f0f0f0 !important;
-    border-radius: 8px !important;
-    transition: all 0.2s ease;
-  }
-
-  /* Fix for service dropdown items - ensure all text is visible */
-  .services-dropdown.active .dropdown-item span,
-  .products-dropdown.active .dropdown-item span {
-    color: #333333 !important;
-    font-size: 0.8rem !important;
-    font-weight: 500 !important;
-  }
-
-  /* Fix for the second line text */
-  .services-dropdown.active .dropdown-item .second-line,
-  .products-dropdown.active .dropdown-item .second-line {
-    color: #666666 !important;
-    font-size: 0.7rem !important;
-    display: inline !important;
-  }
-
-  /* Fix icon color - keep orange */
-  .services-dropdown.active .dropdown-item i,
-  .products-dropdown.active .dropdown-item i {
-    color: #ff5e0e !important;
-    font-size: 1rem !important;
-    min-width: 20px;
-  }
-
-  /* Fix hover states */
-  .services-dropdown.active .dropdown-item:hover,
-  .products-dropdown.active .dropdown-item:hover {
-    background: #f8f8f8 !important;
-    border-color: #ff5e0e !important;
-    transform: translateY(-2px);
-  }
-
-  .services-dropdown.active .dropdown-item:hover span,
-  .products-dropdown.active .dropdown-item:hover span {
-    color: #ff5e0e !important;
-  }
-
-  /* Adjust dropdown animation */
-  @keyframes fadeInFromLeft {
-    from {
-      opacity: 0;
-      transform: translate(-70%, -50%);
-    }
-
-    to {
-      opacity: 1;
-      transform: translate(-40%, -50%);
-    }
-  }
-
-  /* Better spacing for nav items */
-  .nav-item {
-    margin: 0.8rem 0 !important;
-  }
-
-  /* Ensure dropdowns don't go off screen */
-  .services-dropdown.active .dropdown-container,
-  .products-dropdown.active .dropdown-container {
-    animation: fadeInFromLeft 0.3s ease-out;
-    transform: translate(-40%, -50%) !important;
-  }
-
-  /* Fix for very small tablets (768px - 850px) */
-  @media (max-width: 850px) {
+    /* Fix navbar menu width */
     .nav-menu {
-      width: 85% !important;
-      max-width: 450px !important;
+        width: 80% !important;
+        max-width: 450px !important;
+        top: 5rem;
+        padding: 2rem 1.5rem !important;
     }
 
+    /* ADJUST DROPDOWN POSITIONING */
     .services-dropdown.active .dropdown-container {
-      left: 0% !important;
-      width: 45% !important;
-      top: 45% !important;
-      transform: translate(-50%, -50%) !important;
+        left: 0% !important;
+        width: 40% !important;
+        top: 45% !important;
+        max-width: 240px !important;
+        background: white !important;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2) !important;
+        border-radius: 12px !important;
+        padding: 0.8rem !important;
     }
 
     .products-dropdown.active .dropdown-container {
-      left: 0% !important;
-      width: 30% !important;
-      top: 25% !important;
-      transform: translate(-50%, -50%) !important;
+        left: 0% !important;
+        width: 30% !important;
+        top: 25% !important;
+        background: white !important;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2) !important;
+        border-radius: 12px !important;
+        padding: 0.8rem !important;
     }
 
-    /* Ensure text is visible on very small tablets */
+    /* FIX TEXT COLOR ISSUE - THIS IS THE IMPORTANT PART */
+    .services-dropdown.active .dropdown-item,
+    .products-dropdown.active .dropdown-item {
+        color: #333333 !important;
+        /* Dark color for text */
+        background: white !important;
+        padding: 0.6rem 0.8rem !important;
+        margin-bottom: 0.4rem !important;
+        border: 1px solid #f0f0f0 !important;
+        border-radius: 8px !important;
+        transition: all 0.2s ease;
+    }
+
+    /* Fix for service dropdown items - ensure all text is visible */
     .services-dropdown.active .dropdown-item span,
     .products-dropdown.active .dropdown-item span {
-      font-size: 0.75rem !important;
+        color: #333333 !important;
+        font-size: 0.8rem !important;
+        font-weight: 500 !important;
     }
-  }
+
+    /* Fix for the second line text */
+    .services-dropdown.active .dropdown-item .second-line,
+    .products-dropdown.active .dropdown-item .second-line {
+        color: #666666 !important;
+        font-size: 0.7rem !important;
+        display: inline !important;
+    }
+
+    /* Fix icon color - keep orange */
+    .services-dropdown.active .dropdown-item i,
+    .products-dropdown.active .dropdown-item i {
+        color: #ff5e0e !important;
+        font-size: 1rem !important;
+        min-width: 20px;
+    }
+
+    /* Fix hover states */
+    .services-dropdown.active .dropdown-item:hover,
+    .products-dropdown.active .dropdown-item:hover {
+        background: #f8f8f8 !important;
+        border-color: #ff5e0e !important;
+        transform: translateY(-2px);
+    }
+
+    .services-dropdown.active .dropdown-item:hover span,
+    .products-dropdown.active .dropdown-item:hover span {
+        color: #ff5e0e !important;
+    }
+
+    /* Adjust dropdown animation */
+    @keyframes fadeInFromLeft {
+        from {
+            opacity: 0;
+            transform: translate(-70%, -50%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(-40%, -50%);
+        }
+    }
+
+    /* Better spacing for nav items */
+    .nav-item {
+        margin: 0.8rem 0 !important;
+    }
+
+    /* Ensure dropdowns don't go off screen */
+    .services-dropdown.active .dropdown-container,
+    .products-dropdown.active .dropdown-container {
+        animation: fadeInFromLeft 0.3s ease-out;
+        transform: translate(-40%, -50%) !important;
+    }
+
+    /* Fix for very small tablets (768px - 850px) */
+    @media (max-width: 850px) {
+        .nav-menu {
+            width: 85% !important;
+            max-width: 450px !important;
+        }
+
+        .services-dropdown.active .dropdown-container {
+            left: 0% !important;
+            width: 45% !important;
+            top: 45% !important;
+            transform: translate(-50%, -50%) !important;
+        }
+
+        .products-dropdown.active .dropdown-container {
+            left: 0% !important;
+            width: 30% !important;
+            top: 25% !important;
+            transform: translate(-50%, -50%) !important;
+        }
+
+        /* Ensure text is visible on very small tablets */
+        .services-dropdown.active .dropdown-item span,
+        .products-dropdown.active .dropdown-item span {
+            font-size: 0.75rem !important;
+        }
+    }
 }
 
 /* LETS TALK MODEL  */
@@ -5556,7 +5556,81 @@ footer {
     }
 
     .about-text h3 {
-        text-align: center ;
+        text-align: center;
     }
-    
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ABOUT: Partner row */
+.partner-row {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    flex-wrap: wrap;
+}
+
+.partner-label {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #006400;
+}
+
+.partner-label::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 40%;
+    height: 2px;
+    background: #006400;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.4s ease;
+}
+
+.partner-row:hover .partner-label::after {
+    width: 100%;
+}
+
+.partner-img {
+    height: 60px;
+    width: auto;
+    border-radius: 12px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.partner-img:hover {
+    transform: translateY(-5px) scale(1.06);
+    filter: drop-shadow(0 12px 20px rgba(103, 61, 230, 0.4));
+}
+
+@media (max-width: 576px) {
+    .partner-row {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .partner-label {
+        font-size: 0.85rem;
+    }
+
+    .partner-img {
+        height: 50px;
+    }
 }
